@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.5.0</version>
+    <authors>Paul Accisano</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://qttabbar.sourceforge.net/</projectUrl>
+    <iconUrl>http://qttabbar.sourceforge.net/wp-content/themes/atahualpa/images/site_logo_small.png</iconUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <id>QTTabBar</id>
+    <title>QTTabBar</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>QTTabBar is extension for Windows Explorer that brings tabbed browsing to Microsoft's file browser, along with a host of other great features. Under new management! Now in public beta!</description>
+    <summary>Dragging Explorer into the modern era</summary>
+    <tags>productivity windows explorer chocolatey admin</tags>
+  </metadata>
+</package>
