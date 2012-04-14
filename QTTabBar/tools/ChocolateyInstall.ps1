@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'QTTabBar' 'msi' '/quiet /norestart' 'http://downloads.sourceforge.net/project/qttabbar/1.5.0.0%20Beta%202/qttabbar-v1.5.0.0b2.msi'
+Install-ChocolateyPackage 'QTTabBar' 'msi' '/q' 'http://downloads.sourceforge.net/project/qttabbar/1.5.0.0%20Beta%202/qttabbar-v1.5.0.0b2.msi'

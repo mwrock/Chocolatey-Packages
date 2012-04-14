@@ -14,4 +14,7 @@
     <summary>Makes creating and examining nuget packages very easy.</summary>
     <tags>nuget chocolatey</tags>
   </metadata>
+  <files>
+    <file src="tools\**\*.*" />
+  </files>
 </package>
