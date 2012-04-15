@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>2011.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.microsoft.com/download/en/details.aspx?id=8621</projectUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/WindowsLiveWriter/live_logo.jpg</iconUrl>
+    <id>WindowsLiveWriter</id>
+    <title>Windows Live Writer</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Windows Live Writer makes it easy to share your photos and videos on almost any blog service. With Writer, you can preview everything you’re adding to your blog, and see exactly how the fonts, spacing, colors, and images will look, before you publish. It's fast and easy to make photos and videos look great on your blog. You can even create a photo album—just select the style you want and Writer takes care of the rest. Writer is already packed with useful features, but if you like to tinker, there are all sorts of plug-ins you can add to help you do even more.</description>
+    <summary>Windows Live Writer makes blogging a breeze. You can add photos and videos, format everything just so, and publish to most blogging services</summary>
+    <tags>bloging windows live writer chocolatey</tags>
+  </metadata>
+  <files>
+    <file src="tools\**\*.*" />
+  </files>
+</package>
