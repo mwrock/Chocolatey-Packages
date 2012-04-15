@@ -11,6 +11,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>With Windows Live Mesh and the Windows Live Devices website, you can stop emailing files to yourself, carrying them around on a USB drive, or worrying whether the version you have with you is the latest. Keep up-to-date copies of documents, photos, and other files on all of your computers, whether PC or Mac. So, even if you go offline, the files you synced earlier are there when you need them. You can sync up to 5 GB to your free synced storage space on SkyDrive, and sync an unlimited number of files directly from one computer to another. Windows Live Mesh also has remote access, so you can get to your PC from another location, similar to using Remote Desktop Connection in Windows. With Windows Live Mesh installed and running on your PC, you can run programs and browse to all the files on that PC from any other PC on the Internet.</description>
     <summary>Sync your files and program settings between computers and connect to your PCs remotely</summary>
+    <dependencies>
+      <dependency id="WindowsLiveInstaller" />
+    </dependencies>
     <tags>windows live mesh chocolatey</tags>
   </metadata>
   <files>
