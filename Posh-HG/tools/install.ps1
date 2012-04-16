@@ -20,7 +20,7 @@ function Get-FileEncoding($Path) {
 }
 
 $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$profileLine = ". '$tools\profile.example.ps1'"
+$profileLine = ". '$tools\profile.example-ps3.ps1'"
 if(Select-String -Path $PROFILE -Pattern $profileLine -Quiet -SimpleMatch) {
     Write-Host "It seems posh-hg is already installed..."
     return
