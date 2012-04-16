@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.1.0</version>
+    <version>1.1.0,20120415</version>
     <authors>Jeremy Skinner</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://poshhg.codeplex.com/</projectUrl>
@@ -12,5 +12,8 @@
     <summary>Posh-hg provides a custom prompt and tab expansion when using Mercurial from within a Windows Powershell command line.</summary>
     <description>Posh-hg provides a custom prompt and tab expansion when using Mercurial from within a Windows Powershell command line.</description>
     <tags>Mercurial hg posh powershell chocolatey</tags>
+    <dependencies>
+      <dependency id="hg" />
+    </dependencies>
   </metadata>
 </package>

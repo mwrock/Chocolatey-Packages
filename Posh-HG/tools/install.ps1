@@ -3,11 +3,6 @@ if(!(Test-Path $PROFILE)) {
     New-Item $PROFILE -Force -Type File
 }
 
-if(!(Get-Command hg -ErrorAction SilentlyContinue)) {
-    Write-Warning 'Could not find hg command. Please create a hg alias or add hg directory to PATH.'
-    return
-}
-
 # Adapted from http://www.west-wind.com/Weblog/posts/197245.aspx
 function Get-FileEncoding($Path) {
     $bytes = [byte[]](Get-Content $Path -Encoding byte -ReadCount 4 -TotalCount 4)
