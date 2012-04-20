@@ -25,7 +25,7 @@ function Get-FileEncoding($Path) {
 $module = Get-Module | Where-Object {$_.Name -eq "posh-hg"}
 if($module -eq $null) {
     $tools = ([array](dir $env:ChocolateyInstall\lib\posh-hg.*))[-1]
-    $profileLine = ". '$tools\profile.example-ps3.ps1'"    
+    $profileLine = ". '$tools\tools\profile.example-ps3.ps1'"    
     Write-Host "Adding posh-hg to profile..."
     @"
 
@@ -40,7 +40,7 @@ if($module -eq $null) {
     $binRoot = join-path $env:systemdrive 'tools'
     if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
     $poshgitPath = join-path $binRoot 'poshgit'
-    $profileLine = ". '$poshgitPath\profile.example.ps1'"    
+    $profileLine = ". '$poshgitPath\dahlbyk-posh-git-60e1ed7\profile.example.ps1'"    
     Write-Host "Adding posh-git to profile..."
     @"
 
