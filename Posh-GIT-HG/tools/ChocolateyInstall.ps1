@@ -1,11 +1,3 @@
-if(!(Test-Path $PROFILE)) {
-    Write-Host "Creating PowerShell profile...`n$PROFILE"
-    New-Item $PROFILE -Force -Type File
-}
-else {
-    & $profile
-}
-
 # Adapted from http://www.west-wind.com/Weblog/posts/197245.aspx
 function Get-FileEncoding($Path) {
     $bytes = [byte[]](Get-Content $Path -Encoding byte -ReadCount 4 -TotalCount 4)
@@ -22,43 +14,43 @@ function Get-FileEncoding($Path) {
     }
 }
 
-$module = Get-Module | Where-Object {$_.Name -eq "posh-hg"}
-if($module -eq $null) {
-    $tools = ([array](dir $env:ChocolateyInstall\lib\posh-hg.*))[-1]
-    $profileLine = ". '$tools\tools\profile.example-ps3.ps1'"    
-    Write-Host "Adding posh-hg to profile..."
+function Add-Line([string]$profileLine) {
+    Write-Host "Adding $profileLine to profile..."
     @"
 
-    # Load posh-hg example profile
     $profileLine
 
 "@ | Out-File $PROFILE -Append -Encoding (Get-FileEncoding $PROFILE)
 }
 
-$module = Get-Module | Where-Object {$_.Name -eq "posh-git"}
-if($module -eq $null) {
+function Check-Profile([string] $profileLine) {
+    if(!(Select-String -Path $PROFILE -Pattern $profileLine -Quiet -SimpleMatch)) {
+        Add-Line $profileLine
+    }
+}
+
+
+try {
+    if(!(Test-Path $PROFILE)) {
+        Write-Host "Creating PowerShell profile...`n$PROFILE"
+        New-Item $PROFILE -Force -Type File
+    }
+
+    $tools = ([array](dir $env:ChocolateyInstall\lib\posh-hg.*))[-1]
+    Check-Profile ". '$tools\tools\profile.example-ps3.ps1'"    
+
     $binRoot = join-path $env:systemdrive 'tools'
     if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
     $poshgitPath = join-path $binRoot 'poshgit'
-    $profileLine = ". '$poshgitPath\dahlbyk-posh-git-60e1ed7\profile.example.ps1'"    
-    Write-Host "Adding posh-git to profile..."
-    @"
+    Check-Profile ". $poshgitPath\dahlbyk-posh-git-60e1ed7\profile.example.ps1"
 
-    # Load posh-git example profile
-    $profileLine
+    $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+    Check-Profile ". '$tools\profile.example.ps1'"    
 
-"@ | Out-File $PROFILE -Append -Encoding (Get-FileEncoding $PROFILE)
+    Write-Host 'Please reload your profile for the changes to take effect:'
+    Write-Host '    . $PROFILE'
+    Write-ChocolateySuccess 'posh-git-hg'
+} catch {
+  Write-ChocolateyFailure 'posh-git-hg' $($_.Exception.Message)
+  throw
 }
-
-$tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$profileLine = ". '$tools\profile.example.ps1'"    
-Write-Host "Adding posh-git-hg to profile..."
-@"
-
-# Load posh-hg-git example profile
-$profileLine
-
-"@ | Out-File $PROFILE -Append -Encoding (Get-FileEncoding $PROFILE)
-
-Write-Host 'Please reload your profile for the changes to take effect:'
-Write-Host '    . $PROFILE'
