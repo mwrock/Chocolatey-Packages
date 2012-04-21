@@ -36,8 +36,9 @@ try {
         New-Item $PROFILE -Force -Type File
     }
 
-    $tools = ([array](dir $env:ChocolateyInstall\lib\posh-hg.*))[-1]
-    Check-Profile ". '$tools\tools\profile.example-ps3.ps1'"    
+    $lib = (Split-Path -parent (Split-Path -parent (Split-Path -parent $MyInvocation.MyCommand.Definition)))
+    $poshHg = ([array](dir $lib\posh-hg.*))[-1]
+    Check-Profile ". '$poshHg\tools\profile.example-ps3.ps1'"    
 
     $binRoot = join-path $env:systemdrive 'tools'
     if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
