@@ -31,22 +31,11 @@ function Check-Profile([string] $profileLine) {
 
 
 try {
-    if(!(Test-Path $PROFILE)) {
-        Write-Host "Creating PowerShell profile...`n$PROFILE"
-        New-Item $PROFILE -Force -Type File
-    }
-
     $lib = (Split-Path -parent (Split-Path -parent (Split-Path -parent $MyInvocation.MyCommand.Definition)))
-    $poshHg = ([array](dir $lib\posh-hg.*))[-1]
-    Check-Profile ". '$poshHg\tools\profile.example-ps3.ps1'"    
-
-    $binRoot = join-path $env:systemdrive 'tools'
-    if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
-    $poshgitPath = join-path $binRoot 'poshgit'
-    Check-Profile ". $poshgitPath\dahlbyk-posh-git-60e1ed7\profile.example.ps1"
-
-    $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-    Check-Profile ". '$tools\profile.example.ps1'"    
+    $oldPhgProf = ". '$lib\posh-git-hg.1.0.1\profile.example.ps1'"
+    (Get-Content $PROFILE) | ForEach-Object {
+        % {$_ -replace $oldPhgProf, "" }
+    } | Set-Content $PROFILE
 
     Write-Host 'Please reload your profile for the changes to take effect:'
     Write-Host '    . $PROFILE'

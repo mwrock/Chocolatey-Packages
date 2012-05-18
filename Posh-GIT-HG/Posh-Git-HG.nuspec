@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>rodpl, Matt Wrock</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://stackoverflow.com/questions/4500134/posh-git-and-posh-hg-together</projectUrl>
@@ -13,7 +13,7 @@
     <tags>Mercurial hg posh powershell GIT chocolatey</tags>
     <dependencies>
       <dependency id="Posh-HG" />
-      <dependency id="poshgit" version="0.3.0.2" />
+      <dependency id="poshgit" version="0.4.0" />
     </dependencies>
   </metadata>
 </package>
