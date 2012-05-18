@@ -16,38 +16,45 @@ function Get-FileEncoding($Path) {
 
 try {
     if((Test-Path $PROFILE)) {
-        $oldProfile = Get-Content $PROFILE
+        $oldProfile = [string[]](Get-Content $PROFILE)
     }
 
     $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
     if($oldProfile) {
-        $newProfile = $oldProfile
+        $newProfile = @()
         $lib = (Split-Path(Split-Path $tools -parent) -parent)
-        foreach($path in (([array](dir $lib\posh-hg.*)))) {
-            $newProfile -replace $tools\profile.example.ps1, ""
-            $newProfile -replace $tools\profile.example-ps3.ps1, ""
+        $promptCheck = "if(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshHGPrompt -Force}"
+        $poshPromptRename = "Rename-Item Function:\Prompt PoshHGPrompt -Force"
+        $newPrompt = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
+        foreach($line in $oldProfile) {
+            foreach($path in (([array](dir $lib\posh-hg.*)))) {
+                $line = $line.replace(". '$path\tools\profile.example.ps1'", "")
+                $line = $line.replace(". '$path\tools\profile.example-ps3.ps1'", "")
+            }
+            $line = $line.replace($promptCheck, "")
+            $line = $line.replace($poshPromptRename, "")
+            $line = $line.replace($newPrompt, "")
+            if($line.Trim().Length -gt 0) {
+                $newProfile += $line
+            }
         }
-        $promptCheck = "`r`nif(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshHGPrompt}"
-        $poshPromptRename = "`r`nRename-Item Function:\Prompt PoshHGPrompt"
-        $newPrompt = "`r`nfunction Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
-        $newProfile -replace $promptCheck, ""
-        $newProfile -replace $poshPromptRename, ""
-        $newProfile -replace $newPrompt, ""
-        $newProfile = $newProfile + $promptCheck
+        $newProfile += $promptCheck
+        Set-Content -path $profile  -value $newProfile -Force
     }
 
-    Install-ChocolateyZipPackage 'posh-hg' 'https://github.com/JeremySkinner/posh-hg/zipball/master' $tools
+    Install-ChocolateyZipPackage 'posh-hg' 'c:\dev\posh-hg.zip' $tools
 
     $install = (Get-Item "$tools\*\install.ps1")
     & $install
 
     if($oldProfile) {
-        $newProfile = $newProfile + $poshPromptRename
-        $newProfile = $newProfile + $newPrompt
+        $newProfile = [string[]](Get-Content $PROFILE)
+        $newProfile += $poshPromptRename
+        $newProfile += $newPrompt
         Set-Content -path $profile  -value $newProfile -Force
     }
-    
-    $prof = (Get-Item "$tools\*\profile-example.ps1")
+
+    $prof = (Get-Item "$tools\*\profile.example.ps1")
 @"
 if(Test-Path Function:\TabExpansion) {
     if(-not (Test-Path Function:\DefaultTabExpansion)) {
