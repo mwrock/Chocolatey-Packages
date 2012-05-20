@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.1.0.20120517</version>
+    <version>1.1.0.20120520</version>
     <authors>Jeremy Skinner</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://poshhg.codeplex.com/</projectUrl>
