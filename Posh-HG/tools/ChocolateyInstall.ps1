@@ -16,10 +16,19 @@ try {
         $newProfile = @()
         $lib = (Split-Path(Split-Path $tools -parent) -parent)
         #Clean out old profiles
+        $versions = ([array](dir $lib\posh-hg.*))
+        if($versions.Count -gt 1) {
+            $prev = $versions[-2]
+            write-host "previous version: $prev"
+        }
         foreach($line in $oldProfile) {
-            foreach($path in (([array](dir $lib\posh-hg.*)))) {
-                if((Join-Path $path "tools") -ne $tools) {
+            foreach($path in ($versions)) {
+                if((Join-Path $path "tools") -ne $tools -and $path -ne $prev) {
                     $line = $line.replace(". '$path\tools\posh-hg\profile.example.ps1'", "")
+                }
+                elseif($path -eq $prev) {
+                    $thisVersion = (Join-Path $versions[-1] tools\posh-hg\profile.example.ps1)
+                    $line = $line.replace(". '$path\tools\posh-hg\profile.example.ps1'", ". '$thisVersion'")
                 }
                 $line = $line.replace(". '$path\tools\posh-hg\profile.example-ps3.ps1'", "")
             }
