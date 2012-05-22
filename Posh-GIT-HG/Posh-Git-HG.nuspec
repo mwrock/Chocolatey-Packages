@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <version>1.0.2</version>
-    <authors>rodpl, Matt Wrock</authors>
+    <authors>Matt Wrock</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://stackoverflow.com/questions/4500134/posh-git-and-posh-hg-together</projectUrl>
     <id>Posh-GIT-HG</id>

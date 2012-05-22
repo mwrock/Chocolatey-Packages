@@ -1,6 +1,6 @@
 $packageName = (split-Path (Resolve-Path *.nuspec) -leaf).Replace(".nuspec","")
 cpack
-$installDir = Join-Path $env:ChocolateyInstall\lib ((split-Path (Resolve-Path *.nupkg)[-1] -leaf).Replace(".nupkg",""))
+$installDir = Join-Path $env:ChocolateyInstall\lib ((split-Path ([array](Resolve-Path *.nupkg))[-1] -leaf).Replace(".nupkg",""))
 
 function CleanUp {
     if(Test-Path $env:Temp\Chocolatey\$packageName) {Remove-Item $env:Temp\Chocolatey\$packageName -Recurse -Force}
