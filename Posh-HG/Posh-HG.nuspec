@@ -16,4 +16,7 @@
       <dependency id="hg" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**\*.*" />
+  </files>
 </package>

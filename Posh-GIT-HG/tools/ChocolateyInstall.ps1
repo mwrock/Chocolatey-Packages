@@ -1,4 +1,3 @@
-# Adapted from http://www.west-wind.com/Weblog/posts/197245.aspx
 try {
     $oldProfile = [string[]](Get-Content $PROFILE)
     $newProfile = @()

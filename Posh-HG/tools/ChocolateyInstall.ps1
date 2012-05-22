@@ -3,54 +3,36 @@ function Insert-Script([ref]$originalScript, $script) {
 }
 
 try {
-    if((Test-Path $PROFILE)) {
+    $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+    if(Test-Path $PROFILE) {
         $oldProfile = [string[]](Get-Content $PROFILE)
+        $newProfile = @()
+        $lib = (Split-Path(Split-Path $tools -parent) -parent)
+        #Clean out old profiles
+        foreach($line in $oldProfile) {
+            if($line.Contains("profile.example-ps3.ps1")){ $line="" }
+            elseif($line.Contains("$lib\posh-hg.")) { $line = ". '$tools\posh-hg\profile.example.ps1'" }
+            if($line.Trim().Length -gt 0) {  $newProfile += $line }
+        }
+        #Save any previous Prompt logic
+        Insert-Script ([REF]$newProfile) "if(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshHGPrompt -Force}"
+        Set-Content -path $profile  -value $newProfile -Force
     }
     else {
         Write-Host "Creating PowerShell profile...`n$PROFILE"
         New-Item $PROFILE -Force -Type File
     }
 
-    $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-    if($oldProfile) {
-        $newProfile = @()
-        $lib = (Split-Path(Split-Path $tools -parent) -parent)
-        #Clean out old profiles
-        $versions = ([array](dir $lib\posh-hg.*))
-        if($versions.Count -gt 1) {
-            $prev = $versions[-2]
-            write-host "previous version: $prev"
-        }
-        foreach($line in $oldProfile) {
-            foreach($path in ($versions)) {
-                if((Join-Path $path "tools") -ne $tools -and $path -ne $prev) {
-                    $line = $line.replace(". '$path\tools\posh-hg\profile.example.ps1'", "")
-                }
-                elseif($path -eq $prev) {
-                    $thisVersion = (Join-Path $versions[-1] tools\posh-hg\profile.example.ps1)
-                    $line = $line.replace(". '$path\tools\posh-hg\profile.example.ps1'", ". '$thisVersion'")
-                }
-                $line = $line.replace(". '$path\tools\posh-hg\profile.example-ps3.ps1'", "")
-            }
-            if($line.Trim().Length -gt 0) {
-                $newProfile += $line
-            }
-        }
-        #Save any previous Prompt logic
-        Insert-Script ([REF]$newProfile) "if(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshHGPrompt -Force}"
-        Set-Content -path $profile  -value $newProfile -Force
-    }
-    
     #If Mercurial is installed in same session, the path set will not be present here and posh-hg install will fail
-    if(!(Get-Command hg -ErrorAction SilentlyContinue)) {
+    if(!(Get-Command g -ErrorAction SilentlyContinue)) {
         if( test-path "$env:programfiles\Mercurial" ) {$mPath="$env:programfiles\Mercurial"} else { $mPath = "${env:programfiles(x86)}\Mercurial" }
-        Install-ChocolateyPath $mPath
+        $env:Path += ";$mPath"
         $aliasedHG = $true
     }
 
     #for PS 3.0 TabExpansion function won't exist and podh-hg install will throw error
     $newProfile = [string[]](Get-Content $PROFILE)
-    Insert-Script ([REF]$newProfile) "if(!(Test-Path function:\TabExpansion)) { New-Item function:\TabExpansion -value '' | out-null }"
+    Insert-Script ([REF]$newProfile) "if(!(Test-Path function:\TabExpansion)) { New-Item function:\Global:TabExpansion -value '' | Out-Null }"
     Set-Content -path $profile  -value $newProfile -Force
 
     Install-ChocolateyZipPackage 'posh-hg' 'c:\dev\autobox\posh-hg.zip' $tools
@@ -70,11 +52,10 @@ try {
     }
 
     Write-ChocolateySuccess 'posh-hg'
-} catch {
+} 
+catch {
   try {
-    if($oldProfile){
-        Set-Content -path $PROFILE -value $oldProfile -Force
-    }
+    if($oldProfile){ Set-Content -path $PROFILE -value $oldProfile -Force }
   }
   catch{}
   Write-ChocolateyFailure 'posh-hg' $($_.Exception.Message)

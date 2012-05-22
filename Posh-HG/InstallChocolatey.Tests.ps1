@@ -1,0 +1,175 @@
+. ../Test-Helpers.ps1
+if(Test-Path $Profile) { $currentProfileScript = (Get-Content $Profile) }
+
+function Setup-Profile {
+    $profileScript = @"
+`$dev = "c:\dev"
+`$da = "`$dev\autobox"
+`$ds = "`$dev\SocialBuilds"
+`$hostFile="`$env:windir\system32\drivers\etc\hosts"
+`$host.ui.RawUI.WindowTitle = `$(get-location)
+`$p86 = if( `${env:programfiles(x86)} -ne `$null){`${env:programfiles(x86)}} else {`$env:programfiles}
+sal sub "`$env:programfiles\Sublime Text 2\sublime_text.exe"
+sal ch `$p86\Google\Chrome\Application\chrome.exe
+function prompt(){ `$host.ui.RawUI.WindowTitle = "My Prompt" }
+"@
+    Set-Content $Profile -value $profileScript -Force
+}
+
+function Clean-Environment {
+    Set-Content $Profile -value $currentProfileScript -Force
+}
+
+Describe "Install-Posh-HG" {
+
+    It "WillUpdateOldPs3Version" {
+        Cleanup
+        Setup-Profile
+        try{
+            CINST Posh-Hg -Version 1.1.0.20120417
+
+            RunInstall
+
+            $newProfile = (Get-Content $Profile)
+            ($newProfile -Contains ". 'C:\Chocolatey\lib\Posh-HG.1.1.0.20120417\profile.example-ps3.ps1'").should.be($false)
+            ($newProfile -Contains ". '$installDir\posh-hg\profile.example.ps1'").should.be($true)
+        }
+        catch {
+            write-host (Get-Content $Profile)
+            throw
+        }
+        finally {Clean-Environment}
+    }
+
+    It "WillRemvePreviousInstallVersion" {
+        Cleanup
+        Setup-Profile
+        try{
+            CINST Posh-Hg -Version 1.1.0.20120517 -source c:\dev\Chocolatey-Packages\Posh-HG
+
+            RunInstall
+
+            $newProfile = (Get-Content $Profile)
+            ($newProfile -Contains ". 'C:\Chocolatey\lib\Posh-HG.1.1.0.20120517\posh-hg\profile.example.ps1'").should.be($false)
+            ($newProfile -Contains ". '$installDir\posh-hg\profile.example.ps1'").should.be($true)
+        }
+        catch {
+            write-host (Get-Content $Profile)
+            throw
+        }
+        finally {Clean-Environment}
+    }
+
+    It "WillNotAddDuplicateCallOnRepeatInstall" {
+        Cleanup
+        Setup-Profile
+        try{
+            RunInstall
+            Cleanup
+
+            RunInstall
+
+            $newProfile = (Get-Content $Profile)
+            ($newProfile -like ". 'C:\Chocolatey\lib\Posh-HG.1.1.0.20120517\posh-hg\profile.example.ps1'").Count.should.be($false)
+        }
+        catch {
+            write-host (Get-Content $Profile)
+            throw
+        }
+        finally {Clean-Environment}
+    }
+
+    It "WillPreserveOldPromptLogic" {
+        Cleanup
+        Setup-Profile
+        try{
+            RunInstall
+            . $Profile
+            $host.ui.RawUI.WindowTitle = "bad"
+
+            Prompt
+
+            $host.ui.RawUI.WindowTitle.should.be("My Prompt")
+        }
+        catch {
+            write-host (Get-Content function:\prompt)
+            throw
+        }
+        finally {
+            Clean-Environment
+        }
+    }
+
+    It "WillSucceedIfHgEnvironmentNotSet" {
+        Cleanup
+        Setup-Profile
+        try{
+            Remove-Path "Mercurial"
+            Remove-Path "TortoiseHg"
+
+            RunInstall
+
+            $newProfile = (Get-Content $Profile)
+            ($newProfile -Contains ". '$installDir\posh-hg\profile.example.ps1'").should.be($true)
+        }
+        catch {
+            write-host (Get-Content function:\prompt)
+            throw
+        }
+        finally {
+            Clean-Environment
+        }
+    }
+
+    It "WillSucceedIfTabExpansionNotSet" {
+        Cleanup
+        Setup-Profile
+        $tabExpansion = (Get-Content function:\TabExpansion)
+        try{
+            Remove-Item function:\TabExpansion -Force
+            RunInstall
+            $errorCount = 0
+
+            try{. $Profile }
+            catch { $errorCount = 1}
+
+            $errorCount.should.be(0)
+        }
+        catch {
+            write-host (Get-Content $Profile)
+            write-host (Get-Content function:\TabExpansion)
+            throw
+        }
+        finally {
+            Clean-Environment
+            Set-Content function:\TabExpansion $tabExpansion -Force
+        }
+    }
+
+    It "WillOutputVcsStatus" {
+        Cleanup
+        Setup-Profile
+        try{
+            RunInstall
+            mkdir PoshTest
+            Pushd PoshTest
+            hg init
+            . $Profile
+            $global:wh=""
+            New-Item function:\global:Write-Host -value "param([object] `$object, `$backgroundColor, `$foregroundColor, [switch] `$nonewline) try{Write-Output `$object;[string]`$global:wh += `$object.ToString()} catch{}"
+
+            Prompt
+
+            Remove-Item function:\Write-Host
+            Popd
+            Remove-Item PoshTest -Force -Recurse
+            $wh.should.be("$pwd\PoshTest [default tip]")
+        }
+        catch {
+            throw
+        }
+        finally {
+            Clean-Environment
+        }
+    }
+}
