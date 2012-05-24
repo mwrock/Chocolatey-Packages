@@ -31,8 +31,8 @@ Describe "Install-Posh-HG" {
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -Contains ". 'C:\Chocolatey\lib\Posh-HG.1.1.0.20120417\profile.example-ps3.ps1'").should.be($false)
-            ($newProfile -Contains ". '$installDir\posh-hg\profile.example.ps1'").should.be($true)
+            ($newProfile -like ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120417\profile.example-ps3.ps1'").Count.should.be(0)
+            ($newProfile -like ". '$installDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
             write-host (Get-Content $Profile)
@@ -50,8 +50,8 @@ Describe "Install-Posh-HG" {
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -Contains ". 'C:\Chocolatey\lib\Posh-HG.1.1.0.20120517\posh-hg\profile.example.ps1'").should.be($false)
-            ($newProfile -Contains ". '$installDir\posh-hg\profile.example.ps1'").should.be($true)
+            ($newProfile -Contains ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120517\*\profile.example.ps1'").Count.should.be(0)
+            ($newProfile -Contains ". '$installDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
             write-host (Get-Content $Profile)
@@ -70,7 +70,7 @@ Describe "Install-Posh-HG" {
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -like ". 'C:\Chocolatey\lib\Posh-HG.1.1.0.20120517\posh-hg\profile.example.ps1'").Count.should.be($false)
+            ($newProfile -like ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120517\*\profile.example.ps1'").Count.should.be(0)
         }
         catch {
             write-host (Get-Content $Profile)
@@ -104,19 +104,20 @@ Describe "Install-Posh-HG" {
         Cleanup
         Setup-Profile
         try{
-            Remove-Path "Mercurial"
+            $hgPath = Remove-Path "Mercurial"
             Remove-Path "TortoiseHg"
 
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -Contains ". '$installDir\posh-hg\profile.example.ps1'").should.be($true)
+            ($newProfile -like ". '$installDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
             write-host (Get-Content function:\prompt)
             throw
         }
         finally {
+            if($hgPath){ $env:path += ";$hgPath" }
             Clean-Environment
         }
     }
@@ -160,15 +161,50 @@ Describe "Install-Posh-HG" {
 
             Prompt
 
-            Remove-Item function:\Write-Host
             Popd
-            Remove-Item PoshTest -Force -Recurse
             $wh.should.be("$pwd\PoshTest [default tip]")
         }
+        catch {
+            write-output (Get-Content $Profile)
+            throw
+        }
+        finally {
+            if( Test-Path function:\Write-Host ) {Remove-Item function:\Write-Host}
+            if( Test-Path PoshTest ) {Remove-Item PoshTest -Force -Recurse}
+            Clean-Environment
+        }
+    }
+
+    It "WillNotWriteVcsTwiceWhenUpgradingAfterPoshHgGitInstall" {
+        Cleanup
+        Cleanup Posh-GIT-HG
+        Cleanup PoshGit
+        Setup-Profile
+        try{
+            $poshGitHg = Resolve-Path ..\Posh-GIT-HG
+            CINST Posh-GIT-HG -source "$poshGitHg"
+            RunInstall
+            mkdir ..\..\PoshTest
+            Pushd ..\..\PoshTest
+            $tempPWD = $PWD
+            hg init
+            . $Profile
+            $global:wh=""
+            New-Item function:\global:Write-Host -value "param([object] `$object, `$backgroundColor, `$foregroundColor, [switch] `$nonewline) try{Write-Output `$object;[string]`$global:wh += `$object.ToString()} catch{}"
+
+            Prompt
+
+            Popd
+            $wh.should.be("$tempPWD [default tip]")
+            $host.ui.RawUI.WindowTitle.should.be("My Prompt")
+            }
         catch {
             throw
         }
         finally {
+            write-output (Get-Content $Profile)
+            if( Test-Path function:\Write-Host ) {Remove-Item function:\Write-Host}
+            if( Test-Path ..\..\PoshTest ) {Remove-Item ..\..\PoshTest -Force -Recurse}
             Clean-Environment
         }
     }

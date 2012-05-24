@@ -3,7 +3,7 @@ try {
     $newProfile = @()
     $lib = (Split-Path -parent (Split-Path -parent (Split-Path -parent $MyInvocation.MyCommand.Definition)))
     $oldPhgProf = ". '$lib\posh-git-hg.1.0.1\profile.example.ps1'"
-    $removePoshHGPrompt = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}}"
+    $removePoshHGPrompt = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
     foreach($line in $oldProfile) {
         $line = $line.replace($oldPhgProf, "")
         $line = $line.replace($removePoshHGPrompt, "")

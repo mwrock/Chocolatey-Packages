@@ -13,11 +13,11 @@ sal sub "`$env:programfiles\Sublime Text 2\sublime_text.exe"
 sal ch `$p86\Google\Chrome\Application\chrome.exe
 function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}}
 function prompt(){ `$host.ui.RawUI.WindowTitle = `$(get-location) }
-. 'C:\Chocolatey\lib\posh-git-hg.1.0.1\profile.example.ps1'
+. '$env:ChocolateyInstall\lib\posh-git-hg.1.0.1\profile.example.ps1'
 if(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshHGPrompt -Force}
 if(!(Test-Path function:\TabExpansion)) { New-Item function:\Global:TabExpansion -value '' | Out-Null }
 # Load posh-hg example profile
-. 'C:\Chocolatey\lib\Posh-HG.1.1.0.20120520\posh-hg\profile.example.ps1'
+. '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120520\posh-hg\profile.example.ps1'
 Rename-Item Function:\Prompt PoshHGPrompt -Force
 function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}
 "@
@@ -28,18 +28,19 @@ function Clean-Environment {
     Set-Content $Profile -value $currentProfileScript -Force
 }
 
-Describe "Install-Posh-HG" {
+Describe "Install-Posh-Git-HG" {
 
     It "WillRemoveOldExampleProfile" {
         Cleanup
         Setup-Profile
         try{
             CINST Posh-git-Hg -Version 1.0.1
+            If(!(Test-Path Posh-HG.1.1.0.20120520.nupkg)) {Copy-Item ..\Posh-HG\Posh-HG.1.1.0.20120520.nupkg .}
 
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -Contains ". 'C:\Chocolatey\lib\posh-git-hg.1.0.1\profile.example.ps1'").should.be($false)
+            ($newProfile -Contains ". '$env:ChocolateyInstall\lib\posh-git-hg.1.0.1\profile.example.ps1'").should.be($false)
         }
         catch {
             write-host (Get-Content $Profile)
@@ -57,7 +58,7 @@ Describe "Install-Posh-HG" {
             . $Profile
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -like "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}}").Count.should.be(0)
+            ($newProfile -like "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}}").Count.should.be(1)
             $newPrompt = (Get-Content function:\prompt)
             ($newPrompt -Contains "PoshHGPrompt").should.be($false)
         }

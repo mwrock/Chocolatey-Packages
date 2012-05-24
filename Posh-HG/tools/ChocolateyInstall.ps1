@@ -9,9 +9,10 @@ try {
         $newProfile = @()
         $lib = (Split-Path(Split-Path $tools -parent) -parent)
         #Clean out old profiles
+        $phg = Get-Item "$tools\*posh-hg*\profile.example.ps1"
         foreach($line in $oldProfile) {
             if($line.Contains("profile.example-ps3.ps1")){ $line="" }
-            elseif($line.Contains("$lib\posh-hg.")) { $line = ". '$tools\posh-hg\profile.example.ps1'" }
+            elseif($line.Contains("$lib\posh-hg.")) { $line = ". '$phg'" }
             if($line.Trim().Length -gt 0) {  $newProfile += $line }
         }
         #Save any previous Prompt logic
@@ -35,7 +36,7 @@ try {
     Insert-Script ([REF]$newProfile) "if(!(Test-Path function:\TabExpansion)) { New-Item function:\Global:TabExpansion -value '' | Out-Null }"
     Set-Content -path $profile  -value $newProfile -Force
 
-    Install-ChocolateyZipPackage 'posh-hg' 'c:\dev\autobox\posh-hg.zip' $tools
+    Install-ChocolateyZipPackage 'posh-hg' 'https://github.com/JeremySkinner/posh-hg/zipball/master' $tools
     $install = (Get-Item "$tools\*\install.ps1")
     & $install
 
