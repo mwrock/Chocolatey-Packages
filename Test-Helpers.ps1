@@ -1,10 +1,15 @@
 $packageName = (split-Path (Resolve-Path *.nuspec) -leaf).Replace(".nuspec","")
 cpack
-$installDir = Join-Path $env:ChocolateyInstall\lib ((split-Path ([array](Resolve-Path *.nupkg))[-1] -leaf).Replace(".nupkg",""))
+$chocInstallDir = Join-Path $env:ChocolateyInstall\lib ((split-Path ([array](Resolve-Path $packageName*nupkg))[-1] -leaf).Replace(".nupkg",""))
 
 function CleanUp ($package = $packageName){
-    if(Test-Path $env:Temp\Chocolatey\$package) {Remove-Item $env:Temp\Chocolatey\$package -Recurse -Force}
+    Clean-Temp $package
     Remove-Item $env:ChocolateyInstall\lib\$package* -Recurse -Force
+    $env:poshGit = "c:\dev\Autobox\posh-hg.zip"
+}
+
+function Clean-Temp  ($package = $packageName){
+    if(Test-Path $env:Temp\Chocolatey\$package) {Remove-Item $env:Temp\Chocolatey\$package -Recurse -Force}
 }
 
 function RunInstall {

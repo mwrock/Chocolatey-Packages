@@ -11,9 +11,9 @@ function Setup-Profile {
 `$p86 = if( `${env:programfiles(x86)} -ne `$null){`${env:programfiles(x86)}} else {`$env:programfiles}
 sal sub "`$env:programfiles\Sublime Text 2\sublime_text.exe"
 sal ch `$p86\Google\Chrome\Application\chrome.exe
-function prompt(){ `$host.ui.RawUI.WindowTitle = "My Prompt" }
+function Prompt(){ `$host.ui.RawUI.WindowTitle = "My Prompt" }
 "@
-    Set-Content $Profile -value $profileScript -Force
+    (Set-Content $Profile -value $profileScript -Force)
 }
 
 function Clean-Environment {
@@ -26,13 +26,13 @@ Describe "Install-Posh-HG" {
         Cleanup
         Setup-Profile
         try{
-            CINST Posh-Hg -Version 1.1.0.20120417
+            Add-Content $profile -value ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120417\profile.example-ps3.ps1'"
 
             RunInstall
 
             $newProfile = (Get-Content $Profile)
             ($newProfile -like ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120417\profile.example-ps3.ps1'").Count.should.be(0)
-            ($newProfile -like ". '$installDir\*\profile.example.ps1'").Count.should.be(1)
+            ($newProfile -like ". '$chocInstallDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
             write-host (Get-Content $Profile)
@@ -45,13 +45,13 @@ Describe "Install-Posh-HG" {
         Cleanup
         Setup-Profile
         try{
-            CINST Posh-Hg -Version 1.1.0.20120517 -source c:\dev\Chocolatey-Packages\Posh-HG
+            Add-Content $profile -value ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120517\posh-hg\profile.example.ps1'"
 
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -Contains ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120517\*\profile.example.ps1'").Count.should.be(0)
-            ($newProfile -Contains ". '$installDir\*\profile.example.ps1'").Count.should.be(1)
+            ($newProfile -like ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120517\*\profile.example.ps1'").Count.should.be(0)
+            ($newProfile -like ". '$chocInstallDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
             write-host (Get-Content $Profile)
@@ -110,7 +110,7 @@ Describe "Install-Posh-HG" {
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -like ". '$installDir\*\profile.example.ps1'").Count.should.be(1)
+            ($newProfile -like ". '$chocInstallDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
             write-host (Get-Content function:\prompt)
@@ -199,10 +199,13 @@ Describe "Install-Posh-HG" {
             $host.ui.RawUI.WindowTitle.should.be("My Prompt")
             }
         catch {
+            write-output (Get-Content $Profile)
+            write-output (Get-Content function:\Prompt)
+            write-output (Get-Content function:\PrePoshHGPrompt)
+            write-output (Get-Content function:\PoshHGPrompt)
             throw
         }
         finally {
-            write-output (Get-Content $Profile)
             if( Test-Path function:\Write-Host ) {Remove-Item function:\Write-Host}
             if( Test-Path ..\..\PoshTest ) {Remove-Item ..\..\PoshTest -Force -Recurse}
             Clean-Environment

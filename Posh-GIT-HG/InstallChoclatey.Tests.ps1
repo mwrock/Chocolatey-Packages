@@ -34,7 +34,7 @@ Describe "Install-Posh-Git-HG" {
         Cleanup
         Setup-Profile
         try{
-            CINST Posh-git-Hg -Version 1.0.1
+            CINST Posh-git-Hg -Version 1.0.1 -source (Resolve-Path .)
             If(!(Test-Path Posh-HG.1.1.0.20120520.nupkg)) {Copy-Item ..\Posh-HG\Posh-HG.1.1.0.20120520.nupkg .}
 
             RunInstall
@@ -57,13 +57,12 @@ Describe "Install-Posh-Git-HG" {
 
             . $Profile
 
-            $newProfile = (Get-Content $Profile)
-            ($newProfile -like "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}}").Count.should.be(1)
-            $newPrompt = (Get-Content function:\prompt)
-            ($newPrompt -Contains "PoshHGPrompt").should.be($false)
+            $newPrompt = (Get-Content function:\Prompt)
+            ($newPrompt -like "*if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt").should.be($true)
         }
         catch {
             write-host (Get-Content $Profile)
+            write-host (Get-Content function:\Prompt)
             throw
         }
         finally {Clean-Environment}

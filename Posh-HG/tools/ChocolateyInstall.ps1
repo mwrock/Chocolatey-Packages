@@ -7,17 +7,17 @@ try {
     if(Test-Path $PROFILE) {
         $oldProfile = [string[]](Get-Content $PROFILE)
         $newProfile = @()
-        $lib = (Split-Path(Split-Path $tools -parent) -parent)
+        $lib = "$env:chocolateyInstall\lib"
         #Clean out old profiles
         $phg = Get-Item "$tools\*posh-hg*\profile.example.ps1"
         foreach($line in $oldProfile) {
             if($line.Contains("profile.example-ps3.ps1")){ $line="" }
-            elseif($line.Contains("$lib\posh-hg.")) { $line = ". '$phg'" }
+            elseif($line.ToLower().Contains("$lib\posh-hg.".ToLower())) { $line = ". '$phg'" }
             if($line.Trim().Length -gt 0) {  $newProfile += $line }
         }
         #Save any previous Prompt logic
         Insert-Script ([REF]$newProfile) "if(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshHGPrompt -Force}"
-        Set-Content -path $profile  -value $newProfile -Force
+        Set-Content -path $profile -value $newProfile -Force
     }
     else {
         Write-Host "Creating PowerShell profile...`n$PROFILE"
@@ -36,7 +36,8 @@ try {
     Insert-Script ([REF]$newProfile) "if(!(Test-Path function:\TabExpansion)) { New-Item function:\Global:TabExpansion -value '' | Out-Null }"
     Set-Content -path $profile  -value $newProfile -Force
 
-    Install-ChocolateyZipPackage 'posh-hg' 'https://github.com/JeremySkinner/posh-hg/zipball/master' $tools
+    $poshHgInstall = if($env:poshGit -ne $null){ $env:poshGit } else {'https://github.com/JeremySkinner/posh-hg/zipball/master'}
+    Install-ChocolateyZipPackage 'posh-hg' $poshHgInstall $tools
     $install = (Get-Item "$tools\*\install.ps1")
     & $install
 
