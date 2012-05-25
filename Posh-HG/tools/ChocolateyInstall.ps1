@@ -42,12 +42,10 @@ try {
     $install = (Get-Item "$tools\*\install.ps1")
     & $install
 
-    if($oldProfile) {
-        $newProfile = [string[]](Get-Content $PROFILE)
-        Insert-Script ([REF]$newProfile) "Rename-Item Function:\Prompt PoshHGPrompt -Force"
-        Insert-Script ([REF]$newProfile) "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
-        Set-Content -path $profile  -value $newProfile -Force
-    }
+    $newProfile = [string[]](Get-Content $PROFILE)
+    Insert-Script ([REF]$newProfile) "Rename-Item Function:\Prompt PoshHGPrompt -Force"
+    Insert-Script ([REF]$newProfile) "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
+    Set-Content -path $profile  -value $newProfile -Force
 
     if($aliasedHG) {
         Write-Host 'chocolatey sucessfully installed both Mercurial and posh-hg'
