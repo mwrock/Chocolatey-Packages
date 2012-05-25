@@ -51,6 +51,7 @@ Describe "Install-Posh-HG" {
 
             $newProfile = (Get-Content $Profile)
             ($newProfile -like ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120517\*\profile.example.ps1'").Count.should.be(0)
+            ($newProfile -like ". ''").Count.should.be(0)
             ($newProfile -like ". '$chocInstallDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
@@ -197,7 +198,7 @@ Describe "Install-Posh-HG" {
             Popd
             $wh.should.be("$tempPWD [default tip]")
             $host.ui.RawUI.WindowTitle.should.be("My Prompt")
-            }
+        }
         catch {
             write-output (Get-Content $Profile)
             write-output (Get-Content function:\Prompt)

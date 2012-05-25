@@ -4,6 +4,9 @@ function Insert-Script([ref]$originalScript, $script) {
 
 try {
     $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+    $poshHgInstall = if($env:poshGit -ne $null){ $env:poshGit } else {'https://github.com/JeremySkinner/posh-hg/zipball/master'}
+    Install-ChocolateyZipPackage 'posh-hg' $poshHgInstall $tools
+
     if(Test-Path $PROFILE) {
         $oldProfile = [string[]](Get-Content $PROFILE)
         $newProfile = @()
@@ -25,7 +28,7 @@ try {
     }
 
     #If Mercurial is installed in same session, the path set will not be present here and posh-hg install will fail
-    if(!(Get-Command g -ErrorAction SilentlyContinue)) {
+    if(!(Get-Command hg -ErrorAction SilentlyContinue)) {
         if( test-path "$env:programfiles\Mercurial" ) {$mPath="$env:programfiles\Mercurial"} else { $mPath = "${env:programfiles(x86)}\Mercurial" }
         $env:Path += ";$mPath"
         $aliasedHG = $true
@@ -36,8 +39,6 @@ try {
     Insert-Script ([REF]$newProfile) "if(!(Test-Path function:\TabExpansion)) { New-Item function:\Global:TabExpansion -value '' | Out-Null }"
     Set-Content -path $profile  -value $newProfile -Force
 
-    $poshHgInstall = if($env:poshGit -ne $null){ $env:poshGit } else {'https://github.com/JeremySkinner/posh-hg/zipball/master'}
-    Install-ChocolateyZipPackage 'posh-hg' $poshHgInstall $tools
     $install = (Get-Item "$tools\*\install.ps1")
     & $install
 
