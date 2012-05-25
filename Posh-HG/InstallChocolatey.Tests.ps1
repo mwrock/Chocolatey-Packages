@@ -71,7 +71,7 @@ Describe "Install-Posh-HG" {
             RunInstall
 
             $newProfile = (Get-Content $Profile)
-            ($newProfile -like ". '$env:ChocolateyInstall\lib\Posh-HG.1.1.0.20120517\*\profile.example.ps1'").Count.should.be(0)
+            ($newProfile -like ". '$chocInstallDir\*\profile.example.ps1'").Count.should.be(1)
         }
         catch {
             write-host (Get-Content $Profile)
