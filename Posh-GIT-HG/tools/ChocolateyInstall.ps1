@@ -3,15 +3,17 @@ try {
     $newProfile = @()
     $lib = (Split-Path -parent (Split-Path -parent (Split-Path -parent $MyInvocation.MyCommand.Definition)))
     $oldPhgProf = ". '$lib\posh-git-hg.1.0.1\profile.example.ps1'"
-    $removePoshHGPrompt = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
+    $oldPromptOverride = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
+    $newPromptOverride = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){New-Item function:\script:Write-host -value `"param([object] ```$object, ```$backgroundColor, ```$foregroundColor, [switch] ```$nonewline) `" | Out-Null;`$private:p = PrePoshHGPrompt; Remove-Item function:\Write-Host -Force}PoshHGPrompt}"
     foreach($line in $oldProfile) {
         $line = $line.replace($oldPhgProf, "")
-        $line = $line.replace($removePoshHGPrompt, "")
+        $line = $line.replace($newPromptOverride, "")
+        $line = $line.replace($oldPromptOverride, "")
         if($line.Trim().Length -gt 0) {
             $newProfile += $line
         }        
     }
-    $newProfile += $removePoshHGPrompt
+    $newProfile += $newPromptOverride
     Set-Content -path $profile  -value $newProfile -Force
     Write-Host 'Please reload your profile for the changes to take effect:'
     Write-Host '    . $PROFILE'

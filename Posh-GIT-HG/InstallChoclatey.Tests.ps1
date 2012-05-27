@@ -49,7 +49,7 @@ Describe "Install-Posh-Git-HG" {
         finally {Clean-Environment}
     }
 
-    It "WillMovePromptOverrideToBottom" {
+    It "WillRemoveOldPromptOverride" {
         Cleanup
         Setup-Profile
         try{
@@ -58,7 +58,29 @@ Describe "Install-Posh-Git-HG" {
             . $Profile
 
             $newPrompt = (Get-Content function:\Prompt)
-            ($newPrompt -like "*if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt").should.be($true)
+            ($newPrompt -like "*if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt").should.be($false)
+        }
+        catch {
+            write-host (Get-Content $Profile)
+            write-host (Get-Content function:\Prompt)
+            throw
+        }
+        finally {Clean-Environment}
+    }
+
+    It "WillMovePromptOverrideToBottom" {
+        Cleanup
+        Setup-Profile
+        try{
+            RunInstall
+            $newPromptOverride = "if(Test-Path Function:\PrePoshHGPrompt){New-Item function:\script:Write-host -value `"param([object] ```$object, ```$backgroundColor, ```$foregroundColor, [switch] ```$nonewline) `" | Out-Null;`$private:p = PrePoshHGPrompt; Remove-Item function:\Write-Host -Force}PoshHGPrompt"
+
+            . $Profile
+
+            $newPrompt = (Get-Content function:\Prompt) -Join ""
+            $newPrompt.Length
+            $newPromptOverride.Length
+            $newPrompt.EndsWith($newPromptOverride).should.be($true)
         }
         catch {
             write-host (Get-Content $Profile)
