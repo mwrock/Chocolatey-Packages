@@ -5,6 +5,7 @@ function Insert-Script([ref]$originalScript, $script) {
 try {
     $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
     $poshHgInstall = if($env:poshGit -ne $null){ $env:poshGit } else {'https://github.com/JeremySkinner/posh-hg/zipball/master'}
+    $newPromptOverride = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){New-Item function:\script:Write-host -value `"param([object] ```$object, ```$backgroundColor, ```$foregroundColor, [switch] ```$nonewline) `" | Out-Null;`$private:p = PrePoshHGPrompt; Remove-Item function:\Write-Host -Force}PoshHGPrompt}"
     Install-ChocolateyZipPackage 'posh-hg' $poshHgInstall $tools
 
     if(Test-Path $PROFILE) {
@@ -14,6 +15,7 @@ try {
         #Clean out old profiles
         $phg = Get-Item "$tools\*posh-hg*\profile.example.ps1"
         foreach($line in $oldProfile) {
+            if($line.Contains("function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}")){ $line=$newPromptOverride }
             if($line.Contains("profile.example-ps3.ps1")){ $line="" }
             elseif($line.ToLower().Contains("$lib\posh-hg.".ToLower())) { $line = ". '$phg'" }
             if($line.Trim().Length -gt 0) {  $newProfile += $line }
@@ -42,9 +44,10 @@ try {
     $install = (Get-Item "$tools\*\install.ps1")
     & $install
 
+    #Preserve any prior prompt logic but hide its output
     $newProfile = [string[]](Get-Content $PROFILE)
     Insert-Script ([REF]$newProfile) "Rename-Item Function:\Prompt PoshHGPrompt -Force"
-    Insert-Script ([REF]$newProfile) "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){PrePoshHGPrompt}PoshHGPrompt}"
+    Insert-Script ([REF]$newProfile) $newPromptOverride
     Set-Content -path $profile  -value $newProfile -Force
 
     if($aliasedHG) {

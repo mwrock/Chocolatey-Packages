@@ -161,7 +161,7 @@ Describe "Install-Posh-HG" {
             New-Item function:\global:Write-Host -value "param([object] `$object, `$backgroundColor, `$foregroundColor, [switch] `$nonewline) try{Write-Output `$object;[string]`$global:wh += `$object.ToString()} catch{}"
 
             Prompt
-
+            
             Popd
             $wh.should.be("$pwd\PoshTest [default tip]")
         }
@@ -170,9 +170,9 @@ Describe "Install-Posh-HG" {
             throw
         }
         finally {
-            if( Test-Path function:\Write-Host ) {Remove-Item function:\Write-Host}
-            if( Test-Path PoshTest ) {Remove-Item PoshTest -Force -Recurse}
             Clean-Environment
+            if( Test-Path function:\global:Write-Host ) {Remove-Item function:\Write-Host}
+            if( Test-Path PoshTest ) {Remove-Item PoshTest -Force -Recurse}
         }
     }
 
@@ -199,9 +199,39 @@ Describe "Install-Posh-HG" {
             throw
         }
         finally {
-            if( Test-Path function:\Write-Host ) {Remove-Item function:\Write-Host}
-            if( Test-Path PoshTest ) {Remove-Item PoshTest -Force -Recurse}
             Clean-Environment
+            if( Test-Path function:\global:Write-Host ) {Remove-Item function:\Write-Host}
+            if( Test-Path PoshTest ) {Remove-Item PoshTest -Force -Recurse}
+        }
+    }
+
+    It "WillSucceedOnProfileWithPromptWithWriteHost" {
+        Cleanup
+        Setup-Profile
+        try{
+            Remove-Item $Profile -Force
+            Add-Content $profile -value "function prompt {Write-Host 'Hi'}" -Force
+            RunInstall
+            mkdir PoshTest
+            Pushd PoshTest
+            hg init
+            . $Profile
+            $global:wh=""
+            New-Item function:\global:Write-Host -value "param([object] `$object, `$backgroundColor, `$foregroundColor, [switch] `$nonewline) try{Write-Output `$object;[string]`$global:wh += `$object.ToString()} catch{}"
+
+            Prompt
+
+            Popd
+            $wh.should.be("$pwd\PoshTest [default tip]")
+        }
+        catch {
+            write-output (Get-Content $Profile)
+            throw
+        }
+        finally {
+            Clean-Environment
+            if( Test-Path function:\global:Write-Host ) {Remove-Item function:\Write-Host}
+            if( Test-Path PoshTest ) {Remove-Item PoshTest -Force -Recurse}
         }
     }
 
@@ -229,6 +259,7 @@ Describe "Install-Posh-HG" {
             $host.ui.RawUI.WindowTitle.should.be("My Prompt")
         }
         catch {
+            if( Test-Path function:\global:Write-Host ) {Remove-Item function:\global:Write-Host}
             write-output (Get-Content $Profile)
             write-output (Get-Content function:\Prompt)
             write-output (Get-Content function:\PrePoshHGPrompt)
@@ -236,9 +267,10 @@ Describe "Install-Posh-HG" {
             throw
         }
         finally {
-            if( Test-Path function:\Write-Host ) {Remove-Item function:\Write-Host}
-            if( Test-Path ..\..\PoshTest ) {Remove-Item ..\..\PoshTest -Force -Recurse}
             Clean-Environment
+            if( Test-Path function:\global:Write-Host ) {Remove-Item function:\Write-Host}
+            if( Test-Path ..\..\PoshTest ) {Remove-Item ..\..\PoshTest -Force -Recurse}
         }
     }
+    #>
 }
