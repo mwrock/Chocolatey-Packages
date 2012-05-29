@@ -5,7 +5,7 @@ $chocInstallDir = Join-Path $env:ChocolateyInstall\lib ((split-Path ([array](Res
 function CleanUp ($package = $packageName){
     Clean-Temp $package
     Remove-Item $env:ChocolateyInstall\lib\$package* -Recurse -Force
-    $env:poshGit = "c:\dev\Autobox\posh-hg.zip"
+    $env:poshHgZip = "c:\dev\Autobox\posh-hg.zip"
 }
 
 function Clean-Temp  ($package = $packageName){

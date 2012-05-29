@@ -2,17 +2,7 @@
 if(Test-Path $Profile) { $currentProfileScript = (Get-Content $Profile) }
 
 function Setup-Profile {
-    $profileScript = @"
-`$dev = "c:\dev"
-`$da = "`$dev\autobox"
-`$ds = "`$dev\SocialBuilds"
-`$hostFile="`$env:windir\system32\drivers\etc\hosts"
-`$host.ui.RawUI.WindowTitle = `$(get-location)
-`$p86 = if( `${env:programfiles(x86)} -ne `$null){`${env:programfiles(x86)}} else {`$env:programfiles}
-sal sub "`$env:programfiles\Sublime Text 2\sublime_text.exe"
-sal ch `$p86\Google\Chrome\Application\chrome.exe
-function Prompt(){ `$host.ui.RawUI.WindowTitle = "My Prompt" }
-"@
+    $profileScript = "function Prompt(){ `$host.ui.RawUI.WindowTitle = `"My Prompt`" }"
     (Set-Content $Profile -value $profileScript -Force)
 }
 
@@ -272,5 +262,4 @@ Describe "Install-Posh-HG" {
             if( Test-Path ..\..\PoshTest ) {Remove-Item ..\..\PoshTest -Force -Recurse}
         }
     }
-    #>
 }

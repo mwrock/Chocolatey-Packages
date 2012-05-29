@@ -4,8 +4,8 @@ function Insert-Script([ref]$originalScript, $script) {
 
 try {
     $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-    $poshHgInstall = if($env:poshGit -ne $null){ $env:poshGit } else {'https://github.com/JeremySkinner/posh-hg/zipball/master'}
-    $newPromptOverride = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){New-Item function:\script:Write-host -value `"param([object] ```$object, ```$backgroundColor, ```$foregroundColor, [switch] ```$nonewline) `" | Out-Null;`$private:p = PrePoshHGPrompt; Remove-Item function:\Write-Host -Force}PoshHGPrompt}"
+    $poshHgInstall = if($env:poshHgZip -ne $null){ $env:poshHgZip } else {'https://github.com/JeremySkinner/posh-hg/zipball/master'}
+    $newPromptOverride = "function Prompt() {if(Test-Path Function:\PrePoshHGPrompt){++`$global:poshScope; New-Item function:\script:Write-host -value `"param([object] ```$object, ```$backgroundColor, ```$foregroundColor, [switch] ```$nonewline) `" -Force | Out-Null;`$private:p = PrePoshHGPrompt; if(--`$global:poshScope -eq 0) {Remove-Item function:\Write-Host -Force}}PoshHGPrompt}"
     Install-ChocolateyZipPackage 'posh-hg' $poshHgInstall $tools
 
     if(Test-Path $PROFILE) {
