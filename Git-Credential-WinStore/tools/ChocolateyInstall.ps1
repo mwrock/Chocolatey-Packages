@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'git-credential-winstore' 'exe' '-s' 'https://github.com/downloads/anurse/git-credential-winstore/git-credential-winstore.exe'
