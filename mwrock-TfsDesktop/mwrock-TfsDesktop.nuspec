@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.0.8</version>
+    <authors>Matt Wrock</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>https://github.com/mwrock/Chocolatey-Packages/tree/master/mwrock-TfsDesktop</projectUrl>
+    <id>mwrock-TfsDesktop</id>
+    <title>mwrock-TfsDesktop</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>When I am am working for the man at my desk, this is how I roll</description>
+    <dependencies>
+      <dependency id="autobox" />      
+    </dependencies>  
+  </metadata>
+  <files>
+    <file src="tools\**\*.*" target="tools"/>
+  </files>
+</package>

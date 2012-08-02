@@ -1,0 +1,2125 @@
+{
+	"folder_history":
+	[
+		"/C/dev/wit/src/vset/InternalTools/TfsBootstraper",
+		"/C/tools/pester",
+		"/C/dev/ChocPackages"
+	],
+	"last_window_id": 56,
+	"settings":
+	{
+		"new_window_height": 630.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"new",
+						"newAddin"
+					],
+					[
+						"St",
+						"Start-Transcript"
+					],
+					[
+						"Pa",
+						"parent"
+					],
+					[
+						"cho",
+						"Choc"
+					],
+					[
+						"ch",
+						"Choc"
+					],
+					[
+						"pro",
+						"programfiles"
+					],
+					[
+						"pr",
+						"programfiles"
+					],
+					[
+						"fun",
+						"function"
+					]
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"",
+						"Package Control: Upgrade/Overwrite All Packages"
+					],
+					[
+						"p",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/dev/autobox/Autobox.nuspec",
+				"/C/dev/chocolatey/tests/Chocolatey-PackagesConfig.tests.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/tools/WindowsLiveInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveWriter/tools/ChocolateyInstall.ps1",
+				"/C/dev/autobox/VsixInstallFunctions.ps1",
+				"/C/dev/autobox/.gitignore",
+				"/C/dev/autobox/Utilities.ps1",
+				"/C/dev/autobox/test.ps1",
+				"/C/dev/AutoWrockTestable/default.ps1",
+				"/C/dev/AutoWrockTestable/autowrocktestable/AutoWrockTestable.nuspec",
+				"/C/dev/AutoWrockTestable/MyClassFacts.vstemplate",
+				"/C/dev/AutoWrockTestable/AutoWrockTestable/Properties/AssemblyInfo.cs",
+				"/C/dev/AutoWrockTestable/AutoWrockTestable/AutoWrockTestable.nuspec",
+				"/C/dev/autobox/bootstrap.ps1",
+				"/C/dev/SkyCli/packages/repositories.config",
+				"/C/dev/SkyCli/SkyCli.Facts/packages.config",
+				"//epxsource/d$/Mercurial/SocialBuilds/.hg/hgrc",
+				"/C/Users/mwrock/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AutoScript.ahk",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/rgfcwcdi.jpx/extension.vsixmanifest",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/extensions.en-US.cache",
+				"/C/Users/mwrock/Documents/myclassfacts/myclassfacts.vstemplate",
+				"/C/dev/AutoWrockTestable/BuildFiles/vsix/extension.vsixmanifest",
+				"/C/dev/autobox/PinnedApplications.psm1",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/chocolateyInstaller.psm1",
+				"/C/Chocolatey/chocolateyInstall/chocolatey.ps1",
+				"/C/Chocolatey/lib/console-devel.2.0.147.2/tools/ChocolateyInstall.ps1",
+				"/C/dev/autobox/autobox.sublime-project",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/alias.txt",
+				"/C/new.txt",
+				"/C/Users/mwrock/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/C/dev/autobox/bootstrapper.sublime-workspace"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"Choc ",
+					"Install-VS11-Beta",
+					"sql",
+					"vsixinstaller",
+					"justFinishedUpdates",
+					"Install-ChocolateyPackage"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"cinst "
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+					[
+						"",
+						"/C/dev/autobox/autobox.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 233.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1262.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"Pro",
+						"profile"
+					],
+					[
+						"pr",
+						"profile"
+					],
+					[
+						"fo",
+						"Force"
+					],
+					[
+						"db",
+						"dbUserNameForPerms"
+					],
+					[
+						"Fo",
+						"ForumsShard"
+					],
+					[
+						"F",
+						"Forums"
+					],
+					[
+						"en",
+						"EnvironmentName"
+					],
+					[
+						"web",
+						"WebServers"
+					],
+					[
+						"Serv",
+						"servermanager"
+					],
+					[
+						"Im",
+						"Import-Module"
+					],
+					[
+						"he",
+						"header"
+					],
+					[
+						"ss",
+						"sslThumb"
+					],
+					[
+						"ca",
+						"catch"
+					],
+					[
+						"wri",
+						"Write-Host"
+					],
+					[
+						"wr",
+						"Write-Host"
+					],
+					[
+						"S",
+						"SqlServers"
+					],
+					[
+						"confi",
+						"Configuration"
+					],
+					[
+						"cer",
+						"certPassword"
+					],
+					[
+						"sto",
+						"store"
+					],
+					[
+						"Te",
+						"test-path"
+					],
+					[
+						"Set-",
+						"Set-AccessRights"
+					],
+					[
+						"Foru",
+						"ForumsShard"
+					],
+					[
+						"cert",
+						"certPath"
+					],
+					[
+						"For",
+						"Force"
+					],
+					[
+						"c",
+						"com"
+					],
+					[
+						"m",
+						"microsoft"
+					],
+					[
+						"co",
+						"corp"
+					],
+					[
+						"In",
+						"Install-DotNet4"
+					],
+					[
+						"ba",
+						"badServer"
+					],
+					[
+						"test",
+						"test-path"
+					],
+					[
+						"sp",
+						"split"
+					],
+					[
+						"Add-P",
+						"Add-ProxyOverride"
+					],
+					[
+						"f",
+						"function"
+					],
+					[
+						"ta",
+						"task"
+					],
+					[
+						"restart",
+						"restartSuffix"
+					],
+					[
+						"rest",
+						"restartSuffix"
+					],
+					[
+						"sql",
+						"sqlServer"
+					],
+					[
+						"appf",
+						"AppFabricServer"
+					],
+					[
+						"We",
+						"WebServers"
+					],
+					[
+						"Admin",
+						"AdminServer"
+					],
+					[
+						"com",
+						"computername"
+					],
+					[
+						"acco",
+						"accountNames"
+					],
+					[
+						"for",
+						"foreach"
+					],
+					[
+						"MS",
+						"MSMQ-Server"
+					],
+					[
+						"Remo",
+						"Remove-Item"
+					],
+					[
+						"Remove",
+						"Remove-Startup"
+					],
+					[
+						"Test",
+						"Test-Path"
+					],
+					[
+						"Sear",
+						"Search"
+					],
+					[
+						"tas",
+						"taskToInvoke"
+					],
+					[
+						"Rest",
+						"Restore-Chameleon"
+					],
+					[
+						"de",
+						"default"
+					],
+					[
+						"Env",
+						"Environment"
+					],
+					[
+						"system",
+						"systemdrive"
+					],
+					[
+						"Crea",
+						"Create-Databases"
+					],
+					[
+						"ins",
+						"Install"
+					],
+					[
+						"T",
+						"Test-Path"
+					],
+					[
+						"Sta",
+						"Start-Sleep"
+					],
+					[
+						"Net",
+						"NetworkService"
+					],
+					[
+						"Create",
+						"Create-Http-Share"
+					],
+					[
+						"A",
+						"Application"
+					],
+					[
+						"Social",
+						"SocialServices"
+					],
+					[
+						"SearchP",
+						"SearchProviderServices"
+					],
+					[
+						"Search",
+						"SearchApi"
+					],
+					[
+						"Profi",
+						"ProfileAdmin"
+					],
+					[
+						"add",
+						"addHttps"
+					],
+					[
+						"sit",
+						"siteName"
+					],
+					[
+						"http",
+						"httpShare"
+					],
+					[
+						"R",
+						"Remove-Pool"
+					],
+					[
+						"Re",
+						"Remove"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+					"settings":
+					{
+						"buffer_size": 16205,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"",
+						"Package Control: Discover Packages"
+					],
+					[
+						"p",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/AdminPsakeProxy.ps1",
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/build.ps1",
+				"/C/Program Files/GIT-TF/git-tf",
+				"/C/RequestReduce/.gitignore",
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+				"/C/dev/wit/binaries/x86dbg/bin/i386/devfabric.ini",
+				"/C/dev/wit/binaries/x86dbg/bin/i386/tfdf.cmd",
+				"/C/dev/wit/binaries/x86dbg/bin/i386/Configuration/Logs/TFS_DevFabric",
+				"/C/dev/wit/binaries/x86dbg/bin/i386/Foundation/Server",
+				"/C/ProgramData/Microsoft/Team",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+				"/C/dev/wit/binaries/x86dbg/bin/i386/azure.ini",
+				"/C/dev/wit/binaries/x86dbg/bin/i386/Deployment_0717_112831.log",
+				"/C/dev/wit/src/alm/tfs_core/WorkItemTracking/WebServices/ClientService.csproj",
+				"/C/dev/wit/src/alm/tfs_core/Framework/Server/TeamFoundationServer.csproj",
+				"/C/dev/wit/src/alm/tfs_core/Framework/dirs.proj",
+				"/C/dev/wit/src/suitesrc/tfs/WITPlatform/Tests/UnitTests/CssTests/MS.TF.Test.WITPlatform.UnitTests.CssTests.csproj",
+				"/C/dev/wit/src/alm/tfs_core/Framework/OnPremisePlugins/OnPremisePlugins.csproj",
+				"/C/dev/wit/src/vset/TeamFoundationServer/servicing/application/ApplicationServicing.csproj",
+				"/C/Windows/Microsoft.NET/Framework64/v4.0.30319/Microsoft.Common.targets",
+				"/C/Windows/Microsoft.NET/Framework64/v4.0.30319/Microsoft.CSharp.targets",
+				"/C/Program Files (x86)/MSBuild/4.0/Microsoft.Common.props",
+				"/C/dev/wit/src/alm/tfs_core/TfsCore.Settings.targets",
+				"/C/dev/wit/src/.tfignore",
+				"/C/Users/mwrock/Documents/azuredeploy.ps1",
+				"//wrockdesk/d$/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+				"/C/dev/SocialBuilds/default.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Next.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Temp.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/OSSRed.ps1",
+				"/C/dev/SocialBuilds/sql/RestoreDatabase.sql",
+				"/C/dev/SocialBuilds/bootstrap/bootstrap.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/test.ps1",
+				"//wrockdesk/c$/dev/autobox/bootstrap.ps1",
+				"//wrockdesk/c$/dev/autobox/BuildPackages/bootstrap.ps1",
+				"/C/dev/SocialBuilds/Psake/psake.psm1",
+				"//wrockdesk/c$/dev/autobox/AdminDeployment.xml",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Start-ChocolateyProcessAsAdmin.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Install-ChocolateyInstallPackage.ps1",
+				"/C/dev/SocialBuilds/post-restart-.bat",
+				"/C/dev/tfs/CodePlex Template - v3/ProcessTemplate.xml",
+				"/C/dev/tfs/q11w/src/tools/fb/MSBtoVars.xslt",
+				"//cpvsbuild/drops/dev11/ALM/layouts/x86chk/current/enu/vs/ultimate/dvd/AdminDeployment.xml",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Write-Host.ps1",
+				"/C/Chocolatey/chocolateyInstall/chocolatey.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/chocolateyInstaller.psm1",
+				"/C/dev/SocialBuilds/cleansetup.ps1",
+				"/C/dev/SocialBuilds/sql/ErrorLog.sql",
+				"/C/Framework/CommApps/Forums/BuildScript.ps1",
+				"/C/dev/SocialBuilds/sql/logging.sql",
+				"/C/Framework/CommApps/Forums/Database/Init/0-CreateDatabase.sql",
+				"/C/Framework/CommApps/Forums/Database/Init/2-Create-ErrorLog.sql",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Next_old.ps1",
+				"/C/Windows/System32/drivers/etc/hosts",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Testing.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/CtpRed.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/next.ps1",
+				"/C/dev/SocialBuilds/Utilities/EnvironmentSetup.ps1",
+				"/C/dev/SocialBuilds/temprestore.sql",
+				"/C/dev/SocialBuilds/Logging.sql",
+				"/C/dev/SocialBuilds/Configuration/updates.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/DEFAULT.ps1",
+				"/C/dev/SocialBuilds/Psake/psake.ps1",
+				"/C/dev/SocialBuilds/New-Config.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/mwrock-test.ps1",
+				"/C/dev/SocialBuilds/readme.txt",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/live.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/cdn.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/int.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Recognition-prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/IntPhx.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/QA.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Profile-prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Recognition-int.ps1",
+				"/C/MW-MARATHON/c$/http/stonotificationmanagerservice/log.txt",
+				"/C/MW-MARATHON/c$/http/marathon/log.txt",
+				"/C/Framework/CommApps/Profile/Marathon/default.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Testing.ps1.orig",
+				"/C/dev/SocialBuilds/post-restart-Full.bat",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/ctpPhx.ps1",
+				"/C/dev/SocialBuilds/bootstrap.bat",
+				"/C/Framework/SocialRootWeb/Web.config",
+				"/C/epxsource/builds/bootstrap.bat",
+				"/C/Galleries/Templates/AppSettings.config.template",
+				"/C/dev/SocialBuilds/cd",
+				"/C/dev/SocialBuilds/CodeFlow/hgcf.pyo",
+				"/C/dev/SocialBuilds/SocialBuilds.sublime-project",
+				"/C/Framework/CommApps/Profile/default.ps1",
+				"/C/dev/SocialBuilds/Psake/psake-config.ps1",
+				"/C/Program Files (x86)/Microsoft Visual Studio 10.0/Common7/IDE/devenv.pkgdef",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/extensions.en-US.cache",
+				"/C/dev/SocialBuilds/.hg/hgrc",
+				"/C/Users/mwrock/mercurial.ini",
+				"/C/dev/SocialBuilds/bootstrap/.hgpack",
+				"//epxsource/d$/Mercurial/Search/.hg/hgrc",
+				"/C/Framework/CommApps/Search/.hg/hgrc",
+				"/C/Framework/CommApps/Search/.hgignore",
+				"/C/dev/SocialBuilds/hgcf.ps1",
+				"/C/dev/SocialBuilds/codeflow/codeflow2010_1/CodeFlow2010.application",
+				"/C/dev/SocialBuilds/codeflow/codeflow2010_1/CodeFlow2010.exe.manifest",
+				"/C/http/database/update.ps1",
+				"/C/dev/SocialBuilds/.hgignore",
+				"/C/dev/AutoWrockTestable/AutoWrockTestable.Template/extension.vsixmanifest",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/sasd4dv4.kh5/extension.vsixmanifest",
+				"/C/dev/nuget/test/EndToEnd/ProjectTemplates/WebApplicationProject40.zip/WebApplicationProject40.vstemplate",
+				"/C/dev/AutoWrockTestable/BuildFiles/AutoWrockTestable/extension.vsixmanifest",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/Templates/ItemTemplates/Visual C#/myclassfacts/MyClassFacts.vstemplate",
+				"/C/Framework/CommApps/Search/System.Management.Automation.Internal.Host.InternalHost",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/My Exported Templates/AutoWrockTestable/extension.vsixmanifest",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/My Exported Templates/AutoWrockTestable/[Content_Types].xml",
+				"/C/dev/SocialBuilds/Configuration/Builds/ffspBuild.ps1",
+				"/C/dev/SocialBuilds/GalleriesSetup.ps1",
+				"/C/dev/SocialBuilds/Configuration/Builds/ExportableFunctions.ps1",
+				"/C/dev/SocialBuilds/Configuration/Builds/GalleriesBuild.ps1",
+				"/C/dev/SocialBuilds/tests.ps1",
+				"//cpmsdnvss03/epx/SocialSites/PROD/2012/May/Package3145.123/Web/GlobalResources/Xsl/Header_Microsoft.xslt",
+				"//codegcr.redmond.corp.microsoft.com/c$/Deploy/AutoDeployBuild.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/galleriesdb.bat",
+				"/C/Galleries/Deploy.ps1",
+				"/C/dev/SocialBuilds/Configuration/configure.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/posh-hg.psm1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/HgPrompt.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/HgUtils.ps1",
+				"/C/Chocolatey/lib/Posh-GIT-HG.1.0.0/tools/profile.example.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/profile.example-ps3.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/posh-hg",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/posh-hg.ps1"
+			],
+			"find":
+			{
+				"height": 36.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"default",
+					"publishpartition",
+					"IntermediateOutputPath",
+					"msbuildtools",
+					"BinariesDirectory",
+					"MSBuildProjectDirectory",
+					"azureops",
+					"mssqlserver",
+					"doNotNeedBits",
+					"GetSqlUser",
+					"get-user",
+					"getuser",
+					"domain",
+					"ffspdomain",
+					"DbBackupPath",
+					"$EnvironmrntServicesServer",
+					"$EnvironmentWebServers",
+					"$global:WebServers",
+					"GetSqlUser",
+					"domain",
+					"GetSqlUser",
+					"shard",
+					"ProfileInternalApiEndpoint",
+					"ProfileApiUrl",
+					"services",
+					"sqlcmd",
+					"Install-SqlServer",
+					"Private-Deployment",
+					"Invoke",
+					"VelocityServers",
+					"ServiceQueue",
+					"profileapi",
+					"ProfileApiUrl",
+					"ProfileInternalApiEndpoint",
+					"internalProfileSdk",
+					"inter",
+					"Configure-Service-User",
+					"app-fab",
+					"Configure-Service-User",
+					"AvatarUriPrefix",
+					"ProfileBaseAvatarCookieLess",
+					"baseavatar",
+					"profileap",
+					"Add-DB-Perms",
+					"WebServicesServers",
+					"ProfileApiServers",
+					"Configure-Velocity",
+					"RebootAndContinue",
+					"Configure-Velocity",
+					"app-fab",
+					"setup-ro",
+					"SqlExec",
+					"Configure-Service",
+					"Add-DB-Perms",
+					"Restore-Chameleon",
+					"Invoke-TeamCity",
+					"Install-SqlServer",
+					"Live",
+					"Marathon",
+					"proxy",
+					"marathon",
+					"MvpPuidFile",
+					"profi",
+					"tk",
+					"UX",
+					"passpo",
+					"FsisEndpoint",
+					"smtp",
+					"LiveIdHost",
+					"StoCacheServers",
+					"CacheEnabled",
+					"LiveId",
+					"MsdnLiveID",
+					"LiveAlertsHost",
+					"BrandUrl",
+					"AdminAdamStore",
+					"Marathon",
+					"Install-WinServices",
+					"ffspdomain",
+					"domain",
+					"nopr",
+					"profile",
+					"confi",
+					"Load-Module",
+					"restartNeeded",
+					"restartNeededOverride",
+					"configu",
+					"Configure-Velocity",
+					"post-re",
+					"startu",
+					"live",
+					"marath",
+					"cdnhost",
+					"cdn",
+					"searchser",
+					"searchapiurl",
+					"SearchApiEndpoint",
+					"search",
+					"WebDrop",
+					"DiscoverySqlServer",
+					"sql",
+					"BUILD",
+					"$global:DiscoverySqlServer",
+					"rtl",
+					"script",
+					"mara",
+					"mar",
+					"WinServices",
+					"@",
+					"$currentDir",
+					"download-fi",
+					"Add-NetworkShare",
+					"Set-AccessRights",
+					"download-file",
+					"Set-AccessRights",
+					"velo",
+					"download",
+					"cert",
+					"Add-Site",
+					" dd-Site",
+					"header",
+					"paspsword",
+					"certPath",
+					"httpShare",
+					"Add-NetworkShare",
+					"$httpShare",
+					"Add-NetworkShare",
+					"physi"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"doNotNeedBits",
+					"cp.",
+					"$env:ffspDomain",
+					"mw-build01",
+					"mw-build03",
+					"mw-build02",
+					"C:\\",
+					"\\Utilities\\RemoteService"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+							"settings":
+							{
+								"buffer_size": 16205,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										8251,
+										8251
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1094.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,2,3,-1,-1,-1,-1,689,1,1,1279",
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 217.0,
+			"status_bar_visible": true,
+			"window_id": 54,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"new",
+						"newAddin"
+					],
+					[
+						"St",
+						"Start-Transcript"
+					],
+					[
+						"Pa",
+						"parent"
+					],
+					[
+						"cho",
+						"Choc"
+					],
+					[
+						"ch",
+						"Choc"
+					],
+					[
+						"pro",
+						"programfiles"
+					],
+					[
+						"pr",
+						"programfiles"
+					],
+					[
+						"fun",
+						"function"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "autobox.bat",
+					"settings":
+					{
+						"buffer_size": 213,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "BuildPackages/example/default.ps1",
+					"settings":
+					{
+						"buffer_size": 2080,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "AutoBox.psm1",
+					"settings":
+					{
+						"buffer_size": 8042,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "nuget/ChocolateyInstall.ps1",
+					"settings":
+					{
+						"buffer_size": 596,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/dev/chocolatey/src/helpers/chocolateyInstaller.psm1",
+					"settings":
+					{
+						"buffer_size": 22091,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "Tests/RunPsakeScript.Tests.ps1",
+					"settings":
+					{
+						"buffer_size": 649,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "#Stock TFS dev environment\n& \\\\cpvsbuild\\DROPS\\dev11\\Q11W\\raw\\current\\binaries.x86ret\\bin\\i386\\TfsBootstraper\\build\n\nEnable-Telnet\nSet-PinnedApplication -Action PinToTaskbar -FilePath \"$env:windir\\system32\\mstsc.exe\"\n\ncinst console-devel\nSet-PinnedApplication -Action PinToTaskbar -FilePath \"$env:programfiles\\console\\console.exe\"\n\ncinst sublimetext2\nSet-PinnedApplication -Action PinToTaskbar -FilePath \"$env:programfiles\\Sublime Text 2\\sublime_text.exe\"\nAdd-ExplorerMenuItem \"sublime\" \"Open with Sublime Text 2\" \"$env:programfiles\\Sublime Text 2\\sublime_text.exe\"\nAdd-ExplorerMenuItem \"sublime\" \"Open with Sublime Text 2\" \"$env:programfiles\\Sublime Text 2\\sublime_text.exe\" \"folder\"\nSet-FileAssociation \".txt\" \"$env:programfiles\\Sublime Text 2\\sublime_text.exe\"\ncmd /c assoc .=txtfile\n\ncinst skydrive\ncinst fiddler\ncinst posh-git-hg\ncinst git-credentials-winstore\ncinst tortoisehg\n\ncinst dotpeek\n$dotPeekDir = (Get-ChildItem $env:systemdrive\\chocolatey\\lib\\dotpeek* | select $_.last)\nSet-FileAssociation \".dll\" \"$dotPeekDir\\tools\\dotPeek.exe\"\n\ncinst AutoHotKey\nset-content \"$env:appdata\\Microsoft\\Windows\\Start Menu\\Programs\\startup\\AutoScript.ahk\" -Force -value @\"\n^+C::\nIfWinExist Console\n{\n    WinActivate\n}\n\"@\n\ncinst Paint.net\ncinst windirstat\ncinst sysinternals\ncinst evernote\ncinst NugetPackageExplorer\ncinst PowerGUI\n\ncinst googlechrome\nSet-PinnedApplication -Action PinToTaskbar -FilePath \"$programFiles86\\Google\\Chrome\\Application\\chrome.exe\"\n\ncinst WindowsLiveMesh\n\nSet-PinnedApplication -Action PinToTaskbar -FilePath \"$programFiles86\\Microsoft Visual Studio 11.0\\Common7\\IDE\\devenv.exe\"\nInstall-ChocolateyPackage 'resharper' 'msi' '/quiet' 'http://download.jetbrains.com/resharper/ReSharperSetup.7.0.97.60.msi' \nInstallVsixSilently http://visualstudiogallery.msdn.microsoft.com/en-us/EA4AC039-1B5C-4D11-804E-9BEDE2E63ECF, \"11.0\"\ncinst TestDriven.Net",
+					"file": "BuildPackages/work.ps1",
+					"file_size": 1918,
+					"file_write_time": 129882180134806412,
+					"settings":
+					{
+						"buffer_size": 1863,
+						"line_ending": "Windows",
+						"name": "work.ps1"
+					}
+				},
+				{
+					"file": "Externals/PinnedApplications.ps1",
+					"settings":
+					{
+						"buffer_size": 4459,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": ".gitignore",
+					"settings":
+					{
+						"buffer_size": 79,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"",
+						"Package Control: Upgrade/Overwrite All Packages"
+					],
+					[
+						"p",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Chocolatey/lib/chocolatey.0.9.8.19/tools/chocolateysetup.psm1",
+				"/C/Chocolatey/bin/cinst.bat",
+				"/C/Chocolatey/lib/chocolatey.0.9.8.19/tools/chocolateyInstall.ps1",
+				"/C/dev/autobox/Autobox.nuspec",
+				"/C/dev/chocolatey/tests/Chocolatey-PackagesConfig.tests.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/tools/WindowsLiveInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveWriter/tools/ChocolateyInstall.ps1",
+				"/C/dev/autobox/VsixInstallFunctions.ps1",
+				"/C/dev/autobox/.gitignore",
+				"/C/dev/autobox/Utilities.ps1",
+				"/C/dev/autobox/test.ps1",
+				"/C/dev/AutoWrockTestable/default.ps1",
+				"/C/dev/AutoWrockTestable/autowrocktestable/AutoWrockTestable.nuspec",
+				"/C/dev/AutoWrockTestable/MyClassFacts.vstemplate",
+				"/C/dev/AutoWrockTestable/AutoWrockTestable/Properties/AssemblyInfo.cs",
+				"/C/dev/AutoWrockTestable/AutoWrockTestable/AutoWrockTestable.nuspec",
+				"/C/dev/autobox/bootstrap.ps1",
+				"/C/dev/SkyCli/packages/repositories.config",
+				"/C/dev/SkyCli/SkyCli.Facts/packages.config",
+				"//epxsource/d$/Mercurial/SocialBuilds/.hg/hgrc",
+				"/C/Users/mwrock/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AutoScript.ahk",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/rgfcwcdi.jpx/extension.vsixmanifest",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/11.0/Extensions/extensions.en-US.cache",
+				"/C/Users/mwrock/Documents/myclassfacts/myclassfacts.vstemplate",
+				"/C/dev/AutoWrockTestable/BuildFiles/vsix/extension.vsixmanifest",
+				"/C/dev/autobox/PinnedApplications.psm1",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/chocolateyInstaller.psm1",
+				"/C/Chocolatey/chocolateyInstall/chocolatey.ps1",
+				"/C/Chocolatey/lib/console-devel.2.0.147.2/tools/ChocolateyInstall.ps1",
+				"/C/dev/autobox/autobox.sublime-project",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/alias.txt",
+				"/C/new.txt",
+				"/C/Users/mwrock/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/C/dev/autobox/bootstrapper.sublime-workspace"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"Choc ",
+					"Install-VS11-Beta",
+					"sql",
+					"vsixinstaller",
+					"justFinishedUpdates",
+					"Install-ChocolateyPackage"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"cinst "
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 6,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "autobox.bat",
+							"settings":
+							{
+								"buffer_size": 213,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Batch File/Batch File.tmLanguage"
+								},
+								"translation.x": 565.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "BuildPackages/example/default.ps1",
+							"settings":
+							{
+								"buffer_size": 2080,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										122,
+										252
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "AutoBox.psm1",
+							"settings":
+							{
+								"buffer_size": 8042,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										8042,
+										8042
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1807.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "nuget/ChocolateyInstall.ps1",
+							"settings":
+							{
+								"buffer_size": 596,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										55,
+										78
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/dev/chocolatey/src/helpers/chocolateyInstaller.psm1",
+							"settings":
+							{
+								"buffer_size": 22091,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										17601,
+										17605
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 7124.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "Tests/RunPsakeScript.Tests.ps1",
+							"settings":
+							{
+								"buffer_size": 649,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										649,
+										649
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "BuildPackages/work.ps1",
+							"settings":
+							{
+								"buffer_size": 1863,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										350,
+										350
+									]
+								],
+								"settings":
+								{
+									"auto_name": "work.ps1",
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "Externals/PinnedApplications.ps1",
+							"settings":
+							{
+								"buffer_size": 4459,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4459,
+										4459
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 935.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": ".gitignore",
+							"settings":
+							{
+								"buffer_size": 79,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										79,
+										79
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,0,1,-1,-1,-1,-1,689,1,1,1279",
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+					[
+						"",
+						"/C/dev/autobox/autobox.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 233.0,
+			"status_bar_visible": true,
+			"window_id": 55,
+			"workspace_name": "/C/dev/autobox/autobox.sublime-project"
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"po",
+						"poshGit"
+					],
+					[
+						"posh",
+						"posh-hg"
+					],
+					[
+						"P",
+						"Posh-HG"
+					],
+					[
+						"old",
+						"olsPromptOverride"
+					],
+					[
+						"C",
+						"Contains"
+					],
+					[
+						"o",
+						"object"
+					],
+					[
+						"R",
+						"Recurse"
+					],
+					[
+						"Re",
+						"Remove-Item"
+					],
+					[
+						"Posh",
+						"poshGit"
+					],
+					[
+						"new",
+						"newPrompt"
+					],
+					[
+						"ch",
+						"ChocolateyInstall"
+					],
+					[
+						"in",
+						"install"
+					],
+					[
+						"W",
+						"Write-Host"
+					],
+					[
+						"Remo",
+						"Remove-Item"
+					],
+					[
+						"T",
+						"TabExpansion"
+					],
+					[
+						"Set",
+						"Set-Content"
+					],
+					[
+						"G",
+						"Get-Content"
+					],
+					[
+						"Get",
+						"Get-Command"
+					],
+					[
+						"ne",
+						"newEntries"
+					],
+					[
+						"pa",
+						"path"
+					],
+					[
+						"n",
+						"newEntries"
+					],
+					[
+						"path",
+						"pathArray"
+					],
+					[
+						"pr",
+						"Profile"
+					],
+					[
+						"Cle",
+						"Clean-Profile"
+					],
+					[
+						"co",
+						"Contains"
+					],
+					[
+						"pre",
+						"prev"
+					],
+					[
+						"pro",
+						"promptCheck"
+					],
+					[
+						"fi",
+						"function"
+					],
+					[
+						"p",
+						"profile"
+					],
+					[
+						"l",
+						"line"
+					],
+					[
+						"F",
+						"Force"
+					],
+					[
+						"v",
+						"value"
+					],
+					[
+						"Pro",
+						"profile"
+					],
+					[
+						"Pr",
+						"Prompt"
+					],
+					[
+						"par",
+						"parent"
+					],
+					[
+						"Ge",
+						"Get-Item"
+					],
+					[
+						"Add",
+						"Add-Line"
+					],
+					[
+						"windows",
+						"WindowsLiveInstall"
+					],
+					[
+						"f",
+						"file"
+					],
+					[
+						"Windo",
+						"WindowsLive-mw"
+					],
+					[
+						"nu",
+						"NugetPackageExplorer"
+					],
+					[
+						"NuG",
+						"NugetPackageExplorer"
+					],
+					[
+						"d",
+						"drop"
+					],
+					[
+						"fun",
+						"function"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "<?xml version=\"1.0\"?>\n<package xmlns=\"http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd\">\n  <metadata>\n    <version>1.0.1</version>\n    <authors>Matt Wrock</authors>\n    <owners>Matt Wrock</owners>\n    <projectUrl>https://github.com/mwrock/Chocolatey-Packages/tree/master/mwrock-console</projectUrl>\n    <id>mwrock-console</id>\n    <title>mwrock-console</title>\n    <requireLicenseAcceptance>false</requireLicenseAcceptance>\n    <description>Console2 - Wrock style.</description>\n    <dependencies>\n      <dependency id=\"console-devel\" />\n      <dependency id=\"autobox\" />      \n    </dependencies>  \n  </metadata>\n  <files>\n    <file src=\"tools\\**\\*.*\" />\n  </files>\n</package>",
+					"file": "mwrock-console/mwrock-console.nuspec",
+					"file_size": 705,
+					"file_write_time": 129882727065347855,
+					"settings":
+					{
+						"buffer_size": 686,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "mwrock-console/tools/ChocolateyInstall.ps1",
+					"settings":
+					{
+						"buffer_size": 370,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "WindowsLiveInstall/tools/ChocolateyInstall.ps1",
+					"settings":
+					{
+						"buffer_size": 151,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "mwrock-TfsDesktop/mwrock-TfsDesktop.nuspec",
+					"settings":
+					{
+						"buffer_size": 695,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "mwrock-TfsDesktop/tools/ChocolateyInstall.ps1",
+					"settings":
+					{
+						"buffer_size": 2463,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 311.0,
+				"selected_items":
+				[
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"p",
+						"Package Control: List Packages"
+					],
+					[
+						"",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/NugetPackageExplorer/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/TestDriven.net/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/QTTabBar/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/Git-Credential-WinStore/tools/ChocolateyInstall.ps1",
+				"/C/dev/nugetpackages/poshgit/poshgit.nuspec",
+				"/C/dev/nugetpackages/poshgit/tools/chocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-HG/tools/ChocolateyInstall.ps1",
+				"/C/dev/nugetpackages/poshgit/tests/InstallChocolatey.Tests.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-HG/InstallChocolatey.Tests.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-GIT-HG/InstallChoclatey.Tests.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-GIT-HG/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/Test-Helpers.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-GIT-HG/Posh-Git-HG.nuspec",
+				"/C/dev/Chocolatey-Packages/Git-Credential-WinStore/Git-Credential-WinStore.nuspec",
+				"/C/dev/Chocolatey-Packages/Posh-HG/Posh-HG.nuspec",
+				"/C/dev/posh-hg/HgPrompt.ps1",
+				"/C/dev/Chocolatey-Packages/pester/runtests.bat",
+				"/C/dev/Chocolatey-Packages/TestDriven.net/TestDriven.net.nuspec",
+				"/C/dev/posh-hg/profile.example.ps1",
+				"/C/dev/Chocolatey-Packages/Git.Credential.WinStore/Git.Credential.WinStore.nuspec",
+				"/C/dev/SocialBuilds/bootstrap/bootstrap.ps1",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+				"/C/dev/Pester/bin/pester.bat",
+				"/C/dev/Pester/Pester.psm1",
+				"/C/dev/Chocolatey-Packages/pester/Pester.psm1",
+				"/C/dev/Chocolatey-Packages/pester/Functions/It.ps1",
+				"/C/RequestReduce/build.bat",
+				"/C/dev/posh-hg/HgTabExpansion.ps1",
+				"/C/dev/posh-hg/posh-hg.psm1",
+				"/C/tools/poshgit/dahlbyk-posh-git-60be436/profile.example.ps1",
+				"/C/dev/Chocolatey-Packages/Microsoft.PowerShell_profile.ps1",
+				"/C/dev/posh-hg/HgUtils.ps1",
+				"/C/dev/posh-hg/Settings.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120520/posh-hg/HgTabExpansion.ps1",
+				"/C/dev/posh-hg/install.ps1",
+				"/C/Users/mwrock/Downloads/Posh-hg-1.1/posh-hg.psm1",
+				"/C/tools/pester/Examples/Calculator/Add-Numbers.Tests.ps1",
+				"/C/tools/pester/pester.bat",
+				"/C/tools/pester/runtests.bat",
+				"/C/dev/Chocolatey-Packages/NugetPackageExplorer/NugetPackageExplorer.2.7.0.20120414.nuspec",
+				"/C/Users/mwrock/Downloads/Posh-hg-1.1/HgTabExpansion.ps1",
+				"/C/Chocolatey/lib/poshgit.0.4.0/tools/chocolateyInstall.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120517/tools/posh-hg/profile.example.ps1",
+				"/C/RequestReduce/BuildScript.ps1",
+				"/C/tools/poshgit/dahlbyk-posh-git-60be436/install.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-HG/tools/profile.example-ps3.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-HG/tools/install.ps1",
+				"/C/dev/Chocolatey-Packages/Posh-HG/Posh-HG.1.1.0.20120415.nupkg",
+				"/C/dev/Chocolatey-Packages/Posh-GIT-HG/tools/profile.example.ps1",
+				"/C/tools/posh-hg/profile.example.ps1",
+				"/C/Windows/Microsoft.NET/Framework64/v4.0.30319/Config/machine.config",
+				"/C/Windows/Microsoft.NET/Framework64/v4.0.30319/msbuild.exe.config",
+				"/C/Chocolatey/lib/poshgit.0.3.0.2/tools/chocolateyInstall.ps1",
+				"/C/Chocolatey/lib/msysgit.1.7.9/tools/chocolateyInstall.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/chocolateyInstaller.psm1",
+				"/C/tools/poshgit/dahlbyk-posh-git-60e1ed7/install.ps1",
+				"/C/tools/poshgit/dahlbyk-posh-git-60e1ed7/profile.example.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveMesh/tools/ChocolateyInstall.ps1",
+				"/C/Users/mwrock/Downloads/JeremySkinner-posh-hg-1.1-0-g802574d/JeremySkinner-posh-hg-1c29345/profile.example.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveMesh/WindowsLiveMesh.nuspec",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/tools/WindowsLiveInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveWriter/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/WindowsLiveInstall.nuspec",
+				"/C/dev/Chocolatey-Packages/WindowsLiveWriter/WindowsLiveWriter.nuspec",
+				"/C/dev/Chocolatey-Packages/WindowsLiveWriter/WindowsLiveWriter.2011.0.0.nuspec",
+				"/C/dev/Chocolatey-Packages/WindowsLiveMesh/WindowsLiveMesh.2011.0.0.nuspec",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/WindowsLiveInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveInstall/WindowsLiveInstall.1.0.0.nuspec",
+				"/C/RequestReduce/RequestReduce/Nuget/RequestReduce.nuspec",
+				"/C/dev/Chocolatey-Packages/.gitignore",
+				"/C/dev/Chocolatey-Packages/NugetPackageExplorer/NugetPackageExplorer.2.7.0.nuspec",
+				"/C/dev/autobox/Utilities.ps1",
+				"/C/dev/Chocolatey-Packages/NugetPackageExplorer/NugetPackageExplorer.2.7.0.nupkg",
+				"/C/dev/Chocolatey-Packages/NugetPackageExplorer/NpeLocalExecutable.zip",
+				"/C/dev/SocialBuilds/cleansetup.ps1",
+				"/C/dev/autobox/bootstrap.ps1",
+				"/C/Users/mwrock/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AutoScript.ahk",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/alias.txt",
+				"/C/new.txt",
+				"/C/Users/mwrock/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/C/dev/autobox/bootstrapper.sublime-workspace"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"$lib",
+					"0.4.0",
+					"newPromptOverride",
+					"Setup-Profile",
+					"chocInstallDir",
+					"packageName",
+					"replace",
+					"installDir",
+					"TabEx",
+					"Get-Con",
+					"Clean-Profile",
+					"`",
+					"lib",
+					"oldProfile",
+					"Insert-Script",
+					"emptyTabExpansion",
+					"FileEncoding",
+					"Check-Profile",
+					"Add-Line",
+					"FileEncoding",
+					"Get-FileEncoding",
+					"MSBuildToolsPath",
+					"ypath",
+					"y-path",
+					"-path",
+					"Get-FileEncoding",
+					"tools",
+					"*",
+					"NuGet Package Explorer"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"Setup-Environment",
+					"chocInstallDir",
+					"Clean-Environment",
+					"",
+					"Windows Live Writer"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 4,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "mwrock-console/mwrock-console.nuspec",
+							"settings":
+							{
+								"buffer_size": 686,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										129,
+										129
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "mwrock-console/tools/ChocolateyInstall.ps1",
+							"settings":
+							{
+								"buffer_size": 370,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										56,
+										56
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "WindowsLiveInstall/tools/ChocolateyInstall.ps1",
+							"settings":
+							{
+								"buffer_size": 151,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										57,
+										150
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
+								},
+								"translation.x": 66.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "mwrock-TfsDesktop/mwrock-TfsDesktop.nuspec",
+							"settings":
+							{
+								"buffer_size": 695,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										556,
+										556
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "mwrock-TfsDesktop/tools/ChocolateyInstall.ps1",
+							"settings":
+							{
+								"buffer_size": 2463,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										670,
+										670
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,0,1,-1,-1,-1,-1,689,1,1,1279",
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 217.0,
+			"status_bar_visible": true,
+			"window_id": 56,
+			"workspace_name": "/C/dev/Chocolatey-Packages/ChocolateyPackages.sublime-project"
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/C/dev/Chocolatey-Packages/ChocolateyPackages.sublime-project",
+			"/C/dev/autobox/autobox.sublime-project",
+			"/C/dev/SocialBuilds/SocialBuilds.sublime-project",
+			"/C/dev/Bootstrapper/bootstrapper.sublime-project",
+			"/C/dev/autobox/bootstrapper.sublime-project"
+		]
+	}
+}

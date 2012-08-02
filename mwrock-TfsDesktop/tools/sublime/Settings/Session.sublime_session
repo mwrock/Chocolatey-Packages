@@ -1,0 +1,1779 @@
+{
+	"folder_history":
+	[
+		"/C/dev/wit/src/vset/InternalTools/TfsBootstraper",
+		"/C/tools/pester",
+		"/C/dev/ChocPackages"
+	],
+	"last_window_id": 54,
+	"settings":
+	{
+		"new_window_height": 702.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"tf",
+						"tfsbootstraper"
+					],
+					[
+						"So",
+						"SourcePath"
+					],
+					[
+						"t",
+						"tfsbootstraper"
+					],
+					[
+						"l",
+						"lastBlock"
+					],
+					[
+						"Cop",
+						"copy"
+					],
+					[
+						"Test",
+						"test-path"
+					],
+					[
+						"source",
+						"SourcePath"
+					],
+					[
+						"Write",
+						"Write-Output"
+					],
+					[
+						"la",
+						"lastexitcode"
+					],
+					[
+						"ps",
+						"psake"
+					],
+					[
+						"bootstrap",
+						"bootstraper"
+					],
+					[
+						"T",
+						"Task"
+					],
+					[
+						"Pro",
+						"profile"
+					],
+					[
+						"pr",
+						"profile"
+					],
+					[
+						"fo",
+						"Force"
+					],
+					[
+						"db",
+						"dbUserNameForPerms"
+					],
+					[
+						"Fo",
+						"ForumsShard"
+					],
+					[
+						"F",
+						"Forums"
+					],
+					[
+						"en",
+						"EnvironmentName"
+					],
+					[
+						"web",
+						"WebServers"
+					],
+					[
+						"Serv",
+						"servermanager"
+					],
+					[
+						"Im",
+						"Import-Module"
+					],
+					[
+						"he",
+						"header"
+					],
+					[
+						"ss",
+						"sslThumb"
+					],
+					[
+						"ca",
+						"catch"
+					],
+					[
+						"wri",
+						"Write-Host"
+					],
+					[
+						"wr",
+						"Write-Host"
+					],
+					[
+						"S",
+						"SqlServers"
+					],
+					[
+						"confi",
+						"Configuration"
+					],
+					[
+						"cer",
+						"certPassword"
+					],
+					[
+						"sto",
+						"store"
+					],
+					[
+						"Te",
+						"test-path"
+					],
+					[
+						"Set-",
+						"Set-AccessRights"
+					],
+					[
+						"Foru",
+						"ForumsShard"
+					],
+					[
+						"cert",
+						"certPath"
+					],
+					[
+						"For",
+						"Force"
+					],
+					[
+						"c",
+						"com"
+					],
+					[
+						"m",
+						"microsoft"
+					],
+					[
+						"co",
+						"corp"
+					],
+					[
+						"In",
+						"Install-DotNet4"
+					],
+					[
+						"ba",
+						"badServer"
+					],
+					[
+						"test",
+						"test-path"
+					],
+					[
+						"sp",
+						"split"
+					],
+					[
+						"Add-P",
+						"Add-ProxyOverride"
+					],
+					[
+						"f",
+						"function"
+					],
+					[
+						"ta",
+						"task"
+					],
+					[
+						"restart",
+						"restartSuffix"
+					],
+					[
+						"rest",
+						"restartSuffix"
+					],
+					[
+						"sql",
+						"sqlServer"
+					],
+					[
+						"appf",
+						"AppFabricServer"
+					],
+					[
+						"We",
+						"WebServers"
+					],
+					[
+						"Admin",
+						"AdminServer"
+					],
+					[
+						"com",
+						"computername"
+					],
+					[
+						"acco",
+						"accountNames"
+					],
+					[
+						"for",
+						"foreach"
+					],
+					[
+						"MS",
+						"MSMQ-Server"
+					],
+					[
+						"Remo",
+						"Remove-Item"
+					],
+					[
+						"Remove",
+						"Remove-Startup"
+					],
+					[
+						"Sear",
+						"Search"
+					],
+					[
+						"tas",
+						"taskToInvoke"
+					],
+					[
+						"Rest",
+						"Restore-Chameleon"
+					],
+					[
+						"de",
+						"default"
+					],
+					[
+						"Env",
+						"Environment"
+					],
+					[
+						"system",
+						"systemdrive"
+					],
+					[
+						"Crea",
+						"Create-Databases"
+					],
+					[
+						"ins",
+						"Install"
+					],
+					[
+						"Sta",
+						"Start-Sleep"
+					],
+					[
+						"Net",
+						"NetworkService"
+					],
+					[
+						"Create",
+						"Create-Http-Share"
+					],
+					[
+						"A",
+						"Application"
+					],
+					[
+						"Social",
+						"SocialServices"
+					],
+					[
+						"SearchP",
+						"SearchProviderServices"
+					],
+					[
+						"Search",
+						"SearchApi"
+					],
+					[
+						"Profi",
+						"ProfileAdmin"
+					],
+					[
+						"add",
+						"addHttps"
+					],
+					[
+						"sit",
+						"siteName"
+					],
+					[
+						"http",
+						"httpShare"
+					],
+					[
+						"R",
+						"Remove-Pool"
+					],
+					[
+						"Re",
+						"Remove"
+					]
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"",
+						"Package Control: Discover Packages"
+					],
+					[
+						"p",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/mwrock/AppData/Local/DevelopmentStorage/DevelopmentStorage.201206.config",
+				"/C/dev/autobox/AutoBox.psm1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120526/posh-hg/profile.example.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120526/posh-hg/HgTabExpansion.ps1",
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/testTabExpansion.ps1",
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/Psake/tabexpansion/PsakeTabExpansion.ps1",
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/Psake/psake.psm1",
+				"/C/dev/wit/src/alm/tfs_core/WorkItemTracking/DataAccessLayer/AdminUpdate.cs",
+				"/C/dev/wit/binaries/x86chk/bin/i386/test.bat",
+				"/C/dev/wit/binaries/x86chk/build.config.settings.targets",
+				"/C/dev/wit/src/alm/tfs_core/TfsCore.Settings.targets",
+				"/C/dev/wit/binaries/x86chk/bin/i386/CleanAndInstallDFTools.cmd",
+				"/C/dev/wit/binaries/x86chk/bin/i386/tfdf.cmd",
+				"/C/dev/wit/binaries/x86chk/bin/i386/SetDFDeploymentVars.cmd",
+				"/C/dev/wit/binaries/x86chk/bin/i386/build.bat",
+				"/C/RequestReduce/BuildScript.ps1",
+				"/C/dev/wit/binaries/x86chk/bin/i386/tfazuretools.cmd",
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+				"/C/ProgramData/Microsoft/Team",
+				"/C/dev/wit/binaries/x86chk/bin/i386/Foundation/Server",
+				"/C/dev/wit/binaries/x86chk/bin/i386/Configuration/Logs/TFS_TfsFileCopy_0628_075912.log",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+				"/c/dev/wit/src/vset/internaltools/tfsbootstraper/*.sub",
+				"/C/dev/wit/src/vset/InternalTools/TfsBootstraper/test.ps1",
+				"/C/dev/psake/psake.psm1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveMesh/tools/ChocolateyInstall.ps1",
+				"/C/dev/Chocolatey-Packages/WindowsLiveMesh/WindowsLiveMesh.nuspec",
+				"/C/dev/SocialBuilds/default.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Next.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Temp.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/OSSRed.ps1",
+				"/C/dev/SocialBuilds/sql/RestoreDatabase.sql",
+				"/C/dev/SocialBuilds/bootstrap/bootstrap.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/test.ps1",
+				"//wrockdesk/c$/dev/autobox/bootstrap.ps1",
+				"//wrockdesk/c$/dev/autobox/BuildPackages/bootstrap.ps1",
+				"/C/dev/SocialBuilds/Psake/psake.psm1",
+				"//wrockdesk/c$/dev/autobox/AdminDeployment.xml",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Start-ChocolateyProcessAsAdmin.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Install-ChocolateyInstallPackage.ps1",
+				"/C/dev/SocialBuilds/post-restart-.bat",
+				"/C/dev/tfs/CodePlex Template - v3/ProcessTemplate.xml",
+				"/C/dev/tfs/q11w/src/tools/fb/MSBtoVars.xslt",
+				"//cpvsbuild/drops/dev11/ALM/layouts/x86chk/current/enu/vs/ultimate/dvd/AdminDeployment.xml",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Write-Host.ps1",
+				"/C/Chocolatey/chocolateyInstall/chocolatey.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/chocolateyInstaller.psm1",
+				"/C/dev/SocialBuilds/cleansetup.ps1",
+				"/C/dev/SocialBuilds/sql/ErrorLog.sql",
+				"/C/Framework/CommApps/Forums/BuildScript.ps1",
+				"/C/dev/SocialBuilds/sql/logging.sql",
+				"/C/Framework/CommApps/Forums/Database/Init/0-CreateDatabase.sql",
+				"/C/Framework/CommApps/Forums/Database/Init/2-Create-ErrorLog.sql",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Next_old.ps1",
+				"/C/Windows/System32/drivers/etc/hosts",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Testing.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/CtpRed.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/next.ps1",
+				"/C/dev/SocialBuilds/Utilities/EnvironmentSetup.ps1",
+				"/C/dev/SocialBuilds/temprestore.sql",
+				"/C/dev/SocialBuilds/Logging.sql",
+				"/C/dev/SocialBuilds/Configuration/updates.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/DEFAULT.ps1",
+				"/C/dev/SocialBuilds/Psake/psake.ps1",
+				"/C/dev/SocialBuilds/New-Config.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/mwrock-test.ps1",
+				"/C/dev/SocialBuilds/readme.txt",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/live.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/cdn.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/int.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Recognition-prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/IntPhx.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/QA.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Profile-prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Recognition-int.ps1",
+				"/C/MW-MARATHON/c$/http/stonotificationmanagerservice/log.txt",
+				"/C/MW-MARATHON/c$/http/marathon/log.txt",
+				"/C/Framework/CommApps/Profile/Marathon/default.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Testing.ps1.orig",
+				"/C/dev/SocialBuilds/post-restart-Full.bat",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/ctpPhx.ps1",
+				"/C/dev/SocialBuilds/bootstrap.bat",
+				"/C/Framework/SocialRootWeb/Web.config",
+				"/C/epxsource/builds/bootstrap.bat",
+				"/C/Galleries/Templates/AppSettings.config.template",
+				"/C/dev/SocialBuilds/cd",
+				"/C/dev/SocialBuilds/CodeFlow/hgcf.pyo",
+				"/C/dev/SocialBuilds/SocialBuilds.sublime-project",
+				"/C/Framework/CommApps/Profile/default.ps1",
+				"/C/dev/SocialBuilds/Psake/psake-config.ps1",
+				"/C/Program Files (x86)/Microsoft Visual Studio 10.0/Common7/IDE/devenv.pkgdef",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/extensions.en-US.cache",
+				"/C/dev/SocialBuilds/.hg/hgrc",
+				"/C/Users/mwrock/mercurial.ini",
+				"/C/dev/SocialBuilds/bootstrap/.hgpack",
+				"//epxsource/d$/Mercurial/Search/.hg/hgrc",
+				"/C/Framework/CommApps/Search/.hg/hgrc",
+				"/C/Framework/CommApps/Search/.hgignore",
+				"/C/dev/SocialBuilds/hgcf.ps1",
+				"/C/dev/SocialBuilds/codeflow/codeflow2010_1/CodeFlow2010.application",
+				"/C/dev/SocialBuilds/codeflow/codeflow2010_1/CodeFlow2010.exe.manifest",
+				"/C/http/database/update.ps1",
+				"/C/dev/SocialBuilds/.hgignore",
+				"/C/dev/AutoWrockTestable/AutoWrockTestable.Template/extension.vsixmanifest",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/sasd4dv4.kh5/extension.vsixmanifest",
+				"/C/dev/nuget/test/EndToEnd/ProjectTemplates/WebApplicationProject40.zip/WebApplicationProject40.vstemplate",
+				"/C/dev/AutoWrockTestable/BuildFiles/AutoWrockTestable/extension.vsixmanifest",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/Templates/ItemTemplates/Visual C#/myclassfacts/MyClassFacts.vstemplate",
+				"/C/Framework/CommApps/Search/System.Management.Automation.Internal.Host.InternalHost",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/My Exported Templates/AutoWrockTestable/extension.vsixmanifest",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/My Exported Templates/AutoWrockTestable/[Content_Types].xml",
+				"/C/dev/SocialBuilds/Configuration/Builds/ffspBuild.ps1",
+				"/C/dev/SocialBuilds/GalleriesSetup.ps1",
+				"/C/dev/SocialBuilds/Configuration/Builds/ExportableFunctions.ps1",
+				"/C/dev/SocialBuilds/Configuration/Builds/GalleriesBuild.ps1",
+				"/C/dev/SocialBuilds/tests.ps1",
+				"//cpmsdnvss03/epx/SocialSites/PROD/2012/May/Package3145.123/Web/GlobalResources/Xsl/Header_Microsoft.xslt",
+				"//codegcr.redmond.corp.microsoft.com/c$/Deploy/AutoDeployBuild.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/galleriesdb.bat",
+				"/C/Galleries/Deploy.ps1",
+				"/C/dev/SocialBuilds/Configuration/configure.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/posh-hg.psm1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/HgPrompt.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/HgUtils.ps1",
+				"/C/Chocolatey/lib/Posh-GIT-HG.1.0.0/tools/profile.example.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/profile.example-ps3.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/posh-hg"
+			],
+			"find":
+			{
+				"height": 36.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"Tab",
+					"tbTabExpansion.ps1",
+					"binar",
+					"ilmer",
+					"AZURE_SDK_PATH",
+					"alm",
+					"path",
+					"boot",
+					"SourcePath",
+					"tasks",
+					"taskList",
+					"alias",
+					"myLocation",
+					"Deploy-Tfs-OnPr",
+					"mssqlserver",
+					"doNotNeedBits",
+					"GetSqlUser",
+					"get-user",
+					"getuser",
+					"domain",
+					"ffspdomain",
+					"DbBackupPath",
+					"$EnvironmrntServicesServer",
+					"$EnvironmentWebServers",
+					"$global:WebServers",
+					"GetSqlUser",
+					"domain",
+					"GetSqlUser",
+					"shard",
+					"ProfileInternalApiEndpoint",
+					"ProfileApiUrl",
+					"services",
+					"sqlcmd",
+					"Install-SqlServer",
+					"Private-Deployment",
+					"Invoke",
+					"VelocityServers",
+					"ServiceQueue",
+					"profileapi",
+					"ProfileApiUrl",
+					"ProfileInternalApiEndpoint",
+					"internalProfileSdk",
+					"inter",
+					"Configure-Service-User",
+					"app-fab",
+					"Configure-Service-User",
+					"AvatarUriPrefix",
+					"ProfileBaseAvatarCookieLess",
+					"baseavatar",
+					"profileap",
+					"Add-DB-Perms",
+					"WebServicesServers",
+					"ProfileApiServers",
+					"Configure-Velocity",
+					"RebootAndContinue",
+					"Configure-Velocity",
+					"app-fab",
+					"setup-ro",
+					"SqlExec",
+					"Configure-Service",
+					"Add-DB-Perms",
+					"Restore-Chameleon",
+					"Invoke-TeamCity",
+					"Install-SqlServer",
+					"Live",
+					"Marathon",
+					"proxy",
+					"marathon",
+					"MvpPuidFile",
+					"profi",
+					"tk",
+					"UX",
+					"passpo",
+					"FsisEndpoint",
+					"smtp",
+					"LiveIdHost",
+					"StoCacheServers",
+					"CacheEnabled",
+					"LiveId",
+					"MsdnLiveID",
+					"LiveAlertsHost",
+					"BrandUrl",
+					"AdminAdamStore",
+					"Marathon",
+					"Install-WinServices",
+					"ffspdomain",
+					"domain",
+					"nopr",
+					"profile",
+					"confi",
+					"Load-Module",
+					"restartNeeded",
+					"restartNeededOverride",
+					"configu",
+					"Configure-Velocity",
+					"post-re",
+					"startu",
+					"live",
+					"marath",
+					"cdnhost",
+					"cdn",
+					"searchser",
+					"searchapiurl",
+					"SearchApiEndpoint",
+					"search",
+					"WebDrop",
+					"DiscoverySqlServer",
+					"sql",
+					"BUILD",
+					"$global:DiscoverySqlServer",
+					"rtl",
+					"script",
+					"mara",
+					"mar",
+					"WinServices",
+					"@",
+					"$currentDir",
+					"download-fi",
+					"Add-NetworkShare",
+					"Set-AccessRights",
+					"download-file",
+					"Set-AccessRights",
+					"velo",
+					"download",
+					"cert",
+					"Add-Site",
+					" dd-Site",
+					"header"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"doNotNeedBits",
+					"cp.",
+					"$env:ffspDomain",
+					"mw-build01",
+					"mw-build03",
+					"mw-build02",
+					"C:\\",
+					"\\Utilities\\RemoteService"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 217.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1424.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"Pro",
+						"profile"
+					],
+					[
+						"pr",
+						"profile"
+					],
+					[
+						"fo",
+						"Force"
+					],
+					[
+						"db",
+						"dbUserNameForPerms"
+					],
+					[
+						"Fo",
+						"ForumsShard"
+					],
+					[
+						"F",
+						"Forums"
+					],
+					[
+						"en",
+						"EnvironmentName"
+					],
+					[
+						"web",
+						"WebServers"
+					],
+					[
+						"Serv",
+						"servermanager"
+					],
+					[
+						"Im",
+						"Import-Module"
+					],
+					[
+						"he",
+						"header"
+					],
+					[
+						"ss",
+						"sslThumb"
+					],
+					[
+						"ca",
+						"catch"
+					],
+					[
+						"wri",
+						"Write-Host"
+					],
+					[
+						"wr",
+						"Write-Host"
+					],
+					[
+						"S",
+						"SqlServers"
+					],
+					[
+						"confi",
+						"Configuration"
+					],
+					[
+						"cer",
+						"certPassword"
+					],
+					[
+						"sto",
+						"store"
+					],
+					[
+						"Te",
+						"test-path"
+					],
+					[
+						"Set-",
+						"Set-AccessRights"
+					],
+					[
+						"Foru",
+						"ForumsShard"
+					],
+					[
+						"cert",
+						"certPath"
+					],
+					[
+						"For",
+						"Force"
+					],
+					[
+						"c",
+						"com"
+					],
+					[
+						"m",
+						"microsoft"
+					],
+					[
+						"co",
+						"corp"
+					],
+					[
+						"In",
+						"Install-DotNet4"
+					],
+					[
+						"ba",
+						"badServer"
+					],
+					[
+						"test",
+						"test-path"
+					],
+					[
+						"sp",
+						"split"
+					],
+					[
+						"Add-P",
+						"Add-ProxyOverride"
+					],
+					[
+						"f",
+						"function"
+					],
+					[
+						"ta",
+						"task"
+					],
+					[
+						"restart",
+						"restartSuffix"
+					],
+					[
+						"rest",
+						"restartSuffix"
+					],
+					[
+						"sql",
+						"sqlServer"
+					],
+					[
+						"appf",
+						"AppFabricServer"
+					],
+					[
+						"We",
+						"WebServers"
+					],
+					[
+						"Admin",
+						"AdminServer"
+					],
+					[
+						"com",
+						"computername"
+					],
+					[
+						"acco",
+						"accountNames"
+					],
+					[
+						"for",
+						"foreach"
+					],
+					[
+						"MS",
+						"MSMQ-Server"
+					],
+					[
+						"Remo",
+						"Remove-Item"
+					],
+					[
+						"Remove",
+						"Remove-Startup"
+					],
+					[
+						"Test",
+						"Test-Path"
+					],
+					[
+						"Sear",
+						"Search"
+					],
+					[
+						"tas",
+						"taskToInvoke"
+					],
+					[
+						"Rest",
+						"Restore-Chameleon"
+					],
+					[
+						"de",
+						"default"
+					],
+					[
+						"Env",
+						"Environment"
+					],
+					[
+						"system",
+						"systemdrive"
+					],
+					[
+						"Crea",
+						"Create-Databases"
+					],
+					[
+						"ins",
+						"Install"
+					],
+					[
+						"T",
+						"Test-Path"
+					],
+					[
+						"Sta",
+						"Start-Sleep"
+					],
+					[
+						"Net",
+						"NetworkService"
+					],
+					[
+						"Create",
+						"Create-Http-Share"
+					],
+					[
+						"A",
+						"Application"
+					],
+					[
+						"Social",
+						"SocialServices"
+					],
+					[
+						"SearchP",
+						"SearchProviderServices"
+					],
+					[
+						"Search",
+						"SearchApi"
+					],
+					[
+						"Profi",
+						"ProfileAdmin"
+					],
+					[
+						"add",
+						"addHttps"
+					],
+					[
+						"sit",
+						"siteName"
+					],
+					[
+						"http",
+						"httpShare"
+					],
+					[
+						"R",
+						"Remove-Pool"
+					],
+					[
+						"Re",
+						"Remove"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+					"settings":
+					{
+						"buffer_size": 15238,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/dev/wit/binaries/x86dbg/bin/i386/azure.ini",
+					"settings":
+					{
+						"buffer_size": 7894,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+					"settings":
+					{
+						"buffer_size": 2465,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/ProgramData/Microsoft/Team",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/dev/wit/binaries/x86dbg/bin/i386/Foundation/Server",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "",
+					"file": "/C/dev/wit/binaries/x86dbg/bin/i386/Configuration/Logs/TFS_DevFabric",
+					"file_size": -1,
+					"file_write_time": -1,
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/dev/wit/binaries/x86dbg/bin/i386/tfdf.cmd",
+					"settings":
+					{
+						"buffer_size": 1642,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/dev/wit/binaries/x86dbg/bin/i386/devfabric.ini",
+					"settings":
+					{
+						"buffer_size": 6711,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/build.ps1",
+					"settings":
+					{
+						"buffer_size": 7253,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/AdminPsakeProxy.ps1",
+					"settings":
+					{
+						"buffer_size": 830,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"",
+						"Package Control: Discover Packages"
+					],
+					[
+						"p",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/dev/wit/binaries/x86dbg/bin/i386/Deployment_0717_112831.log",
+				"/C/dev/wit/src/alm/tfs_core/WorkItemTracking/WebServices/ClientService.csproj",
+				"/C/dev/wit/src/alm/tfs_core/Framework/Server/TeamFoundationServer.csproj",
+				"/C/dev/wit/src/alm/tfs_core/Framework/dirs.proj",
+				"/C/dev/wit/src/suitesrc/tfs/WITPlatform/Tests/UnitTests/CssTests/MS.TF.Test.WITPlatform.UnitTests.CssTests.csproj",
+				"/C/dev/wit/src/alm/tfs_core/Framework/OnPremisePlugins/OnPremisePlugins.csproj",
+				"/C/dev/wit/src/vset/TeamFoundationServer/servicing/application/ApplicationServicing.csproj",
+				"/C/Windows/Microsoft.NET/Framework64/v4.0.30319/Microsoft.Common.targets",
+				"/C/Windows/Microsoft.NET/Framework64/v4.0.30319/Microsoft.CSharp.targets",
+				"/C/Program Files (x86)/MSBuild/4.0/Microsoft.Common.props",
+				"/C/dev/wit/src/alm/tfs_core/TfsCore.Settings.targets",
+				"/C/dev/wit/binaries/x86dbg/bin/i386/devfabric.ini",
+				"/C/dev/wit/src/.tfignore",
+				"/C/Users/mwrock/Documents/azuredeploy.ps1",
+				"//wrockdesk/d$/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+				"/C/dev/SocialBuilds/default.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Next.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Temp.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/OSSRed.ps1",
+				"/C/dev/SocialBuilds/sql/RestoreDatabase.sql",
+				"/C/dev/SocialBuilds/bootstrap/bootstrap.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/test.ps1",
+				"//wrockdesk/c$/dev/autobox/bootstrap.ps1",
+				"//wrockdesk/c$/dev/autobox/BuildPackages/bootstrap.ps1",
+				"/C/dev/SocialBuilds/Psake/psake.psm1",
+				"//wrockdesk/c$/dev/autobox/AdminDeployment.xml",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Start-ChocolateyProcessAsAdmin.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Install-ChocolateyInstallPackage.ps1",
+				"/C/dev/SocialBuilds/post-restart-.bat",
+				"/C/dev/tfs/CodePlex Template - v3/ProcessTemplate.xml",
+				"/C/dev/tfs/q11w/src/tools/fb/MSBtoVars.xslt",
+				"//cpvsbuild/drops/dev11/ALM/layouts/x86chk/current/enu/vs/ultimate/dvd/AdminDeployment.xml",
+				"/C/Chocolatey/chocolateyInstall/helpers/functions/Write-Host.ps1",
+				"/C/Chocolatey/chocolateyInstall/chocolatey.ps1",
+				"/C/Chocolatey/chocolateyInstall/helpers/chocolateyInstaller.psm1",
+				"/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+				"/C/dev/SocialBuilds/cleansetup.ps1",
+				"/C/dev/SocialBuilds/sql/ErrorLog.sql",
+				"/C/Framework/CommApps/Forums/BuildScript.ps1",
+				"/C/dev/SocialBuilds/sql/logging.sql",
+				"/C/Framework/CommApps/Forums/Database/Init/0-CreateDatabase.sql",
+				"/C/Framework/CommApps/Forums/Database/Init/2-Create-ErrorLog.sql",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Next_old.ps1",
+				"/C/Windows/System32/drivers/etc/hosts",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Testing.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/CtpRed.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/next.ps1",
+				"/C/dev/SocialBuilds/Utilities/EnvironmentSetup.ps1",
+				"/C/dev/SocialBuilds/temprestore.sql",
+				"/C/dev/SocialBuilds/Logging.sql",
+				"/C/dev/SocialBuilds/Configuration/updates.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/DEFAULT.ps1",
+				"/C/dev/SocialBuilds/Psake/psake.ps1",
+				"/C/dev/SocialBuilds/New-Config.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/mwrock-test.ps1",
+				"/C/dev/SocialBuilds/readme.txt",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/live.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/cdn.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/int.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Recognition-prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/IntPhx.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/QA.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Profile-prod.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Defaults/Recognition-int.ps1",
+				"/C/MW-MARATHON/c$/http/stonotificationmanagerservice/log.txt",
+				"/C/MW-MARATHON/c$/http/marathon/log.txt",
+				"/C/Framework/CommApps/Profile/Marathon/default.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/Testing.ps1.orig",
+				"/C/dev/SocialBuilds/post-restart-Full.bat",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/ctpPhx.ps1",
+				"/C/dev/SocialBuilds/bootstrap.bat",
+				"/C/Framework/SocialRootWeb/Web.config",
+				"/C/epxsource/builds/bootstrap.bat",
+				"/C/Galleries/Templates/AppSettings.config.template",
+				"/C/dev/SocialBuilds/cd",
+				"/C/dev/SocialBuilds/CodeFlow/hgcf.pyo",
+				"/C/dev/SocialBuilds/SocialBuilds.sublime-project",
+				"/C/Framework/CommApps/Profile/default.ps1",
+				"/C/dev/SocialBuilds/Psake/psake-config.ps1",
+				"/C/Program Files (x86)/Microsoft Visual Studio 10.0/Common7/IDE/devenv.pkgdef",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/extensions.en-US.cache",
+				"/C/dev/SocialBuilds/.hg/hgrc",
+				"/C/Users/mwrock/mercurial.ini",
+				"/C/dev/SocialBuilds/bootstrap/.hgpack",
+				"//epxsource/d$/Mercurial/Search/.hg/hgrc",
+				"/C/Framework/CommApps/Search/.hg/hgrc",
+				"/C/Framework/CommApps/Search/.hgignore",
+				"/C/dev/SocialBuilds/hgcf.ps1",
+				"/C/dev/SocialBuilds/codeflow/codeflow2010_1/CodeFlow2010.application",
+				"/C/dev/SocialBuilds/codeflow/codeflow2010_1/CodeFlow2010.exe.manifest",
+				"/C/http/database/update.ps1",
+				"/C/dev/SocialBuilds/.hgignore",
+				"/C/dev/AutoWrockTestable/AutoWrockTestable.Template/extension.vsixmanifest",
+				"/C/Users/mwrock/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/sasd4dv4.kh5/extension.vsixmanifest",
+				"/C/dev/nuget/test/EndToEnd/ProjectTemplates/WebApplicationProject40.zip/WebApplicationProject40.vstemplate",
+				"/C/dev/AutoWrockTestable/BuildFiles/AutoWrockTestable/extension.vsixmanifest",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/Templates/ItemTemplates/Visual C#/myclassfacts/MyClassFacts.vstemplate",
+				"/C/Framework/CommApps/Search/System.Management.Automation.Internal.Host.InternalHost",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/My Exported Templates/AutoWrockTestable/extension.vsixmanifest",
+				"/C/Users/mwrock/Documents/Visual Studio 2010/My Exported Templates/AutoWrockTestable/[Content_Types].xml",
+				"/C/dev/SocialBuilds/Configuration/Builds/ffspBuild.ps1",
+				"/C/dev/SocialBuilds/GalleriesSetup.ps1",
+				"/C/dev/SocialBuilds/Configuration/Builds/ExportableFunctions.ps1",
+				"/C/dev/SocialBuilds/Configuration/Builds/GalleriesBuild.ps1",
+				"/C/dev/SocialBuilds/tests.ps1",
+				"//cpmsdnvss03/epx/SocialSites/PROD/2012/May/Package3145.123/Web/GlobalResources/Xsl/Header_Microsoft.xslt",
+				"//codegcr.redmond.corp.microsoft.com/c$/Deploy/AutoDeployBuild.ps1",
+				"/C/dev/SocialBuilds/Configuration/ENVIRONMENTS/galleriesdb.bat",
+				"/C/Galleries/Deploy.ps1",
+				"/C/dev/SocialBuilds/Configuration/configure.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/posh-hg.psm1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/HgPrompt.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/JeremySkinner-posh-hg-1c29345/HgUtils.ps1",
+				"/C/Chocolatey/lib/Posh-GIT-HG.1.0.0/tools/profile.example.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/profile.example-ps3.ps1",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/posh-hg",
+				"/C/Chocolatey/lib/Posh-HG.1.1.0.20120417/tools/posh-hg.ps1",
+				"/C/dev/SocialBuilds/ExportableFunctions.ps1",
+				"/C/Users/mwrock/Downloads/default (3).ps1",
+				"/C/dev/SocialBuilds/Utilities/RemoteService.ps1",
+				"/C/Users/mwrock/Downloads/deploy-int.bat",
+				"/C/Users/mwrock/Downloads/environments.ps1",
+				"/C/Users/mwrock/Downloads/default (2).ps1",
+				"/C/Users/mwrock/Downloads/default.ps1",
+				"//epxsource/builds/bootstrap/bootstrap.ps1",
+				"/C/Users/mwrock/SkyDrive/informational.txt",
+				"/C/Galleries/DeploymentScripts/Environment/galleriesvNext.bat"
+			],
+			"find":
+			{
+				"height": 36.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"publishpartition",
+					"IntermediateOutputPath",
+					"msbuildtools",
+					"BinariesDirectory",
+					"MSBuildProjectDirectory",
+					"azureops",
+					"mssqlserver",
+					"doNotNeedBits",
+					"GetSqlUser",
+					"get-user",
+					"getuser",
+					"domain",
+					"ffspdomain",
+					"DbBackupPath",
+					"$EnvironmrntServicesServer",
+					"$EnvironmentWebServers",
+					"$global:WebServers",
+					"GetSqlUser",
+					"domain",
+					"GetSqlUser",
+					"shard",
+					"ProfileInternalApiEndpoint",
+					"ProfileApiUrl",
+					"services",
+					"sqlcmd",
+					"Install-SqlServer",
+					"Private-Deployment",
+					"Invoke",
+					"VelocityServers",
+					"ServiceQueue",
+					"profileapi",
+					"ProfileApiUrl",
+					"ProfileInternalApiEndpoint",
+					"internalProfileSdk",
+					"inter",
+					"Configure-Service-User",
+					"app-fab",
+					"Configure-Service-User",
+					"AvatarUriPrefix",
+					"ProfileBaseAvatarCookieLess",
+					"baseavatar",
+					"profileap",
+					"Add-DB-Perms",
+					"WebServicesServers",
+					"ProfileApiServers",
+					"Configure-Velocity",
+					"RebootAndContinue",
+					"Configure-Velocity",
+					"app-fab",
+					"setup-ro",
+					"SqlExec",
+					"Configure-Service",
+					"Add-DB-Perms",
+					"Restore-Chameleon",
+					"Invoke-TeamCity",
+					"Install-SqlServer",
+					"Live",
+					"Marathon",
+					"proxy",
+					"marathon",
+					"MvpPuidFile",
+					"profi",
+					"tk",
+					"UX",
+					"passpo",
+					"FsisEndpoint",
+					"smtp",
+					"LiveIdHost",
+					"StoCacheServers",
+					"CacheEnabled",
+					"LiveId",
+					"MsdnLiveID",
+					"LiveAlertsHost",
+					"BrandUrl",
+					"AdminAdamStore",
+					"Marathon",
+					"Install-WinServices",
+					"ffspdomain",
+					"domain",
+					"nopr",
+					"profile",
+					"confi",
+					"Load-Module",
+					"restartNeeded",
+					"restartNeededOverride",
+					"configu",
+					"Configure-Velocity",
+					"post-re",
+					"startu",
+					"live",
+					"marath",
+					"cdnhost",
+					"cdn",
+					"searchser",
+					"searchapiurl",
+					"SearchApiEndpoint",
+					"search",
+					"WebDrop",
+					"DiscoverySqlServer",
+					"sql",
+					"BUILD",
+					"$global:DiscoverySqlServer",
+					"rtl",
+					"script",
+					"mara",
+					"mar",
+					"WinServices",
+					"@",
+					"$currentDir",
+					"download-fi",
+					"Add-NetworkShare",
+					"Set-AccessRights",
+					"download-file",
+					"Set-AccessRights",
+					"velo",
+					"download",
+					"cert",
+					"Add-Site",
+					" dd-Site",
+					"header",
+					"paspsword",
+					"certPath",
+					"httpShare",
+					"Add-NetworkShare",
+					"$httpShare",
+					"Add-NetworkShare",
+					"physi",
+					"Requestre"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"doNotNeedBits",
+					"cp.",
+					"$env:ffspDomain",
+					"mw-build01",
+					"mw-build03",
+					"mw-build02",
+					"C:\\",
+					"\\Utilities\\RemoteService"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/default.ps1",
+							"settings":
+							{
+								"buffer_size": 15238,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1794.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/C/dev/wit/binaries/x86dbg/bin/i386/azure.ini",
+							"settings":
+							{
+								"buffer_size": 7894,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2829,
+										2829
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 329.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Users/mwrock/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+							"settings":
+							{
+								"buffer_size": 2465,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										575,
+										575
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 42.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/ProgramData/Microsoft/Team",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/dev/wit/binaries/x86dbg/bin/i386/Foundation/Server",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/C/dev/wit/binaries/x86dbg/bin/i386/Configuration/Logs/TFS_DevFabric",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/C/dev/wit/binaries/x86dbg/bin/i386/tfdf.cmd",
+							"settings":
+							{
+								"buffer_size": 1642,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1109,
+										1109
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 168.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/C/dev/wit/binaries/x86dbg/bin/i386/devfabric.ini",
+							"settings":
+							{
+								"buffer_size": 6711,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4212,
+										4212
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 883.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/build.ps1",
+							"settings":
+							{
+								"buffer_size": 7253,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 77.0,
+								"translation.y": 2044.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/C/dev/wit/src/vset/InternalTools/TfsBootstraper/AdminPsakeProxy.ps1",
+							"settings":
+							{
+								"buffer_size": 830,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,2,3,-1,-1,-1,-1,807,0,10,1440",
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 217.0,
+			"status_bar_visible": true,
+			"window_id": 54,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/C/dev/SocialBuilds/SocialBuilds.sublime-project",
+			"/C/dev/Chocolatey-Packages/ChocolateyPackages.sublime-project",
+			"/C/dev/autobox/autobox.sublime-project",
+			"/C/dev/Bootstrapper/bootstrapper.sublime-project",
+			"/C/dev/autobox/bootstrapper.sublime-project"
+		]
+	}
+}
