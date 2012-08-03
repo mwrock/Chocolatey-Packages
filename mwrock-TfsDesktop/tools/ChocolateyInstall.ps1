@@ -56,11 +56,17 @@ try {
 
     cinstm AutoHotKey
     set-content "$env:appdata\Microsoft\Windows\Start Menu\Programs\startup\AutoScript.ahk" -Force -value @"
-    ^+C::
-    IfWinExist Console
-    {
-        WinActivate
-    }
+^+C::
+IfWinExist Console
+{
+    WinActivate
+}
+else
+{
+    Run Console
+    WinWait Console
+    WinActivate
+}
 "@
 
 } 
