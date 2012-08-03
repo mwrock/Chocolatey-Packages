@@ -2,13 +2,14 @@ try {
     if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
 
     #Stock TFS dev environment
-    #& \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build
-    import-module $env:systemdrive\tools\autobox\autobox.psm1
+    & \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build
+    import-module $env:systemdrive\tools\boxStarter\boxstarter.psm1
 
     cinstm console-devel
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:programfiles\console\console.exe"
     copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'console.xml') -Force $env:appdata\console\console.xml
 
+    Set-TaskbarSmall
     Enable-Telnet
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:windir\system32\mstsc.exe"
 
