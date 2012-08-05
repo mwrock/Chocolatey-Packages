@@ -5,7 +5,7 @@ try {
     & \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build
     import-module $env:systemdrive\tools\boxStarter\boxstarter.psm1
 
-    cinstm console-devel
+    Install-FromChocolatey console-devel
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:programfiles\console\console.exe"
     copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'console.xml') -Force $env:appdata\console\console.xml
 
@@ -13,7 +13,7 @@ try {
     Enable-Telnet
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:windir\system32\mstsc.exe"
 
-    cinstm sublimetext2
+    Install-FromChocolatey sublimetext2
     $sublimeDir = (Get-ChildItem $env:systemdrive\chocolatey\lib\sublimetext* | select $_.last)
     $sublimeExe = "$sublimeDir\tools\sublime_text.exe"
     copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'sublime\*') -Force -Recurse "$sublimeDir\tools\"
@@ -23,21 +23,21 @@ try {
     Set-FileAssociation ".txt" $sublimeExe
     cmd /c assoc .=txtfile
 
-    cinstm skydrive
-    cinstm fiddler
-    cinstm winrar
-    cinstm posh-git-hg
-    cinstm git-credential-winstore
-    cinstm tortoisehg
-    cinstm Paint.net
-    cinstm windirstat
-    cinstm sysinternals
-    cinstm evernote
-    cinstm NugetPackageExplorer
-    cinstm PowerGUI
-    cinstm WindowsLiveMesh
+    Install-FromChocolatey skydrive
+    Install-FromChocolatey fiddler
+    Install-FromChocolatey winrar
+    Install-FromChocolatey posh-git-hg
+    Install-FromChocolatey git-credential-winstore
+    Install-FromChocolatey tortoisehg
+    Install-FromChocolatey Paint.net
+    Install-FromChocolatey windirstat
+    Install-FromChocolatey sysinternals
+    Install-FromChocolatey evernote
+    Install-FromChocolatey NugetPackageExplorer
+    Install-FromChocolatey PowerGUI
+    Install-FromChocolatey WindowsLiveMesh
 
-    cinstm googlechrome
+    Install-FromChocolatey googlechrome
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$programFiles86\Google\Chrome\Application\chrome.exe"
 
 
@@ -49,13 +49,13 @@ try {
     if($resharperVersion -ne "Version=7.0.97.60") {
         Install-ChocolateyPackage 'resharper' 'msi' '/quiet' 'http://download.jetbrains.com/resharper/ReSharperSetup.7.0.97.60.msi' 
     }
-    cinstm TestDriven.Net
+    Install-FromChocolatey TestDriven.Net
 
-    cinstm dotpeek
+    Install-FromChocolatey dotpeek
     $dotPeekDir = (Get-ChildItem $env:systemdrive\chocolatey\lib\dotpeek* | select $_.last)
     Set-FileAssociation ".dll" "$dotPeekDir\tools\dotPeek.exe"
 
-    cinstm AutoHotKey
+    Install-FromChocolatey AutoHotKey
     set-content "$env:appdata\Microsoft\Windows\Start Menu\Programs\startup\AutoScript.ahk" -Force -value @"
 ^+C::
 IfWinExist Console
