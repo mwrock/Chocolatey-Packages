@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.3.100</version>
+    <authors>Shane Richards</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.inputdirector.com</projectUrl>
+    <licenseUrl>http://www.inputdirector.com/faq.html#1_6</licenseUrl>
+    <id>InputDirector</id>
+    <title>Input Director</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Input Director is a Windows application that lets you control multiple Windows systems using the keyboard/mouse attached to one computer. It is designed for folks who have two (or more) computers next to each other and find themselves regularly switching from one system to the other. With Input Director, you can share a single keyboard/mouse across a set of systems. You switch which system receives the input either by hotkey or by moving the cursor so that it transitions from one screen to the other (in a very similar fashion to a multi-monitor setup). The idea being that you can position the monitors from two or more systems in a row and use a shared keyboard/mouse to control all of them.</description>
+    <summary>Input Director is a Windows application that lets you control multiple Windows systems using the keyboard/mouse attached to one computer.</summary>
+    <tags>kvm mouse keyboard sharing</tags>
+  </metadata>
+</package>

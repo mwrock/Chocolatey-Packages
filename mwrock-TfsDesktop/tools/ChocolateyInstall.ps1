@@ -36,6 +36,7 @@ try {
     Install-FromChocolatey NugetPackageExplorer
     Install-FromChocolatey PowerGUI
     Install-FromChocolatey WindowsLiveMesh
+    Install-FromChocolatey InputDirector
 
     Install-FromChocolatey googlechrome
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$programFiles86\Google\Chrome\Application\chrome.exe"
@@ -56,6 +57,7 @@ try {
     Set-FileAssociation ".dll" "$dotPeekDir\tools\dotPeek.exe"
 
     Add-PersistentEnvVar "devFolder" "c:\dev"
+    Install-ChocolateyPath "C:\Chocolatey\chocolateyInstall" "Machine"
 
     Install-FromChocolatey AutoHotKey
     set-content "$env:appdata\Microsoft\Windows\Start Menu\Programs\startup\AutoScript.ahk" -Force -value @"
