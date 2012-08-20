@@ -55,6 +55,8 @@ try {
     $dotPeekDir = (Get-ChildItem $env:systemdrive\chocolatey\lib\dotpeek* | select $_.last)
     Set-FileAssociation ".dll" "$dotPeekDir\tools\dotPeek.exe"
 
+    Add-PersistentEnvVar "devFolder" "c:\dev"
+
     Install-FromChocolatey AutoHotKey
     set-content "$env:appdata\Microsoft\Windows\Start Menu\Programs\startup\AutoScript.ahk" -Force -value @"
 ^+C::
