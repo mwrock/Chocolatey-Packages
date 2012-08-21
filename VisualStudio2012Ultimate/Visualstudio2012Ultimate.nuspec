@@ -14,4 +14,7 @@
     <summary>Visual Studio Ultimate 2012 is the comprehensive ALM offering for organizations developing and operating highly scalable software applications and services.</summary>
     <tags>Microsoft Visual Studio 2012 Ultimate IDE ALM</tags>
   </metadata>
+    <dependencies>
+      <dependency id="DotNet4.5" />
+    </dependencies>
 </package>
