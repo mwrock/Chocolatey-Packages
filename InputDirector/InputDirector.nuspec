@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.3.100</version>
+    <version>1.3.100.20120821</version>
     <authors>Shane Richards</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.inputdirector.com</projectUrl>
     <licenseUrl>http://www.inputdirector.com/faq.html#1_6</licenseUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/InputDirector/green_id.png</iconUrl>
     <id>InputDirector</id>
     <title>Input Director</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,4 +14,7 @@
     <summary>Input Director is a Windows application that lets you control multiple Windows systems using the keyboard/mouse attached to one computer.</summary>
     <tags>kvm mouse keyboard sharing</tags>
   </metadata>
+  <files>
+    <file src="tools\**\*.*" />
+  </files>
 </package>
