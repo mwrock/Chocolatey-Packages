@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>4.5</version>
+    <version>4.5.20120822</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/DotNet4.5/dotnet.png</iconUrl>
     <projectUrl>http://www.microsoft.com/visualstudio/11/en-us/downloads#net-45</projectUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <id>DotNet4.5</id>
-    <title>Dot Net 45 Ful Redistributable</title>
+    <title>Dot Net 4.5 Framework Full Redistributable</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Microsoft .NET Framework 4.5 is a highly compatible, in-place update to the .NET Framework 4. By using the .NET Framework 4.5 together with the C# or Visual Basic programming languages, you can write Windows Metro style apps. The .NET Framework 4.5 delivers better performance, reliability, and security.</description>
     <summary>The Microsoft .NET Framework 4.5</summary>
