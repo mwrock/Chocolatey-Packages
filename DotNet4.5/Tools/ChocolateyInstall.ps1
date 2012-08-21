@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'dotnet45' 'exe' "/Passive /NoRestart /Log $env:temp\net45.log" 'http://go.microsoft.com/?linkid=9816306'
+Install-ChocolateyPackage 'dotnet45' 'exe' "/Passive /NoRestart /Log $env:temp\net45.log" 'http://go.microsoft.com/?linkid=9816306' -validExitCodes @(3010,44)
