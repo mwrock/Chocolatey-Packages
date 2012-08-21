@@ -10,7 +10,7 @@
     <id>VisualStudio2012Ultimate</id>
     <title>Visual Studio 2012 - Ultimate</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This silently installs the 90 day trial (http://msdn.microsoft.com/en-us/library/gg442061.aspx) of Visual Studio Ultimate along with the Microsoft .Net 4.5 Framework SDK. All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed. However, from the "Programs and Features" menu in Windows you can right click Microsoft Visual Studio Ultimate and choose "Change" and then add the features you want.</description>
+    <description>This silently installs the 90 day trial (http://msdn.microsoft.com/en-us/library/gg442061.aspx) of Visual Studio Ultimate along with the Microsoft .Net 4.5 Framework SDK. All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed. However, from the "Programs and Features" menu in Windows you can right click Microsoft Visual Studio Ultimate and choose "Change" and then add the features you want. This may take quite a while to install so grab your Star Trek attire and re-enact your favorite episode while you wait.</description>
     <summary>Visual Studio Ultimate 2012 is the comprehensive ALM offering for organizations developing and operating highly scalable software applications and services.</summary>
     <tags>Microsoft Visual Studio 2012 Ultimate IDE ALM</tags>
   </metadata>
