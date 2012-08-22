@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.0</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://gittf.codeplex.com/</projectUrl>
+    <licenseUrl>http://gittf.codeplex.com/license</licenseUrl>
+    <id>Git-TF</id>
+    <title>Git-TF</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Git-TF is a set of cross-platform, command line tools that facilitate sharing of changes between TFS and Git. These tools allow a developer to use a local Git repository, and configure it to share changes with a TFS server. Using the tools, changes made in TFS can be pulled into a local Git repository, and changes made in the Git repository can be checked in to TFS. These tools can be used by individuals or teams collaborating using Git.</description>
+    <summary>Git-TF is a set of cross-platform, command line tools that facilitate sharing of changes between TFS and Git.</summary>
+    <tags>GIT TFS Codeplex</tags>
+    <dependencies>
+      <dependency id="git" />
+      <dependency id="javaruntime" />
+    </dependencies>
+  </metadata>
+</package>
