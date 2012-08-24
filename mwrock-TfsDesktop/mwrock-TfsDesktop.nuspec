@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>When I am am working for the man at my desk, this is how I roll</description>
     <dependencies>
-      <dependency id="autobox" />      
+      <dependency id="Boxstarter" />      
     </dependencies>  
   </metadata>
   <files>
