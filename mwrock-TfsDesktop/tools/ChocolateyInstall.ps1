@@ -1,5 +1,6 @@
 try {
     if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
+    Set-PersonalDirectory "$env:UserProfile\skydrive\documents" -admin
     Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "WROCKDESK"
 
     #Stock TFS dev environment
@@ -12,6 +13,7 @@ try {
 
     Set-TaskbarSmall
     Enable-Telnet
+    Enable-HyperV
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:windir\system32\mstsc.exe"
 
     Install-FromChocolatey sublimetext2
