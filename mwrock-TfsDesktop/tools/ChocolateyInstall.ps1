@@ -1,5 +1,6 @@
 try {
     if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
+    Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "WROCKDESK"
 
     #Stock TFS dev environment
     & \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build
@@ -56,7 +57,7 @@ try {
     $dotPeekDir = (Get-ChildItem $env:systemdrive\chocolatey\lib\dotpeek* | select $_.last)
     Set-FileAssociation ".dll" "$dotPeekDir\tools\dotPeek.exe"
 
-    Add-PersistentEnvVar "devFolder" "c:\dev"
+    Add-PersistentEnvVar "devFolder" "d:\dev"
     Install-ChocolateyPath "C:\Chocolatey\chocolateyInstall" "Machine"
 
     Install-FromChocolatey AutoHotKey
@@ -73,6 +74,10 @@ else
     WinActivate
 }
 "@
+
+mkdir d:\dev\wit\Q11W
+cd d:\dev\wit\Q11W
+tf workspace /new /noprompt /template:wrockdesk-q11w /collection: http://vstspioneer:8080/tfs/vstsdf /location:local
 
 } 
 catch {
