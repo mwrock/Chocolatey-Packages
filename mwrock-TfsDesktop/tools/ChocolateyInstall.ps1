@@ -1,6 +1,6 @@
 try {
     if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
-    Set-PersonalDirectory "$env:UserProfile\skydrive\documents" -admin
+    Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
     Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "WROCKDESK"
 
     #Stock TFS dev environment
