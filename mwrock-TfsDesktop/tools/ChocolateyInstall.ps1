@@ -40,6 +40,7 @@ try {
     Install-FromChocolatey PowerGUI
     Install-FromChocolatey WindowsLiveMesh
     Install-FromChocolatey InputDirector
+    Install-FromChocolatey QTTabBar
 
     Install-FromChocolatey googlechrome
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$programFiles86\Google\Chrome\Application\chrome.exe"
