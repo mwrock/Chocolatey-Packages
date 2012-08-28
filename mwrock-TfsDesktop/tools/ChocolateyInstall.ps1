@@ -33,7 +33,6 @@ try {
     Install-FromChocolatey fiddler
     Install-FromChocolatey winrar
     Install-FromChocolatey posh-git-hg
-    Install-FromChocolatey git-credential-winstore
     Install-FromChocolatey tortoisehg
     Install-FromChocolatey Paint.net
     Install-FromChocolatey windirstat
@@ -44,6 +43,7 @@ try {
     Install-FromChocolatey WindowsLiveMesh
     Install-FromChocolatey InputDirector
     Install-FromChocolatey QTTabBar
+    Install-FromChocolatey git-credential-winstore
 
     Install-FromChocolatey googlechrome
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$programFiles86\Google\Chrome\Application\chrome.exe"
