@@ -1,5 +1,4 @@
 try {
-    if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
     import-module $env:systemdrive\tools\boxStarter\boxstarter.psm1
     Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
     Install-WindowsUpdate
@@ -46,10 +45,10 @@ try {
     Install-FromChocolatey git-credential-winstore
 
     Install-FromChocolatey googlechrome
-    Set-PinnedApplication -Action PinToTaskbar -FilePath "$programFiles86\Google\Chrome\Application\chrome.exe"
+    Set-PinnedApplication -Action PinToTaskbar -FilePath "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
 
 
-    Set-PinnedApplication -Action PinToTaskbar -FilePath "$programFiles86\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"
+    Set-PinnedApplication -Action PinToTaskbar -FilePath "${env:ProgramFiles(x86)}\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"
     if( Test-Path 'HKCU:\Software\jetbrains\resharper\v7.0\vs11.0' ) {
         $resharperKey = (Get-ItemProperty 'HKCU:\Software\jetbrains\resharper\v7.0\vs11.0')
         $resharperVersion = $resharperKey.'One-Time Initialization Identity'
@@ -66,8 +65,9 @@ try {
     Add-PersistentEnvVar "devFolder" "d:\dev"
     Install-ChocolateyPath "C:\Chocolatey\chocolateyInstall" "Machine"
 
-    Install-FromChocolatey AutoHotKey
-    set-content "$env:appdata\Microsoft\Windows\Start Menu\Programs\startup\AutoScript.ahk" -Force -value @"
+    Install-FromChocolatey autohotkey_l
+    $ahk = "$env:appdata\Microsoft\Windows\Start Menu\Programs\startup\AutoScript.ahk"
+    set-content $ahk -Force -value @"
 ^+C::
 IfWinExist Console
 {
@@ -80,10 +80,12 @@ else
     WinActivate
 }
 "@
+.$ahk
 
 mkdir c:\dev\wit\Q11W
 cd c:\dev\wit\Q11W
-tf workspace /new /noprompt /template:mwrock-q11w $env:computername-q11w /collection:http://vstspioneer:8080/tfs/vstsdf /location:local
+$tf = "${env:ProgramFiles(x86)}\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe"
+.$tf workspace /new /noprompt /template:mwrock-q11w $env:computername-q11w /collection:http://vstspioneer:8080/tfs/vstsdf /location:local
 
 } 
 catch {
