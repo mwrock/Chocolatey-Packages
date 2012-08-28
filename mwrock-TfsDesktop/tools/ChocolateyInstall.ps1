@@ -1,11 +1,14 @@
 try {
     if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
+    import-module $env:systemdrive\tools\boxStarter\boxstarter.psm1
     Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
-    Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "WROCKDESK"
+    Install-WindowsUpdate
+
+    Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "mwrock-feature2"
 
     #Stock TFS dev environment
-    & \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build
-    import-module $env:systemdrive\tools\boxStarter\boxstarter.psm1
+    #& \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build.bat
+    & \\mwrock1\c$\dev\wit\src\vset\internaltools\TfsBootstraper\build.bat
 
     Install-FromChocolatey console-devel
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:programfiles\console\console.exe"
@@ -78,9 +81,9 @@ else
 }
 "@
 
-mkdir d:\dev\wit\Q11W
-cd d:\dev\wit\Q11W
-tf workspace /new /noprompt /template:wrockdesk-q11w /collection: http://vstspioneer:8080/tfs/vstsdf /location:local
+mkdir c:\dev\wit\Q11W
+cd c:\dev\wit\Q11W
+tf workspace /new /noprompt /template:mwrock-q11w $env:computername-q11w /collection:http://vstspioneer:8080/tfs/vstsdf /location:local
 
 } 
 catch {
