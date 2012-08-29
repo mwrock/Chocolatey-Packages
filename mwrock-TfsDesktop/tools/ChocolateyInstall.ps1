@@ -25,7 +25,8 @@ try {
     Install-FromChocolatey sublimetext2
     $sublimeDir = (Get-ChildItem $env:systemdrive\chocolatey\lib\sublimetext* | select $_.last)
     $sublimeExe = "$sublimeDir\tools\sublime_text.exe"
-    copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'sublime\*') -Force -Recurse "$sublimeDir\tools\"
+    copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'sublime\*') -Force -Recurse "$sublimeDir\tools\data"
+    move-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) "$sublimeDir\tools\data\Pristine Packages") -Force "$sublimeDir\tools"    
     Set-PinnedApplication -Action PinToTaskbar -FilePath $sublimeExe
     Add-ExplorerMenuItem "sublime" "Open with Sublime Text 2" $sublimeExe
     Add-ExplorerMenuItem "sublime" "Open with Sublime Text 2" $sublimeExe "directory"
@@ -43,7 +44,6 @@ try {
     Install-FromChocolatey evernote
     Install-FromChocolatey NugetPackageExplorer
     Install-FromChocolatey PowerGUI
-    Install-FromChocolatey WindowsLiveMesh
     Install-FromChocolatey InputDirector
     Install-FromChocolatey QTTabBar
 
@@ -88,7 +88,7 @@ else
 mkdir d:\dev\wit\Q11W
 cd d:\dev\wit\Q11W
 $tf = "${env:ProgramFiles(x86)}\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe"
-.$tf workspace /new /noprompt /template:wrockdesk-q11w $env:computername-q11w /collection:http://vstspioneer:8080/tfs/vstsdf /location:local
+.$tf workspace /new /noprompt /template:wrockdesk-q11w_template $env:computername-q11w /collection:http://vstspioneer:8080/tfs/vstsdf /location:local
 } 
 catch {
     Write-ChocolateyFailure 'mwrock-TfsDesktop' $($_.Exception.Message)
