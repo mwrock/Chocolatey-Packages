@@ -28,7 +28,7 @@ try {
     copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'sublime\*') -Force -Recurse "$sublimeDir\tools\"
     Set-PinnedApplication -Action PinToTaskbar -FilePath $sublimeExe
     Add-ExplorerMenuItem "sublime" "Open with Sublime Text 2" $sublimeExe
-    Add-ExplorerMenuItem "sublime" "Open with Sublime Text 2" $sublimeExe "folder"
+    Add-ExplorerMenuItem "sublime" "Open with Sublime Text 2" $sublimeExe "directory"
     Set-FileAssociation ".txt" $sublimeExe
     cmd /c assoc .=txtfile
 
