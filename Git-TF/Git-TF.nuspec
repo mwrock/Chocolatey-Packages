@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.0.1</version>
+    <version>1.0.1.20120827</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://gittf.codeplex.com/</projectUrl>
-    <licenseUrl>http://gittf.codeplex.com/license</licenseUrl>
+    <licenseUrl>http://download.microsoft.com/download/A/E/2/AE23B059-5727-445B-91CC-15B7A078A7F4/license.html</licenseUrl>
     <id>Git-TF</id>
     <title>Git-TF</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
