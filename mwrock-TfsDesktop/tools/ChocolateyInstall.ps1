@@ -5,7 +5,7 @@ try {
 
     Install-WindowsUpdate
 
-    Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "wrockdesk"
+    Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "wrockdesk_template"
 
     #Stock TFS dev environment
     & \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build.bat
