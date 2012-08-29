@@ -1,6 +1,8 @@
 try {
     import-module $env:systemdrive\tools\boxStarter\boxstarter.psm1
     Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
+    Move-LibraryDirectory "Downloads" "D:\Downloads"
+
     Install-WindowsUpdate
 
     Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "wrockdesk"
@@ -15,6 +17,7 @@ try {
     copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'console.xml') -Force $env:appdata\console\console.xml
 
     Set-TaskbarSmall
+    Enable-RemoteDesktop
     Enable-Telnet
     Enable-HyperV
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:windir\system32\mstsc.exe"
