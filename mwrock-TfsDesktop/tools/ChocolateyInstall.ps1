@@ -3,11 +3,12 @@ try {
     Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
     Install-WindowsUpdate
 
-    Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "mwrock-feature2"
+    Add-PersistentEnvVar "Bootstr_TemplateWorkspace" "wrockdesk"
 
     #Stock TFS dev environment
-    #& \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build.bat
-    & \\mwrock1\c$\dev\wit\src\vset\internaltools\TfsBootstraper\build.bat
+    & \\cpvsbuild\DROPS\dev11\Q11W\raw\current\binaries.x86ret\bin\i386\TfsBootstraper\build.bat
+    
+    Install-FromChocolatey git-credential-winstore
 
     Install-FromChocolatey console-devel
     Set-PinnedApplication -Action PinToTaskbar -FilePath "$env:programfiles\console\console.exe"
@@ -42,7 +43,6 @@ try {
     Install-FromChocolatey WindowsLiveMesh
     Install-FromChocolatey InputDirector
     Install-FromChocolatey QTTabBar
-    Install-FromChocolatey git-credential-winstore
 
     Install-FromChocolatey googlechrome
     Set-PinnedApplication -Action PinToTaskbar -FilePath "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
@@ -82,11 +82,10 @@ else
 "@
 .$ahk
 
-mkdir c:\dev\wit\Q11W
-cd c:\dev\wit\Q11W
+mkdir d:\dev\wit\Q11W
+cd d:\dev\wit\Q11W
 $tf = "${env:ProgramFiles(x86)}\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe"
-.$tf workspace /new /noprompt /template:mwrock-q11w $env:computername-q11w /collection:http://vstspioneer:8080/tfs/vstsdf /location:local
-
+.$tf workspace /new /noprompt /template:wrockdesk-q11w $env:computername-q11w /collection:http://vstspioneer:8080/tfs/vstsdf /location:local
 } 
 catch {
     Write-ChocolateyFailure 'mwrock-TfsDesktop' $($_.Exception.Message)
