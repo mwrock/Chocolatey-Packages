@@ -52,13 +52,7 @@ try {
 
 
     Set-PinnedApplication -Action PinToTaskbar -FilePath "${env:ProgramFiles(x86)}\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"
-    if( Test-Path 'HKCU:\Software\jetbrains\resharper\v7.0\vs11.0' ) {
-        $resharperKey = (Get-ItemProperty 'HKCU:\Software\jetbrains\resharper\v7.0\vs11.0')
-        $resharperVersion = $resharperKey.'One-Time Initialization Identity'
-    }
-    if($resharperVersion -ne "Version=7.0.97.60") {
-        Install-ChocolateyPackage 'resharper' 'msi' '/quiet' 'http://download.jetbrains.com/resharper/ReSharperSetup.7.0.97.60.msi' 
-    }
+    Install-FromChocolatey resharper
     Install-FromChocolatey TestDriven.Net
 
     Install-FromChocolatey dotpeek
