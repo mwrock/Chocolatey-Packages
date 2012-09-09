@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>8.59</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://msdn.microsoft.com/en-US/windows/hardware/hh852363</projectUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/Windows.Debuggers/windbg.jpg</iconUrl>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=251960</licenseUrl>
+    <id>windbg</id>
+    <title>Debugging Tools for Windows (windbg)</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft Windows Debugger (WinDbg) is a powerful Windows-based debugger that is capable of both user-mode and kernel-mode debugging. WinDbg provides debugging for the Windows kernel, kernel-mode drivers, and system services, as well as user-mode applications and drivers. ***This Package will add an environment variable pointing to the Microsoft symbols and will also copy sos.dll from the most recent .net runtime on your machine to the same directory where windbg.exe is installed.</description>
+    <summary>Microsoft Windows Debugger (WinDbg) is a powerful Windows-based debugger that is capable of both user-mode and kernel-mode debugging. WinDbg provides debugging for the Windows kernel, kernel-mode drivers, and system services, as well as user-mode applications and drivers.</summary>
+    <tags>windbg sos sos.dll debugging</tags>
+  </metadata>
+    <files>
+    <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
+  </files>
+</package>
