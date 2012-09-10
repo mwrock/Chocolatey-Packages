@@ -47,6 +47,7 @@ try {
     Install-FromChocolatey InputDirector
     Install-FromChocolatey QTTabBar
     Install-FromChocolatey Firefox
+    Install-FromChocolatey windbg    
 
     Install-FromChocolatey googlechrome
     Set-PinnedApplication -Action PinToTaskbar -FilePath "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
