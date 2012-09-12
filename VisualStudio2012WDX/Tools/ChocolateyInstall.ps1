@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'VisualStudio2012WDX' 'exe' "/Passive /NoRestart /Log $env:temp\vs.log" 'http://go.microsoft.com/?linkid=9816758'
