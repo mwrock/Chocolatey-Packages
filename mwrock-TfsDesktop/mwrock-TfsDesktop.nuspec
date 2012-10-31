@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.0.9</version>
+    <version>1.0.10</version>
     <authors>Matt Wrock</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>https://github.com/mwrock/Chocolatey-Packages/tree/master/mwrock-TfsDesktop</projectUrl>
@@ -10,7 +10,30 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>When I am am working for the man at my desk, this is how I roll</description>
     <dependencies>
-      <dependency id="Boxstarter" />      
+      <dependency id="Boxstarter" />
+      <dependency id="git-credential-winstore" />
+      <dependency id="console-devel" />
+      <dependency id="sublimetext2" />
+      <dependency id="skydrive" />
+      <dependency id="fiddler" />
+      <dependency id="Boxstarter" />
+      <dependency id="winrar" />
+      <dependency id="tortoisehg" />
+      <dependency id="Paint.net" />
+      <dependency id="windirstat" />
+      <dependency id="sysinternals" />
+      <dependency id="evernote" />
+      <dependency id="NugetPackageExplorer" />
+      <dependency id="PowerGUI" />
+      <dependency id="InputDirector" />
+      <dependency id="QTTabBar" />
+      <dependency id="Firefox" />
+      <dependency id="windbg" />
+      <dependency id="googlechrome" />
+      <dependency id="resharper" />
+      <dependency id="TestDriven.Net" />
+      <dependency id="dotpeek" />
+      <dependency id="autohotkey_l" />
     </dependencies>  
   </metadata>
   <files>
