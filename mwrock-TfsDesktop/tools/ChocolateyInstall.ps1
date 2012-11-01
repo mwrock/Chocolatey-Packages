@@ -36,8 +36,6 @@ try {
     $dotPeekDir = (Get-ChildItem $env:systemdrive\chocolatey\lib\dotpeek* | select $_.last)
     Install-ChocolateyFileAssociation".dll" "$dotPeekDir\tools\dotPeek.exe"
 
-    Install-ChocolateyPath "C:\Chocolatey\chocolateyInstall" "Machine"
-
     $ahk = "$env:appdata\Microsoft\Windows\Start Menu\Programs\startup\AutoScript.ahk"
     set-content $ahk -Force -value @"
 ^+C::

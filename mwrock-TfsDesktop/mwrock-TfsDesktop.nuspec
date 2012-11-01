@@ -16,9 +16,8 @@
       <dependency id="sublimetext2" />
       <dependency id="skydrive" />
       <dependency id="fiddler" />
-      <dependency id="Boxstarter" />
+      <dependency id="posh-git" />      
       <dependency id="winrar" />
-      <dependency id="tortoisehg" />
       <dependency id="Paint.net" />
       <dependency id="windirstat" />
       <dependency id="sysinternals" />
