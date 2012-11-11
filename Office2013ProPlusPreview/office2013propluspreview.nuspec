@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>15.0.4128.1014</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.microsoft.com/office/preview/en</projectUrl>
+    <licenseUrl>http://windows.microsoft.com/en-US/windows-live/microsoft-services-agreement</licenseUrl>
+    <id>office2013propluspreview</id>
+    <title>Microsoft Office Professional Plus 2013 Preview</title>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/Office2013ProPlusPreview/office.PNG</iconUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A new Office has arrived. It’s a powerful service that helps you unleash your best ideas, get things done and stay connected on the go. Simply sign in for a personalized experience and all the most up-to-date Office applications, with new and enhanced features continually being added. Be one of the first to try it today. NOTE: This may require previous versions of office to be uninstalled.</description>
+    <tags>Microsoft Office 365 2013 Professional Preview</tags>
+  </metadata>
+</package>
