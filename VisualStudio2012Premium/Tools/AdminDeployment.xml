@@ -15,7 +15,7 @@
      <SelectableItemCustomization Id="HelpHidden" Selected="yes" />
      <SelectableItemCustomization Id="LocalDBHidden" Selected="yes" />
      <SelectableItemCustomization Id="NetFX4Hidden" Selected="yes" />
-     <SelectableItemCustomization Id="NetFX45Hidden" Selected="no" />
+     <SelectableItemCustomization Id="NetFX45Hidden" Selected="yes" />
      <SelectableItemCustomization Id="PortableDTPHidden" Selected="yes" />
      <SelectableItemCustomization Id="PreEmptiveDotfuscatorHidden" Selected="no" />
      <SelectableItemCustomization Id="PreEmptiveAnalyticsHidden" Selected="no" />
