@@ -1,7 +1,7 @@
 try {
     $drop = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
     $exe = "$drop\NugetPackageExplorer.exe"
-    Install-ChocolateyZipPackage 'NugetPackageExplorer' 'http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=npe&DownloadId=500666&FileTime=129938420921170000&Build=19692' $drop
+    Install-ChocolateyZipPackage 'NugetPackageExplorer' 'https://github.com/mwrock/Chocolatey-Packages/raw/master/NugetPackageExplorer/NpeLocalExecutable.zip' $drop
     Install-ChocolateyDesktopLink $exe
     $testType = (cmd /c assoc ".nupkg")
     if($testType -ne $null) {
