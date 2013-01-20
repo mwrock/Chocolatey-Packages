@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'firefox' 'exe' '-ms' 'http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/18.0/win32/en-US/Firefox%20Setup%2018.0.exe'
+Install-ChocolateyPackage 'firefox' 'exe' '-ms' 'http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/18.0.1/win32/en-US/Firefox%20Setup%2018.0.1.exe'
