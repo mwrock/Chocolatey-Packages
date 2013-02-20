@@ -9,31 +9,6 @@
     <title>mwrock-TfsDesktop</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>When I am am working for the man at my desk, this is how I roll</description>
-    <dependencies>
-      <dependency id="Boxstarter" />
-      <dependency id="git-credential-winstore" />
-      <dependency id="console-devel" />
-      <dependency id="sublimetext2" />
-      <dependency id="skydrive" />
-      <dependency id="fiddler" />
-      <dependency id="posh-git" />      
-      <dependency id="winrar" />
-      <dependency id="Paint.net" />
-      <dependency id="windirstat" />
-      <dependency id="sysinternals" />
-      <dependency id="evernote" />
-      <dependency id="NugetPackageExplorer" />
-      <dependency id="PowerGUI" />
-      <dependency id="InputDirector" />
-      <dependency id="QTTabBar" />
-      <dependency id="Firefox" />
-      <dependency id="windbg" />
-      <dependency id="googlechrome" />
-      <dependency id="resharper" />
-      <dependency id="TestDriven.Net" />
-      <dependency id="dotpeek" />
-      <dependency id="autohotkey_l" />
-    </dependencies>  
   </metadata>
   <files>
     <file src="tools\**\*.*" target="tools"/>
