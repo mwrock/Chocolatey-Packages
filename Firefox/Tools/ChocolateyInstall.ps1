@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'firefox' 'exe' '-ms' 'http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/19.0/win32/en-US/Firefox%20Setup%2019.0.exe'
+Install-ChocolateyPackage 'firefox' 'exe' '-ms' 'http://download.cdn.mozilla.net/pub/mozilla.org/firefox/releases/19.0.2/win32/en-US/Firefox%20Setup%2019.0.2.exe'
