@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>11.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.microsoft.com/visualstudio/11/en-us</projectUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/VisualStudio2012Ultimate/vs.png</iconUrl>
+    <id>VisualStudioExpress2012Web</id>
+    <title>Visual Studio 2012 - Ultimate</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Visual Studio Express 2012 for Web provides the core tools for web development. You can use the full-featured code editors, design-time tooling, rich language support, and other tools in Visual Studio Express 2012 for Web to create innovative and compelling ASP.NET apps and services for the web.</description>
+    <tags>Microsoft Visual Studio 2012 Express Web IDE ALM</tags>
+    <dependencies>
+      <dependency id="DotNet4.5" />
+    </dependencies>
+  </metadata>
+</package>

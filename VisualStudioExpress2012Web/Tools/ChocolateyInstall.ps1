@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'VisualStudioExpress2012Web' 'exe' "/Passive /NoRestart /Log $env:temp\vs.log" 'http://download.microsoft.com/download/9/A/F/9AF3CEC7-468A-459A-B5F3-16067DAA43A5/vns_full.exe'
