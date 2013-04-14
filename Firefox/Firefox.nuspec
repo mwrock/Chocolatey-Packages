@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>19.0.2</version>
+    <version>20.0.1</version>
     <authors>Mozilla</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.mozilla.org/en-US/firefox/new/</projectUrl>
