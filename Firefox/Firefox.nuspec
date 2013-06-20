@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>21.0</version>
+    <version>21.0.0.20130620</version>
     <authors>Mozilla</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.mozilla.org/en-US/firefox/new/</projectUrl>
@@ -10,7 +10,8 @@
     <id>Firefox</id>
     <title>Firefox</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Bringing together all kinds of awesomeness to make browsing better for you</description>
+    <description>Bringing together all kinds of awesomeness to make browsing better for you.
+This package automatically downloads Firefox in the same language as the user’s Windows has.</description>
     <summary>Bringing together all kinds of awesomeness to make browsing better for you</summary>
     <tags>browser mozilla firefox</tags>
   </metadata>
