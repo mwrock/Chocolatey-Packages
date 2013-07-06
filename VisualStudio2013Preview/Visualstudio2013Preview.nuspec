@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>12.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.microsoft.com/visualstudio/eng/2013-preview</projectUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/VisualStudio2012Ultimate/vs.png</iconUrl>
+    <id>VisualStudio2013Ultimate</id>
+    <title>Visual Studio 2013 - Ultimate Preview</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This silently installs the preview version of Visual Studio 2013 Ultimate along with the Microsoft .Net 4.5.1 Framework SDK. All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed. However, from the "Programs and Features" menu in Windows you can right click Microsoft Visual Studio Ultimate and choose "Change" and then add the features you want.</description>
+    <summary>Visual Studio Ultimate 2013 Preview is the state-of-the-art development solution that empowers teams of all sizes to design and create compelling apps to delight users. You can use flexible agile planning tools—for example, capacity planning, taskboards, and backlog management—to enable incremental development techniques and agile methodologies, at your own pace. Use advanced modeling, discovery, and architecture tools to describe your system and help ensure that your architecture vision is preserved in the implementation. Bring development and operation teams together by using IntelliTrace, Operations Manager Connector, and Preemptive Analytics. Improve quality and reduce time to resolution by generating actionable bugs from deployed software, and effectively partner with the operations staff to provide data that gives developers greater insight into production issues.</summary>
+    <tags>Microsoft Visual Studio 2012 Ultimate IDE ALM</tags>
+  </metadata>
+</package>
