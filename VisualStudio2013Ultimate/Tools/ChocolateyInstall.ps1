@@ -4,7 +4,7 @@ if(Get-ItemProperty -Path $ieKey -Name "SvcUpdateVersion" -ErrorAction SilentlyC
     $hasIE10 = $ieVersion.StartsWith("10.")
 }
 
-if($hasIE10 -eq $null){
+if($hasIE10 -ne $true){
     Write-Host "Downloading and installing IE" -ForeGroundColor green
     Write-Host "This is required by Visual Studio 2013." -ForeGroundColor green
     write-Host "This install will likely require your computer to be restarted before finishing the Visual Studio Install." -ForeGroundColor green
