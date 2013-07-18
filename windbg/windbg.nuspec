@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>8.59.20120910</version>
+    <version>8.59.20130717</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://msdn.microsoft.com/en-US/windows/hardware/hh852363</projectUrl>

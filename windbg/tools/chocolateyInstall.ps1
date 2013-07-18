@@ -7,19 +7,25 @@ try {
     
     $fxDir = "$env:windir\Microsoft.NET\Framework"
     if(Test-Path $fxDir) {
-        $frameworks = dir "$fxdir\v*" | ? { $_.psiscontainer }
-        copy-item (join-path $frameworks[-1] "sos.dll") "$windbgPath\x86"
+        $frameworksx86 = dir "$fxdir\v*" | ? { $_.psiscontainer -and $_.Name -match "v[0-9]" }
     }
 
+$statement = @"
+    copy-item (join-path '$($frameworksx86[-1])' "sos.dll") '$windbgPath\x86';
+    copy-item '$windbgPath\x86\windbg.exe' '$windbgPath\x86\windbgx86.exe';
+    Install-ChocolateyDesktopLink '$windbgPath\x64\windbg.exe';
+    Install-ChocolateyDesktopLink '$windbgPath\x86\windbgx86.exe';
+"@
     $fxDir = "${fxdir}64"
     if(Test-Path $fxDir) {
-        $frameworks = dir "$fxdir\v*" | ? { $_.psiscontainer }
-        copy-item (join-path $frameworks[-1] "sos.dll") "$windbgPath\x64"
+        $frameworksx64 = dir "$fxdir\v*" | ? { $_.psiscontainer -and $_.Name -match "v[0-9]"}
+        $statement += @"
+        copy-item (join-path '$($frameworksx64[-1])' "sos.dll") '$windbgPath\x64';
+"@
     }
+    
+    Start-ChocolateyProcessAsAdmin "$statement" -minimized -nosleep
 
-    Install-ChocolateyDesktopLink "$windbgPath\x64\windbg.exe"
-    copy-item "$windbgPath\x86\windbg.exe" "$windbgPath\x86\windbgx86.exe"
-    Install-ChocolateyDesktopLink "$windbgPath\x86\windbgx86.exe"
 } catch {
   Write-ChocolateyFailure 'Debugging Tools for Windows' $($_.Exception.Message)
   throw
