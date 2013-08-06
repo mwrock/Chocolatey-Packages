@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>22.0</version>
+    <version>23.0</version>
     <authors>Mozilla</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.mozilla.org/en-US/firefox/new/</projectUrl>
-    <iconUrl>https://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-128.png</iconUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png</iconUrl>
     <licenseUrl>http://www.mozilla.org/MPL/2.0/</licenseUrl>
     <id>Firefox</id>
     <title>Firefox</title>
