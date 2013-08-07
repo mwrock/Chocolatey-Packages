@@ -1,6 +1,6 @@
 ﻿$packageName = 'firefox'
 $fileType = 'exe'
-$version = '22.0'
+$version = '23.0'
 $silentArgs = '-ms'
 $language = (Get-Culture).Name # Get language and country code separated by hyphen
 #$language = 'xx-XX' # Language override for testing purposes
