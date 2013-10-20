@@ -23,5 +23,4 @@ if($hasIE10 -ne $true){
 "@
 }
 
-$adminFile = (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'AdminDeployment.xml')
-Install-ChocolateyPackage 'VisualStudio2013Ultimate' 'exe' "/Passive /NoRestart /AdminFile $adminFile /Log $env:temp\vs.log" 'http://download.microsoft.com/download/C/F/B/CFBB5FF1-0B27-42E0-8141-E4D6DA0B8B13/vs_ultimate_download.exe'
+Install-ChocolateyPackage 'VisualStudio2013ExpressWeb' 'exe' "/Passive /NoRestart /Log $env:temp\vs.log" 'http://download.microsoft.com/download/B/B/2/BB2AB17F-7BF1-477B-8BD5-488C843F122B/vns_full.exe'

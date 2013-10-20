@@ -1,24 +1,20 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.5.0</version>
-    <authors>Quizo and Paul Accisano</authors>
+    <version>258.0</version>
+    <authors>QuizoApps</authors>
     <owners>Matt Wrock</owners>
-    <projectUrl>http://qttabbar.sourceforge.net/</projectUrl>
+    <projectUrl>http://qttabbar.wikidot.com/</projectUrl>
     <iconUrl>http://qttabbar.sourceforge.net/wp-content/themes/atahualpa/images/site_logo_small.png</iconUrl>
-    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <licenseUrl>http://creativecommons.org/licenses/by-sa/3.0/</licenseUrl>
     <id>QTTabBar</id>
     <title>QTTabBar</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>QTTabBar is extension for Windows Explorer that brings tabbed browsing to Microsoft's file browser, along with a host of other great features. Under new management! Now in public beta!</description>
+    <description>QTTabBar is extension for Windows Explorer that brings tabbed browsing to Microsoft's file browser, along with a host of other great features.</description>
     <summary>Dragging Explorer into the modern era</summary>
     <tags>productivity windows explorer admin</tags>
-    <dependencies>
-      <dependency id="autoit.commandline" />
-    </dependencies>
   </metadata>
     <files>
     <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
-    <file src="tools\QTTabBar.au3" target="tools\QTTabBar.au3" />
   </files>
 </package>
