@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>11.00.2100.62</version>
+    <version>11.00.2100.63</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.microsoft.com/sqlserver/en/us/default.aspx</projectUrl>
@@ -12,5 +12,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An unattended install of Sql Server 2012 SP1 with tools. Microsoft® SQL Server® 2012 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications.</description>
     <tags>Microsoft SQL Server 2012 Express</tags>
+    <dependencies>
+      <dependency id="DotNet3.5" />
+    </dependencies>    
   </metadata>
 </package>
