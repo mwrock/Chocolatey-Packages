@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>3.7.0.0</version>
+    <version>3.7.0.20131203</version>
     <authors>Luan Nguyen</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://npe.codeplex.com/</projectUrl>
@@ -13,6 +13,9 @@
     <description>NuGet Package Explorer is a ClickOnce application which allows creating and exploring NuGet packages easily. After installing it, you can double click on a .nupkg file to view the package content. You can also load packages directly from the official NuGet feed.</description>
     <summary>Makes creating and examining nuget packages very easy.</summary>
     <tags>nuget chocolatey</tags>
+    <dependencies>
+      <dependency id="DotNet4.5" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**\*.*" />
