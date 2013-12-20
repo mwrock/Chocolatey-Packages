@@ -1,6 +1,6 @@
 try {
     $tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-    Install-ChocolateyZipPackage 'Git-TF' 'http://download.microsoft.com/download/A/E/2/AE23B059-5727-445B-91CC-15B7A078A7F4/git-tf-2.0.2.20130214.zip' $tools
+    Install-ChocolateyZipPackage 'Git-TF' 'http://download.microsoft.com/download/A/E/2/AE23B059-5727-445B-91CC-15B7A078A7F4/git-tf-2.0.3.20131219.zip' $tools
     $gitTfDir = (Get-Item $tools\git*)
     $path = [Environment]::GetEnvironmentVariable('Path', 'User')
     if($path) {
