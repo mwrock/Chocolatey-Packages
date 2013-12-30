@@ -1,1 +1,0 @@
-This file simply exists to get around the fact that its dependency IE10 also has a content file and therefore nuget will not allow this package to depend on it unless it also has a content file.

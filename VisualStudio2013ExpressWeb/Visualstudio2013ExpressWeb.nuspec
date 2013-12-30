@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>12.0.21005.1</version>
+    <version>12.0.21005.20131226</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.microsoft.com/visualstudio/eng/visual-studio-2013</projectUrl>
@@ -10,12 +10,16 @@
     <id>VisualStudio2013ExpressWeb</id>
     <title>Visual Studio 2013 - Express for Web RTM</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This silently installs Visual Studio 2013 Express for Web along with the Microsoft .Net 4.5.1 Framework SDK and IE 10. All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed. However, from the "Programs and Features" menu in Windows you can right click Microsoft Visual Studio Ultimate and choose "Change" and then add the features you want. If you do not already have IE 10, it will require a reboot.</description>
+    <description>This silently installs Visual Studio 2013 Express for Web along with the Microsoft .Net 4.5.1 Framework SDK. All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed. However, from the "Programs and Features" menu in Windows you can right click Microsoft Visual Studio Ultimate and choose "Change" and then add the features you want. If you do not already have IE 10, it will require a reboot.</description>
     <summary>Visual Studio Express 2013 for Web provides the core tools for creating compelling, innovative web applications and services.</summary>
     <tags>Microsoft Visual Studio 2013 Ultimate IDE ALM</tags>
     <dependencies>
       <dependency id="DotNet4.5.1" />
-      <dependency id="IE10" />      
     </dependencies>
+    <releaseNotes>
+      - Add Uninstaller
+      - Remove dependency on IE10
+      - Add ability to specify optional features.
+    </releaseNotes>
   </metadata>
 </package>
