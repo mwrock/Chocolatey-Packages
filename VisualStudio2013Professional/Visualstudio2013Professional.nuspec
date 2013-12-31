@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>12.0.21005.20131229</version>
+    <version>12.0.21005.20131230</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.microsoft.com/visualstudio/eng/visual-studio-2013</projectUrl>
@@ -14,7 +14,7 @@
     ==================OPTIONAL FEATURES==================
     All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed by default, but you can provide install arguments to add them. Here is an example that includes the Web Tools and the Windows 8 Store App SDK:
 
-    cinst VisualStudio2013Ultimate -InstallArguments "WebTools Win8SDK"
+    cinst VisualStudio2013Professional -InstallArguments "WebTools Win8SDK"
 
     You simply need to send a white space delimited list of the features to install via the InstallArguments parameter. Here are the available features:
     Blend
