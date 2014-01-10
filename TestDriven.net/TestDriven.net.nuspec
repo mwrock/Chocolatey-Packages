@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>3.3.2779</version>
+    <version>3.5.2830</version>
     <authors>Jamie Cansdale</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.testdriven.net/default.aspx</projectUrl>
