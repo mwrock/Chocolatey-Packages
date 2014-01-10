@@ -1,2 +1,0 @@
-$adminFile = (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'AdminDeployment.xml')
-Install-ChocolateyPackage 'VisualStudio2012TestProfessional' 'exe' "/Passive /NoRestart /AdminFile $adminFile /Log $env:temp\vs.log" 'http://go.microsoft.com/?linkid=9810314'

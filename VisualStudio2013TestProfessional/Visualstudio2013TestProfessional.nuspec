@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>12.0.21005.1</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.microsoft.com/visualstudio/eng/visual-studio-2013</projectUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/VisualStudio2012Ultimate/vs.png</iconUrl>
+    <id>VisualStudio2013TestProfessional</id>
+    <title>Visual Studio 2013 - Test Professional</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This silently installs the 90 day trial (http://msdn.microsoft.com/en-us/library/gg442061.aspx) of Visual Studio Test Professional along with the Microsoft .Net 4.5.1 Framework SDK.</description>
+    <summary>Quality development means empowering everyone on the development team. Visual Studio Test Professional 2013 is ideal for testers, business analysts, product managers, and other stakeholders who need team collaboration tools, but not a full development IDE.</summary>
+    <tags>Microsoft Visual Studio 2013 Test Professional IDE ALM</tags>
+    <dependencies>
+      <dependency id="DotNet4.5.1" />
+    </dependencies>
+  </metadata>
+</package>

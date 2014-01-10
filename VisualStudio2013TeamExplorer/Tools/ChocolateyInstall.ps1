@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'VisualStudio2013TeamExplorer' 'exe' "/Passive /NoRestart /Log $env:temp\vs.log" 'http://download.microsoft.com/download/4/3/4/43474B43-FC2D-462E-8DFF-F2B3D220E9D3/vs_teamExplorer.exe'

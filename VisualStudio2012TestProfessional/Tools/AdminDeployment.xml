@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<AdminDeploymentCustomizations xmlns="http://schemas.microsoft.com/wix/2011/AdminDeployment">
-   <BundleCustomizations TargetDir="default" NoWeb="default"/>
-</AdminDeploymentCustomizations>
