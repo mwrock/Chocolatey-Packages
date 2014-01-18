@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'WindowsAzurePowershell' 'msi' '/quiet /norestart' 'http://az412849.vo.msecnd.net/downloads02/windowsazure-powershell.0.7.2.1.msi'
