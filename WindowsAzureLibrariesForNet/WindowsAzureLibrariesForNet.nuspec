@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>2.2</version>
+    <version>2.2.20140119</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <iconUrl>https://1.gravatar.com/avatar/425be63bdaaeeffd26d0172ed2030198?d=https%3A%2F%2Fidenticons.github.com%2F732737be523b073de1e3f4cce6660d01.png&amp;r=x&amp;s=128</iconUrl>
@@ -12,5 +12,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Windows Azure SDK for .NET allows you to build Windows Azure applications that take advantage of scalable cloud computing resources.</description>
     <tags>Windows Azure .NET Libraries</tags>
+    <dependencies>
+        <dependency id="WindowsAzureLibsForNet" version="2.2" />
+    </dependencies>
   </metadata>
 </package>
