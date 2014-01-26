@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>11.00.3000.20140123</version>
+    <version>11.00.3000.20140125</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.microsoft.com/sqlserver/en/us/default.aspx</projectUrl>
@@ -10,7 +10,7 @@
     <title>Sql Server 2012 Express with SP1</title>
     <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/MsSqlServer2012Express/SqlServer.PNG</iconUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>An unattended install of Sql Server 2012 SP1 with Tools, SSAS, SSIS and SSRS. Microsoft® SQL Server® 2012 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications.</description>
+    <description>An unattended install of Sql Server 2012 SP1 with Tools, and SSRS. Microsoft® SQL Server® 2012 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications.</description>
     <tags>Microsoft SQL Server 2012 Express</tags>
     <dependencies>
       <dependency id="DotNet3.5" />
