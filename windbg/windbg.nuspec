@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>8.59.20130717</version>
+    <version>8.59.20140202</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
-    <projectUrl>http://msdn.microsoft.com/en-US/windows/hardware/hh852363</projectUrl>
+    <projectUrl>http://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx</projectUrl>
     <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/windbg/windbg.jpg</iconUrl>
     <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=251960</licenseUrl>
     <id>windbg</id>

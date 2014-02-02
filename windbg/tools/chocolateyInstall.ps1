@@ -1,7 +1,7 @@
 try {
-    Install-ChocolateyPackage 'windbg' 'exe' '/features OptionId.WindowsDesktopDebuggers /norestart /q' 'http://download.microsoft.com/download/F/1/3/F1300C9C-A120-4341-90DF-8A52509B23AC/standalonesdk/sdksetup.exe'    
+    Install-ChocolateyPackage 'windbg' 'exe' "/features OptionId.WindowsDesktopDebuggers /norestart /q /log $env:temp\windbg.log" 'http://download.microsoft.com/download/E/5/D/E5DEED97-B850-4F9A-B660-4AAABE55A931/standalonesdk/sdksetup.exe'    
     if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
-    $windbgPath = (Join-Path $programFiles86 "Windows Kits\8.0\Debuggers")
+    $windbgPath = (Join-Path $programFiles86 "Windows Kits\8.1\Debuggers")
     [Environment]::SetEnvironmentVariable( '_NT_SYMBOL_PATH', 'symsrv*symsrv.dll*f:\localsymbols*http://msdl.microsoft.com/download/symbols', 'User')
     $env:_NT_SYMBOL_PATH = "symsrv*symsrv.dll*f:\localsymbols*http://msdl.microsoft.com/download/symbols"
     
