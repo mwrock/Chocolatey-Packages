@@ -1,4 +1,4 @@
-Function Initialize-VS-Settings ($vsArgs)
+Function Initialize-VS-Settings ($vsArgs, $unattendFile)
 {
 	
 	$result = @{ 
@@ -27,7 +27,7 @@ Function Initialize-VS-Settings ($vsArgs)
 	    #Initialize features unattended installation file
 	    if($vsArgValues['Features']) {
 	        $featuresToAdd = -split $vsArgValues['Features']
-	        [xml]$adminXml=Get-Content $adminFile
+	        [xml]$adminXml=Get-Content $unattendFile
 
 	        $featuresToAdd | % {
 	            $feature=$_
@@ -36,7 +36,7 @@ Function Initialize-VS-Settings ($vsArgs)
 	                $node.Selected="yes"
 	            }
 	        }
-	        $adminXml.Save($adminFile)
+	        $adminXml.Save($unattendFile)
 	    }
 
 	    #Return back the product key
