@@ -14,8 +14,8 @@ if($customArgs -match $MATCH_PATTERN ){
     $customArgValues = @{ }
     $customArgs | Select-String $MATCH_PATTERN -AllMatches  | % matches | % { 
         $customArgValues.Add(
-            $_.Groups[$PARAMATER_NAME_INDEX].Value,
-            $_.Groups[$VALUE_INDEX].Value) 
+            $_.Groups[$PARAMATER_NAME_INDEX].Value.Trim(),
+            $_.Groups[$VALUE_INDEX].Value.Trim()) 
     }
 
     if($customArgValues['Features']) {
