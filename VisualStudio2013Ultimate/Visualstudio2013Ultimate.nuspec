@@ -14,7 +14,8 @@
     ==================OPTIONAL FEATURES==================
     All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed by default, but you can provide install arguments to add them. Here is an example that includes the Web Tools and the Windows 8 Store App SDK:
 
-    cinst VisualStudio2013Ultimate -InstallArguments "WebTools Win8SDK"
+    cinst VisualStudio2013Ultimate -InstallArguments "/Features:'WebTools Win8SDK' /ProductKey:AB1CD-EF2GH-IJ3KL-MN4OP-QR5ST"
+
 
     You simply need to send a white space delimited list of the features to install via the InstallArguments parameter. Here are the available features:
     Blend
