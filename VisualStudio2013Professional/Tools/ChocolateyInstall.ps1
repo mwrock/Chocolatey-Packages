@@ -1,27 +1,40 @@
 $adminFile = (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'AdminDeployment.xml')
 $customArgs = $env:chocolateyInstallArguments
 $env:chocolateyInstallArguments=""
+
+$MATCH_PATTERN = "/([a-zA-Z]+):([`"'])?([a-zA-Z- 0-9_]+)([`"'])?"
+$PARAMATER_NAME_INDEX = 1
+$VALUE_INDEX = 3
+
 $productKey = ""
 
-$ARGUMENTS_DELIMITER = ';'
-$FEATURES_INDEX = 0
-$PRODUCT_KEY_INDEX = 1
-
-if($customArgs.Length -gt 0){
-    $featuresToAdd = ($customArgs -split $ARGUMENTS_DELIMITER)[$FEATURES_INDEX]
-    $productKey = ($customArgs -split $ARGUMENTS_DELIMITER)[$PRODUCT_KEY_INDEX]
-
-    $featuresToAdd = -split $featuresToAdd
-    [xml]$adminXml=Get-Content $adminFile
-
-    $featuresToAdd | % {
-        $feature=$_
-        $node=$adminXml.DocumentElement.SelectableItemCustomizations.ChildNodes | ? {$_.Id -eq "$feature"}
-        if($node -ne $null){
-            $node.Selected="yes"
-        }
+if($customArgs -match $MATCH_PATTERN ){
+    
+    write-debug "=====matches====="
+    $customArgValues = @{ }
+    $customArgs | Select-String $MATCH_PATTERN -AllMatches  | % matches | % { 
+        $customArgValues.Add(
+            $_.Groups[$PARAMATER_NAME_INDEX].Value,
+            $_.Groups[$VALUE_INDEX].Value) 
     }
-    $adminXml.Save($adminFile)
+
+    if($customArgValues['Features']) {
+        $featuresToAdd = -split $customArgValues['Features']
+        [xml]$adminXml=Get-Content $adminFile
+
+        $featuresToAdd | % {
+            $feature=$_
+            $node=$adminXml.DocumentElement.SelectableItemCustomizations.ChildNodes | ? {$_.Id -eq "$feature"}
+            if($node -ne $null){
+                $node.Selected="yes"
+            }
+        }
+        $adminXml.Save($adminFile)
+    }
+
+    if($customArgValues['ProductKey']) {
+        $productKey = $customArgValues['ProductKey']
+    };
 }
 
 $installerArgs = "/Passive /NoRestart /AdminFile $adminFile /Log $env:temp\vs.log"
