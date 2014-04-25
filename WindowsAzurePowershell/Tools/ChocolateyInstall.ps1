@@ -1,3 +1,5 @@
+$version = '0.8.0'
+
 if(!(Test-Path "HKLM:\Software\Microsoft\PowerShell\3")){
     Write-Host "Windows Azure Powershell requires Powershell version 3 or greater."
     return
@@ -7,10 +9,10 @@ if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86
 $modulePath="$programFiles86\Microsoft SDKs\Windows Azure\PowerShell\Azure\Azure.psd1"
 if(Test-Path $modulePath) {
     $a=IEX (Get-content $modulePath | Out-String)
-    if($a.ModuleVersion -eq "0.7.4") {
+    if($a.ModuleVersion -eq $version) {
         Write-Host "Windows Azure Powershell is already installed."
         return
     }
 }
 
-Install-ChocolateyPackage 'WindowsAzurePowershell' 'msi' '/quiet /norestart' 'http://az412849.vo.msecnd.net/downloads02/windowsazure-powershell.0.7.4.msi'
+Install-ChocolateyPackage 'WindowsAzurePowershell' 'msi' '/quiet /norestart' "http://az412849.vo.msecnd.net/downloads02/windowsazure-powershell.$version.msi"
