@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>4.5.1.20131012</version>
+    <version>4.5.1.20140606</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/DotNet4.5/dotnet.png</iconUrl>
@@ -10,7 +10,7 @@
     <id>DotNet4.5.1</id>
     <title>Dot Net 4.5.1 RTM</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>The .NET Framework 4.5.1 Preview is a highly compatible, in-place update to the .NET Framework 4 and the .NET Framework 4.5.</description>
+    <description>The .NET Framework 4.5.1 is a highly compatible, in-place update to the .NET Framework 4 and the .NET Framework 4.5.</description>
     <summary>The Microsoft .NET Framework 4.5.1</summary>
     <tags>Microsoft .net Framework 4.5.1</tags>
   </metadata>
