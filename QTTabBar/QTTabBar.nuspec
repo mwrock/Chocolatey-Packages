@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>258.0</version>
+    <version>513.0</version>
     <authors>QuizoApps</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://qttabbar.wikidot.com/</projectUrl>

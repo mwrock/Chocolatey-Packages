@@ -1,7 +1,7 @@
 try {
   $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
   $exe = "$scriptDir\qttabbar.exe"
-  Install-ChocolateyZipPackage 'QTTabBar' 'http://qttabbar.wdfiles.com/local--files/download/QTTabBar_258.zip' $scriptDir
+  Install-ChocolateyZipPackage 'QTTabBar' 'http://qttabbar.wdfiles.com/local--files/qttabbar/QTTabBar_513.zip' $scriptDir
   Install-ChocolateyInstallPackage 'QTTabBar' 'exe' "/QI" "$exe"
 
   Write-ChocolateySuccess 'QTTabBar'
