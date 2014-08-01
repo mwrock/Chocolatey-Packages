@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>0.8.3</version>
+    <version>0.8.5</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <iconUrl>https://1.gravatar.com/avatar/425be63bdaaeeffd26d0172ed2030198?d=https%3A%2F%2Fidenticons.github.com%2F732737be523b073de1e3f4cce6660d01.png&amp;r=x&amp;s=128</iconUrl>
