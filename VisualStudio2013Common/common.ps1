@@ -18,7 +18,7 @@ Function Initialize-VS-Settings ($vsArgs, $unattendFile)
 	    #Format is /Key:Value (optional quotes) - Value can have [a-zA-Z0-9- _]+
 
 	    $vsArgValues = @{ }
-	    $vsArgs | Select-String $MATCH_PATTERN -AllMatches  | % matches | % { 
+	    $vsArgs | Select-String $MATCH_PATTERN -AllMatches  | % $_.matches | % { 
 	        $vsArgValues.Add(
 	            $_.Groups[$PARAMATER_NAME_INDEX].Value.Trim(),
 	            $_.Groups[$VALUE_INDEX].Value.Trim()) 
