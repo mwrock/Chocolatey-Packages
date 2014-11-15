@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>14.0.22310</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.visualstudio.com/en-us</projectUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/VisualStudio2015Preview/vs.png</iconUrl>
+    <id>VisualStudio2015Preview</id>
+    <title>Visual Studio 2015 - Preview</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This silently installs Visual Studio 2015 Preview along with the Microsoft .Net 4.5.1 Framework SDK.
+    ==================OPTIONAL FEATURES==================
+    All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed by default, but you can provide install arguments to add them. Here is an example that includes the Web Tools and the Windows 8 Store App SDK:
+
+    cinst VisualStudio2015Preview -InstallArguments "/Features:'WebTools Win8SDK' /ProductKey:AB1CD-EF2GH-IJ3KL-MN4OP-QR5ST"
+
+
+    You simply need to send a white space delimited list of the features to install via the InstallArguments parameter. Here are the available features:
+    Blend
+    LightSwitch
+    VC_MFC_Libraries
+    OfficeDeveloperTools
+    SQL
+    WebTools
+    Win8SDK
+    SilverLight_Developer_Kit
+    WindowsPhone80</description>
+    <summary>Visual Studio Ultimate 2015 Preview is the state-of-the-art development solution that empowers teams of all sizes to design and create compelling apps to delight users. You can use flexible agile planning tools—for example, capacity planning, taskboards, and backlog management—to enable incremental development techniques and agile methodologies, at your own pace. Use advanced modeling, discovery, and architecture tools to describe your system and help ensure that your architecture vision is preserved in the implementation. Bring development and operation teams together by using IntelliTrace, Operations Manager Connector, and Preemptive Analytics. Improve quality and reduce time to resolution by generating actionable bugs from deployed software, and effectively partner with the operations staff to provide data that gives developers greater insight into production issues.</summary>
+    <tags>Microsoft Visual Studio 2015 Preview IDE ALM</tags>
+    <dependencies>
+      <dependency id="DotNet4.5.1" />
+    </dependencies>
+    <releaseNotes>
+      - Add Uninstaller
+      - Remove dependency on IE10
+      - Add ability to specify optional features.
+    </releaseNotes>
+  </metadata>
+  <files>
+	<file src="..\VisualStudio2013Common\common.ps1" target="Tools\common.ps1" />
+	<file src="Tools\AdminDeployment.xml" target="Tools\AdminDeployment.xml" />
+	<file src="Tools\ChocolateyInstall.ps1" target="Tools\ChocolateyInstall.ps1" />
+	<file src="Tools\ChocolateyUninstall.ps1" target="Tools\ChocolateyUninstall.ps1" />
+  </files>
+</package>
