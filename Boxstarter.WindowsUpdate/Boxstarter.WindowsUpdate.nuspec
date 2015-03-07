@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Boxstarter.WindowsUpdate</id>
+    <version>1.0.0</version>
+    <authors>matt.wrock</authors>
+    <owners>matt.wrock</owners>
+    <description>Install all windows updates **Requires Boxstarter**</description>
+    <projectUrl>https://github.com/mwrock/Chocolatey-Packages/</projectUrl>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>Boxstarter</tags>
+  </metadata>
+</package>
