@@ -7,7 +7,7 @@ function Get-CurrentUser {
 function Restart-Explorer {
   Write-Host "Restarting the Windows Explorer process..."
   $user = Get-CurrentUser
-  $explorer = Get-Process -Name explorer -IncludeUserName
+  $explorer = Get-Process -Name explorer -IncludeUserName -ErrorAction SilentlyContinue
   
   if($explorer -ne $null) { 
       $explorer | ? { $_.UserName -eq "$($user.Domain)\$($user.Name)"} | Stop-Process -Force
