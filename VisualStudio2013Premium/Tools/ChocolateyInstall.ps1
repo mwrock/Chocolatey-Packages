@@ -7,5 +7,5 @@ $env:chocolateyInstallArguments=""
 $settings = Initialize-VS-Settings $customArgs $adminFile
 $installerArgs = Get-VS-Installer-Args $settings.ProductKey
 
-Install-ChocolateyPackage 'VisualStudio2013Premium' 'exe' $installerArgs 'http://download.microsoft.com/download/D/B/D/DBDEE6BB-AF28-4C76-A5F8-710F610615F7/vs_premium_download.exe'
+Install-ChocolateyPackage 'VisualStudio2013Premium' 'exe' $installerArgs 'http://download.microsoft.com/download/0/D/3/0D316453-32A1-4042-A5B6-30B14A4C24AA/vs_premium_download.exe'
  
