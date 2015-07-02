@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>win-no-annoy</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Matt Wrock</authors>
     <owners>Matt Wrock</owners>
     <description>Remove that which is annoying in a default windows install. Disables IE Enhanced Security Configuration and Server Manager opening at logon as well as adjusting win explorer options to display hiden files, folders and extensions.</description>
