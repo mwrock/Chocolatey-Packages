@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Boxstarter.WindowsUpdate</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <authors>matt.wrock</authors>
     <owners>matt.wrock</owners>
     <description>Install all windows updates **Requires Boxstarter**</description>
