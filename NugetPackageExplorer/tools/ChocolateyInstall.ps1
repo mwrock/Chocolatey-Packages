@@ -3,7 +3,8 @@ try {
     $exe = "$drop\NugetPackageExplorer.exe"
     Install-ChocolateyZipPackage 'NugetPackageExplorer' 'http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=npe&DownloadId=781182' $drop
     Install-ChocolateyDesktopLink $exe
-    $testType = (cmd /c assoc ".nupkg")
+    $allTypes = (cmd /c assoc)
+    $testType = $allTypes | ? { $_.StartsWith('.nupkg') }
     if($testType -ne $null) {
         $fileType=$testType.Split("=")[1]
     } 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>3.8.0</version>
+    <version>3.8.0.20150702</version>
     <authors>Luan Nguyen</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://npe.codeplex.com/</projectUrl>
