@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>VisualStudio2013Premium</id>
-        <version>12.0.31101.00</version>
-        <title>Visual Studio 2013 - Premium RTM Update 4</title>
+        <version>12.0.40629.00</version>
+        <title>Visual Studio 2013 - Premium with Update 5</title>
         <authors>Microsoft</authors>
         <owners>Matt Wrock</owners>
         <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
-        <projectUrl>http://www.microsoft.com/visualstudio/eng/visual-studio-2013</projectUrl>
+        <projectUrl>https://www.visualstudio.com/en-us</projectUrl>
         <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/VisualStudio2012Premium/vs.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>This silently installs Visual Studio 2013 Premium Update 4 along with the Microsoft .Net 4.5.1 Framework SDK. 
+        <description>This silently installs Visual Studio 2013 Premium with Update 5 along with the Microsoft .Net 4.5.1 Framework SDK. 
     ==================OPTIONAL FEATURES==================
     All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed by default, but you can provide install arguments to add them. Here is an example that includes the Web Tools and the Windows 8 Store App SDK:
 
