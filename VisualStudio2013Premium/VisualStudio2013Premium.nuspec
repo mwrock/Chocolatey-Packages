@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>VisualStudio2013Premium</id>
-        <version>12.0.40629.00</version>
+        <version>12.0.40629.20150920</version>
         <title>Visual Studio 2013 - Premium with Update 5</title>
         <authors>Microsoft</authors>
         <owners>Matt Wrock</owners>

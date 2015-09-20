@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'VisualStudio2013TestProfessional' 'exe' "/Passive /NoRestart /Log $env:temp\vs.log" 'http://download.microsoft.com/download/4/0/6/406E397F-EDBE-4437-B64F-40DF7A92A26E/vs_testprofessional.exe' -validExitCodes @(3010)
+Install-ChocolateyPackage 'VisualStudio2013TestProfessional' 'exe' "/Passive /NoRestart /Log $env:temp\vs.log" 'http://download.microsoft.com/download/4/0/6/406E397F-EDBE-4437-B64F-40DF7A92A26E/vs_testprofessional.exe' -validExitCodes @(0,3010)
