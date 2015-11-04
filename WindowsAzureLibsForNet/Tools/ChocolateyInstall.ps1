@@ -1,5 +1,5 @@
-if(Test-Path "$env:ProgramFiles\Microsoft SDKs\Azure\.NET SDK\v2.5") {
-    Write-Host "Windows Azure Libraries for .net v2.5 is already installed."
+if(Test-Path "$env:ProgramFiles\Microsoft SDKs\Azure\.NET SDK\v2.7") {
+    Write-Host "Windows Azure Libraries for .net v2.7 is already installed."
     return
 }
-Install-ChocolateyPackage 'WindowsAzureLibsForNet' 'msi' '/quiet /norestart' 'http://download.microsoft.com/download/9/F/7/9F7D3299-9AE1-40BE-B24F-C0E9EB0BE61E/MicrosoftAzureLibsForNet-x86.msi' 'http://download.microsoft.com/download/9/F/7/9F7D3299-9AE1-40BE-B24F-C0E9EB0BE61E/MicrosoftAzureLibsForNet-x64.msi'
+Install-ChocolateyPackage 'WindowsAzureLibsForNet' 'msi' '/quiet /norestart' 'https://download.microsoft.com/download/0/F/E/0FE64840-9806-4D3C-9C11-84B743162618/MicrosoftAzureLibsForNet-x86.msi' 'https://download.microsoft.com/download/0/F/E/0FE64840-9806-4D3C-9C11-84B743162618/MicrosoftAzureLibsForNet-x64.msi'
