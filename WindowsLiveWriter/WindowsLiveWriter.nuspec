@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>2012.0.0.20150823</version>
+    <version>2012.0.0.20151215</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.microsoft.com/download/en/details.aspx?id=8621</projectUrl>
@@ -13,6 +13,7 @@
     <summary>Windows Live Writer makes blogging a breeze. You can add photos and videos, format everything just so, and publish to most blogging services</summary>
     <tags>bloging windows live writer chocolatey</tags>
     <dependencies>
+      <dependency id="DotNet3.5" />
       <dependency id="WindowsLiveInstaller" />
     </dependencies>  
   </metadata>
