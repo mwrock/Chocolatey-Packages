@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>15.0.4753.1002</version>
+    <version>2016.0</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://office.microsoft.com/</projectUrl>
@@ -11,6 +11,6 @@
     <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/Office2013ProPlusPreview/office.PNG</iconUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Get the latest versions of your familiar Office programs, such as Word, Excel and PowerPoint, and more, all in one convenient subscription. This will download and silently install the entire Office 365 Home Premium Retail edition. A license is required and you will be prompted to enter your account information upon first launching the software after install.</description>
-    <tags>Microsoft Office 365 2013 Home Premium</tags>
+    <tags>Microsoft Office 365 2016 Home Premium</tags>
   </metadata>
 </package>
