@@ -14,9 +14,9 @@
         ==================OPTIONAL FEATURES==================
     All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed by default, but you can provide install arguments to add them. Here is an example that includes the Web Tools and SQL features:
 
-    cinst VisualStudio2012Premium -InstallArguments "/Features:'WebTools SQL' /ProductKey:AB1CD-EF2GH-IJ3KL-MN4OP-QR5ST"
+    cinst VisualStudio2012Premium -packageParameters "/Features:'WebTools SQL' /ProductKey:AB1CD-EF2GH-IJ3KL-MN4OP-QR5ST"
 
-    You simply need to send a white space delimited list of the features to install via the InstallArguments parameter. Here are the available features:
+    You simply need to send a white space delimited list of the features to install via the packageParameters parameter. Here are the available features:
     Blend
     LightSwitch
     VC_MFC_Libraries
