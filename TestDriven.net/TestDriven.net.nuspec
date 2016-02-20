@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>3.5.2830</version>
+    <version>3.9.2905</version>
     <authors>Jamie Cansdale</authors>
     <owners>Matt Wrock</owners>
     <projectUrl>http://www.testdriven.net/default.aspx</projectUrl>
@@ -12,6 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TestDriven.Net makes it easy to run unit tests with a single click, anywhere in your Visual Studio solutions. It supports all versions of Microsoft Visual Studio and it integrates with the best .NET development tools.</description>
     <summary>The Zero Friction Unit Testing Add-In for Microsoft Visual Studio</summary>
-    <tags>TestDriven Test Driven Runner Visual Studio addin chocolatey</tags>
+    <tags>TestDriven Test Driven Runner Visual Studio addin</tags>
+    <dependencies>
+      <dependency id="dotnet3.5" />
+    </dependencies>      
   </metadata>
 </package>
