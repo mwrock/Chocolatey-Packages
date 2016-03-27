@@ -1,6 +1,6 @@
 # Run installer
 $packageName = 'Git-Credential-Manager-for-Windows'
-$url = 'https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/download/v1.1.0/GCMW-1.1.0.exe'
+$url = 'https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/download/v1.2.2/GCMW-1.2.2.exe'
 $installerType = 'exe'
 $silentArgs = '/SILENT /NORESTART'
 
