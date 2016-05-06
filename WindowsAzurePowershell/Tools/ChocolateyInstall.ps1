@@ -1,4 +1,5 @@
-$version = '0.9.4'
+$version = '1.4.0'
+$releaseName = "v$version-May2016"
 
 if(!(Test-Path "HKLM:\Software\Microsoft\PowerShell\3")){
     Write-Host "Windows Azure Powershell requires Powershell version 3 or greater."
@@ -15,4 +16,4 @@ if(Test-Path $modulePath) {
     }
 }
 
-Install-ChocolateyPackage 'WindowsAzurePowershell' 'msi' '/quiet /norestart' "https://github.com/Azure/azure-powershell/releases/download/v0.9.7-August2015/azure-powershell.0.9.7.msi"
+Install-ChocolateyPackage 'WindowsAzurePowershell' 'msi' '/quiet /norestart' "https://github.com/Azure/azure-powershell/releases/download/$releaseName/azure-powershell.$version.msi"
