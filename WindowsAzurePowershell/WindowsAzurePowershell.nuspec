@@ -5,8 +5,11 @@
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <iconUrl>https://1.gravatar.com/avatar/425be63bdaaeeffd26d0172ed2030198?d=https%3A%2F%2Fidenticons.github.com%2F732737be523b073de1e3f4cce6660d01.png&amp;r=x&amp;s=128</iconUrl>
-    <projectUrl>https://github.com/WindowsAzure/azure-sdk-tools</projectUrl>
-    <licenseUrl>https://github.com/WindowsAzure/azure-sdk-tools/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/Azure/azure-powershell/</projectUrl>
+    <licenseUrl>https://github.com/Azure/azure-powershell/blob/master/LICENSE.txt</licenseUrl>
+    <projectSourceUrl>https://github.com/Azure/azure-powershell/</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Azure/azure-powershell/issues</bugTrackerUrl>
+    <docsUrl>https://github.com/Azure/azure-powershell/wiki</docsUrl>
     <id>WindowsAzurePowershell</id>
     <title>Windows Azure Powershell</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
