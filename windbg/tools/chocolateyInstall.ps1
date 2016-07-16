@@ -1,5 +1,5 @@
 param(
-    [string] $SymbolPath
+    [string] $SymbolPath = "$env:SYSTEMROOT\Symbols"
 )
 
 $ErrorActionPreference = 'Stop';
@@ -20,16 +20,12 @@ if ($packageParameters) {
         $arguments.Add(
             $_.Groups[$option_name].Value.Trim(),
             $_.Groups[$value_name].Value.Trim())
-    }
+        }
     }
     else
     {
         Throw "Package Parameters were found but were invalid (REGEX Failure)"
     }
-
-    if ($arguments.ContainsKey("CopySoS")) {
-          $CopySoS = [switch]::Present
-      }
 
     if ($arguments.ContainsKey("SymbolPath")) {
         $SymbolPath = $arguments["SymbolPath"]
@@ -89,12 +85,11 @@ foreach ($file in $files.GetEnumerator()) {
 
 Install-ChocolateyInstallPackage "windbg" "msi" "/q" "$tempFolder\SDK Debuggers-x86_en-us.msi"
 
-if ($SymbolPath) {
-    if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
-    $windbgPath = (Join-Path $programFiles86 "Windows Kits\10\Debuggers")
-    [Environment]::SetEnvironmentVariable( '_NT_SYMBOL_PATH', "symsrv*symsrv.dll*$SymbolPath*http://msdl.microsoft.com/download/symbols", 'User')
-    $env:_NT_SYMBOL_PATH = "symsrv*symsrv.dll*$SymbolPath*http://msdl.microsoft.com/download/symbols"
-}
+if(${env:ProgramFiles(x86)} -ne $null){ $programFiles86 = ${env:ProgramFiles(x86)} } else { $programFiles86 = $env:ProgramFiles }
+$windbgPath = (Join-Path $programFiles86 "Windows Kits\10\Debuggers")
+
+[Environment]::SetEnvironmentVariable( '_NT_SYMBOL_PATH', "symsrv*symsrv.dll*$SymbolPath*http://msdl.microsoft.com/download/symbols", 'User')
+$env:_NT_SYMBOL_PATH = "symsrv*symsrv.dll*$SymbolPath*http://msdl.microsoft.com/download/symbols"
 
 $fxDir = "$env:windir\Microsoft.NET\Framework"
 if(Test-Path $fxDir) {
