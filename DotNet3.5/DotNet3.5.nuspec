@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>3.5.20160218</version>
+    <version>3.5.20160716</version>
     <authors>Microsoft</authors>
     <owners>Matt Wrock</owners>
     <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/DotNet4.5/dotnet.png</iconUrl>
