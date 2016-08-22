@@ -1,5 +1,5 @@
-$version = '1.5.1'
-$releaseName = "v$version-June2016"
+$version = '1.6.0'
+$releaseName = "v$version-July2016"
 
 if(!(Test-Path "HKLM:\Software\Microsoft\PowerShell\3")){
     Write-Host "Windows Azure Powershell requires Powershell version 3 or greater."
