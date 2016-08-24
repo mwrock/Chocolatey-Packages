@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>chefdk</id>
+    <version>0.17.17.1</version>
+    <title>Chef Development Kit</title>
+    <authors>Steven Murawski</authors>
+    <owners>CHEF Software</owners>
+    <licenseUrl>http://www.chef.io</licenseUrl>
+    <projectUrl>https://github.com/chef/chef-dk</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Chef Development Kit contains everything you need to start using Chef, along with the tools essential to managing the code that runs your business.
+
+ChefDK contains:
+
+* An early version of a brand new command-line tool, chef, that aims to streamline Chef workflow, starting with new generators.
+* The well-known cookbook dependency manager Berkshelf 3.0.
+* The Test Kitchen integration testing framework.
+* ChefSpec, which makes unit testing cookbooks a breeze.
+* Foodcritic, a linting tool for doing static code analysis on cookbooks.
+* All of the Chef tools you're already familiar with: Chef Client, Knife, Ohai and Chef Zero.</description>
+    <summary>The Chef Development Kit (ChefDK) brings the best-of-breed development tools built by the awesome Chef community to your workstation with just a few clicks. Download your package and start coding Chef in seconds.</summary>
+    <releaseNotes>[Changelog](https://github.com/chef/chef-dk/blob/v0.17.17/CHANGELOG.md)</releaseNotes>
+    <copyright />
+    <tags>chefdk chef-client chef test-kitchen chefspec foodcritic knife</tags>
+  </metadata>
+</package>
