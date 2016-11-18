@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>chefdk</id>
-    <version>0.18.26</version>
+    <version>1.0.3</version>
     <title>Chef Development Kit</title>
     <authors>Steven Murawski</authors>
     <owners>CHEF Software</owners>
