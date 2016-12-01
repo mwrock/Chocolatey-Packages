@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>chefdk</id>
-    <version>0.18.26</version>
+    <version>0.19.6</version>
     <title>Chef Development Kit</title>
     <authors>Steven Murawski</authors>
     <owners>CHEF Software</owners>
@@ -20,7 +20,7 @@ ChefDK contains:
 * Foodcritic, a linting tool for doing static code analysis on cookbooks.
 * All of the Chef tools you're already familiar with: Chef Client, Knife, Ohai and Chef Zero.</description>
     <summary>The Chef Development Kit (ChefDK) brings the best-of-breed development tools built by the awesome Chef community to your workstation with just a few clicks. Download your package and start coding Chef in seconds.</summary>
-    <releaseNotes>[Changelog](https://github.com/chef/chef-dk/blob/v0.18.26/CHANGELOG.md)</releaseNotes>
+    <releaseNotes>[Changelog](https://github.com/chef/chef-dk/blob/v0.19.6/CHANGELOG.md)</releaseNotes>
     <copyright />
     <tags>chefdk chef-client chef test-kitchen chefspec foodcritic knife</tags>
   </metadata>
