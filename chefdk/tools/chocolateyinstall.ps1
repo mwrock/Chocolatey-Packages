@@ -1,6 +1,6 @@
 ﻿try {
   $name = 'chefdk'
-  $version = '1.0.3'
+  $version = '1.1.16'
   $url = "https://packages.chef.io/stable/windows/2012r2/chefdk-$version-1-x86.msi"
 
   $url64 = "https://packages.chef.io/stable/windows/2012r2/chefdk-$version-1-x86.msi"
