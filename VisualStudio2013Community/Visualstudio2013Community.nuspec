@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>12.0.31101</version>
+    <authors>Microsoft</authors>
+    <owners>Matt Wrock</owners>
+    <projectUrl>http://www.visualstudio.com/en-us</projectUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/VisualStudio2013Community/vs.png</iconUrl>
+    <id>VisualStudio2013Community</id>
+    <title>Visual Studio 2013 - Community </title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This silently installs Visual Studio 2013 Community along with the Microsoft .Net 4.5.1 Framework SDK. All Optional Features such as Blend, Sql Dev tools, Web dev tools, etc. are not installed. However, from the "Programs and Features" menu in Windows you can right click Microsoft Visual Studio Ultimate and choose "Change" and then add the features you want. If you do not already have IE 10, it will require a reboot.</description>
+    <summary>Visual Studio Express 2013 Community provides the core tools for creating compelling, innovative web applications and services.</summary>
+    <tags>Microsoft Visual Studio 2013 Community IDE ALM</tags>
+    <dependencies>
+      <dependency id="DotNet4.5.1" />
+    </dependencies>
+    <releaseNotes>
+      - Add Uninstaller
+      - Remove dependency on IE10
+      - Add ability to specify optional features.
+    </releaseNotes>
+  </metadata>
+</package>
