@@ -15,6 +15,7 @@
     <tags>nuget chocolatey</tags>
     <dependencies>
       <dependency id="DotNet4.5" />
+      <dependency id="nuget.commandline" />
     </dependencies>
   </metadata>
   <files>
