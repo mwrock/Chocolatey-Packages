@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>2.9</version>
+    <authors>Microsoft</authors>
+    <owners>TheodoreIII, Matt Wrock</owners>
+    <iconUrl>https://1.gravatar.com/avatar/425be63bdaaeeffd26d0172ed2030198?d=https%3A%2F%2Fidenticons.github.com%2F732737be523b073de1e3f4cce6660d01.png&amp;r=x&amp;s=128</iconUrl>
+    <projectUrl>https://github.com/WindowsAzure/azure-sdk-for-net</projectUrl>
+    <licenseUrl>https://github.com/WindowsAzure/azure-sdk-for-net/blob/master/LICENSE.txt</licenseUrl>
+    <id>MicrosoftAzureComputeEmulator</id>
+    <title>Microsoft Azure Compute Emulator</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Microsoft Azure compute emulator provides a local environment that emulates the Azure Cloud Service hosting.</description>
+    <tags>Windows Azure Compute Emulator</tags>
+  </metadata>
+</package>
