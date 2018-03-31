@@ -8,7 +8,7 @@
     $validExitCodes = @(0,3010)
 
     $SHA256Checksum = '656fd16842972ccb3b76560dd952aa2fd3c430be85dd5a01f2e17f3cc3002635'
-    $SHA256Checksum64 = 'd46f1636089bb3883245db44256e179ff353c998f7f280db222daf504a78033f'
+    $SHA256Checksum64 = '86d8b8408e317298e04a8a96ac45be7b4885973780280239d6abdc31081adf09'
     Install-ChocolateyPackage "$name" "$installerType" "$silentArgs" "$url" "$url64" -validExitCodes $validExitCodes -checksum $SHA256Checksum -checksumtype 'sha256' -checksum64 $SHA256Checksum64 -checksumtype64 'sha256'
 } catch {
     Write-ChocolateyFailure $name $($_.Exception.Message)
