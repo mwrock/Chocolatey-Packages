@@ -5,7 +5,7 @@
     <version>1.0.2</version>
     <authors>Matt Wrock</authors>
     <owners>Matt Wrock</owners>
-    <description>Remove that which is annoying in a default windows install. Disables IE Enhanced Security Configuration and Server Manager opening at logon as well as adjusting win explorer options to display hiden files, folders and extensions.</description>
+    <description>Remove that which is annoying in a default windows install. Disables IE Enhanced Security Configuration and Server Manager opening at logon as well as adjusting win explorer options to display hidden files, folders and extensions.</description>
     <projectUrl>https://github.com/mwrock/Chocolatey-Packages/tree/master/win-no-annoy</projectUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
   </metadata>
