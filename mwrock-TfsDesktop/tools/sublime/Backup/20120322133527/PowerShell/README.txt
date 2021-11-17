@@ -1,1 +1,0 @@
-Adds support for editing PowerShell filetypes
