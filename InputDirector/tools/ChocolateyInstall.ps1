@@ -1,3 +1,3 @@
 $drop = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-Install-ChocolateyZipPackage 'InputDirector' 'https://inputdirector.com/downloads/InputDirector.v2.1.zip' $drop -Checksum FA24FD0AC0A7E15BD773E88E2F97D5BFE373181C1672DCD092E667F6AA7BE599 -ChecksumType SHA256
-."$drop/InputDirector.v2.1.build146.Setup.exe" /S
+Install-ChocolateyZipPackage 'InputDirector' 'https://www.inputdirector.com/downloads/InputDirector.v2.1.1.zip' $drop -Checksum 6DBC57220B55B2D053CE9160D5E85170B6E6388CF75D0EF2384957DE4F180B33 -ChecksumType SHA256
+."$drop/InputDirector.v2.1.1.build150.Setup.exe" /S
